@@ -1,0 +1,149 @@
+magic
+tech scmos
+timestamp 1434142685
+<< polysilicon >>
+rect 44 1006 46 1008
+rect 44 998 46 1000
+rect 44 990 46 992
+rect 44 982 46 984
+rect 44 974 46 976
+rect 44 966 46 968
+<< metal1 >>
+rect 15 1029 18 1032
+rect 51 1029 54 1032
+rect 0 936 3 942
+rect 7 936 10 942
+rect 15 936 18 942
+rect 51 936 54 942
+rect 57 936 60 942
+rect 64 936 67 942
+rect 0 814 3 875
+rect 7 814 10 875
+rect 15 814 18 875
+rect 51 814 54 875
+rect 57 814 60 875
+rect 64 814 67 875
+rect 0 689 3 750
+rect 7 689 10 750
+rect 15 689 18 750
+rect 51 689 54 750
+rect 57 689 60 750
+rect 64 689 67 750
+rect 0 564 3 625
+rect 7 564 10 625
+rect 15 564 18 625
+rect 51 564 54 625
+rect 57 564 60 625
+rect 64 564 67 625
+rect 0 439 3 500
+rect 7 439 10 500
+rect 15 439 18 500
+rect 51 439 54 500
+rect 57 439 60 500
+rect 64 439 67 500
+rect 0 314 3 375
+rect 7 314 10 375
+rect 15 314 18 375
+rect 51 314 54 375
+rect 57 314 60 375
+rect 64 314 67 375
+rect 0 189 3 250
+rect 7 189 10 250
+rect 15 189 18 250
+rect 51 189 54 250
+rect 57 189 60 250
+rect 64 189 67 250
+rect 0 64 3 125
+rect 7 64 10 125
+rect 15 64 18 125
+rect 51 64 54 125
+rect 57 64 60 125
+rect 64 64 67 125
+<< metal2 >>
+rect 29 908 33 936
+rect 29 904 41 908
+rect 29 783 33 811
+rect 29 779 41 783
+rect 29 658 33 686
+rect 29 654 41 658
+rect 29 533 33 561
+rect 29 529 41 533
+rect 29 408 33 436
+rect 29 404 41 408
+rect 29 283 33 311
+rect 29 279 41 283
+rect 29 158 33 186
+rect 29 154 41 158
+rect 29 33 33 61
+rect 29 29 41 33
+<< m2contact >>
+rect 29 936 33 940
+rect 41 904 45 908
+rect 29 811 33 815
+rect 41 779 45 783
+rect 29 686 33 690
+rect 41 654 45 658
+rect 29 561 33 565
+rect 41 529 45 533
+rect 29 436 33 440
+rect 41 404 45 408
+rect 29 311 33 315
+rect 41 279 45 283
+rect 29 186 33 190
+rect 41 154 45 158
+rect 29 61 33 65
+rect 41 29 45 33
+use register_controller  register_controller_0
+timestamp 1434142375
+transform 1 0 22 0 1 985
+box -22 -43 45 47
+use regbit  reg7
+timestamp 1431679428
+transform 1 0 23 0 1 904
+box -23 -29 44 36
+use regbit  reg6
+timestamp 1431679428
+transform 1 0 23 0 1 779
+box -23 -29 44 36
+use regbit  reg5
+timestamp 1431679428
+transform 1 0 23 0 1 654
+box -23 -29 44 36
+use regbit  reg4
+timestamp 1431679428
+transform 1 0 23 0 1 529
+box -23 -29 44 36
+use regbit  reg3
+timestamp 1431679428
+transform 1 0 23 0 1 404
+box -23 -29 44 36
+use regbit  reg2
+timestamp 1431679428
+transform 1 0 23 0 1 279
+box -23 -29 44 36
+use regbit  reg1
+timestamp 1431679428
+transform 1 0 23 0 1 154
+box -23 -29 44 36
+use regbit  reg0
+timestamp 1431679428
+transform 1 0 23 0 1 29
+box -23 -29 44 36
+<< labels >>
+rlabel m2contact 41 904 45 908 1 bus7
+rlabel m2contact 41 29 45 33 1 bus0
+rlabel m2contact 41 154 45 158 1 bus1
+rlabel m2contact 41 279 45 283 1 bus2
+rlabel m2contact 41 404 45 408 1 bus3
+rlabel m2contact 41 529 45 533 1 bus4
+rlabel m2contact 41 654 45 658 1 bus5
+rlabel m2contact 41 779 45 783 1 bus6
+rlabel metal1 15 1029 18 1032 5 GND
+rlabel metal1 51 1029 54 1032 5 Vdd
+rlabel polysilicon 44 1006 46 1008 1 regr
+rlabel polysilicon 44 998 46 1000 1 phi1
+rlabel polysilicon 44 990 46 992 1 rd_id
+rlabel polysilicon 44 982 46 984 1 wr_id
+rlabel polysilicon 44 974 46 976 1 phi0
+rlabel polysilicon 44 966 46 968 1 regw
+<< end >>

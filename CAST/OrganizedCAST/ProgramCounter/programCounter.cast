@@ -1,0 +1,44 @@
+import "globals.cast";
+import "pcEvenBits.cast";
+import "pcOddBits.cast";
+import "pcEvenBitsIncrementor.cast";
+import "pcOddBitsIncrementor.cast";
+import "pcController.cast";
+import "register.cast";
+
+// The program counter in all its glory. Not parameterized intentionally.
+// Takes databus as input.
+// Outputs to address bus.
+define programCounter()() {
+	// incrementor carry chain
+	node[16] NORNANDCarryChain;
+	NORNANDCarryChain[0] = ALWAYSLOW;
+
+	// PCk(onstant) bits[14:8] storage register for branches.
+	// Note if a 16 bit address is passed as a constant the MSB is ignored.
+	node[7] KtoPC, KfromDataPath;
+	node[15] BranchLoadIn;	
+	< i : 7 : KfromDataPath[i] = dataPath[i]; >
+	register(7) PCkonstant(phi0, phi0_, phi1, phi1_, KfromDataPath, KtoPC);
+ 	< i : 8 : BranchLoadIn[i] = dataPath[i]; >
+	< i : 7 : BranchLoadIn[8+i] = KtoPC[i]; >
+
+	// PC control signals
+	node branchWrite, branchWrite_, incWrite, incWrite_;
+	pcController pcC(branchWrite, branchWrite_, incWrite, incWrite_);  
+	
+	// the program counter and its incrementor chain 
+	node[15] toIncrementor;
+	node[15] IncLoadIn;	
+	
+	< i : 8 : pcEvenBitsIncrementor evenIncs[i](NORNANDCarryChain[2*i], toIncrementor[2*i], 
+				NORNANDCarryChain[1+(2*i)], IncLoadIn[2*i]); >	
+	< i : 7 : pcOddBitsIncrementor oddIncs[i](NORNANDCarryChain[1+(2*i)], toIncrementor[1+(2*i)], 
+				NORNANDCarryChain[2+(2*i)], IncLoadIn[1+(2*i)]); >	
+
+	< i : 8 : pcEvenBits evenRegs[i](BranchLoadIn[2*i], IncLoadIn[2*i], branchWrite, branchWrite_, 
+				incWrite, incWrite_, toIncrementor[2*i], addr[2*i]); >
+	< i : 7 : pcOddBits oddRegs[i](BranchLoadIn[1 + (2*i)], IncLoadIn[1 + (2*i)], branchWrite, branchWrite_, 
+				incWrite, incWrite_, toIncrementor[1 + (2*i)], addr[1 + (2*i)]); >
+	
+}

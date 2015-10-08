@@ -1,0 +1,16 @@
+import "adderbit.cast";
+
+define addsubbit()(node a, b, cin, add, sub; node s, cout)
+{
+  node opa, opb, b_;
+  opa = a;
+  adderbit Add(opa, opb, cin, s, cout);
+
+  prs {
+  	b -> b_-
+  	~b -> b_+
+    ( b  &  sub) | ( b_ &  add) -> opb-
+    (~b_ & ~sub) | (~b  & ~add) -> opb+
+  }
+}
+

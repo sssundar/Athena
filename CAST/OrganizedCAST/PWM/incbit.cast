@@ -1,0 +1,18 @@
+define incbit()(node a, cin; node s, cout)
+{
+  node a_, cin_, cout_;
+  prs {
+     a -> a_-
+    ~a -> a_+
+     cin -> cin_-
+    ~cin -> cin_+
+     cout_ -> cout-
+    ~cout_ -> cout+
+
+    ( a  &  cin) | ( a_ &  cin_) -> s-
+    (~a_ & ~cin) | (~a  & ~cin_) -> s+
+
+     a &  cin -> cout_-
+    ~a | ~cin -> cout_+
+  }
+}

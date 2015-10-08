@@ -1,0 +1,12 @@
+import "globals.cast";
+
+// Instruction register controller, generating gated write signals.
+define IRController()(node write, write_) {
+  prs {
+     phi0 & instructionCycleCountIs0 & RESET_ -> write_-
+    ~phi0 | ~instructionCycleCountIs0 | ~RESET_ -> write_+
+
+     write_ -> write-
+    ~write_ -> write+
+  }
+}

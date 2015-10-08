@@ -1,0 +1,73 @@
+magic
+tech scmos
+timestamp 1431679428
+<< polysilicon >>
+rect -13 28 -3 30
+rect 23 28 34 30
+rect 7 25 9 26
+rect -19 12 -3 14
+rect 7 3 9 18
+rect 23 12 40 14
+rect 7 1 12 3
+<< metal1 >>
+rect -23 15 -20 35
+rect -16 31 -13 35
+rect -23 -29 -20 11
+rect -16 -29 -13 27
+rect -8 23 -5 35
+rect 6 32 10 36
+rect -5 19 -1 23
+rect 28 23 31 35
+rect -8 -17 -5 19
+rect 6 10 9 21
+rect 21 19 25 23
+rect 29 19 31 23
+rect 5 7 9 10
+rect 5 1 8 7
+rect 16 0 18 4
+rect 28 -17 31 19
+rect -6 -21 -2 -17
+rect 26 -21 27 -17
+rect -8 -29 -5 -21
+rect 28 -29 31 -21
+rect 34 31 37 35
+rect 34 -29 37 27
+rect 41 15 44 35
+rect 41 -29 44 11
+<< polycontact >>
+rect -17 27 -13 31
+rect 34 27 38 31
+rect 6 21 10 25
+rect -23 11 -19 15
+rect 40 11 44 15
+rect 12 0 16 4
+<< m2contact >>
+rect 18 0 22 4
+<< psubstratepcontact >>
+rect -9 19 -5 23
+rect -10 -21 -6 -17
+<< nsubstratencontact >>
+rect 25 19 29 23
+rect 27 -21 31 -17
+use latch  outlatch
+timestamp 1430426212
+transform 0 1 -1 1 0 25
+box -6 -2 10 24
+use latch  inlatch
+timestamp 1430426212
+transform 0 1 -1 -1 0 17
+box -6 -2 10 24
+use staticizer  staticizer_0
+timestamp 1430428783
+transform 0 1 -6 -1 0 -17
+box -19 2 12 32
+<< labels >>
+rlabel m2contact 18 0 22 4 1 in
+rlabel metal1 6 32 10 36 5 out
+rlabel metal1 -8 32 -5 35 5 GND
+rlabel metal1 28 32 31 35 5 Vdd
+rlabel metal1 34 32 37 35 5 r_
+rlabel metal1 41 32 44 35 6 w_
+rlabel metal1 -23 32 -20 35 4 w
+rlabel metal1 -16 32 -13 35 5 r
+<< end >>

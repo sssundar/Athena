@@ -1,0 +1,17 @@
+import "pwmaccumbit.cast";
+import "pwmbit.cast";
+import "cmpbit.cast";
+import "incbit.cast";
+
+// toFileX are for testing.
+define pwmcell()(node in, w, w_, r, r_, eqin_, zin_,
+		 cin; node out, eqout_, zout_, cout; node toFile1, toFile2)
+{
+  node incin, incout, cnt, cnt_, cmp, cmp_;
+
+  incbit Incrementer(incin, cin, incout, cout);
+  pwmaccumbit PCnt(incout, incin, cnt, cnt_, toFile2);
+  pwmbit PCmp(in, w, w_, r, r_, out, cmp, cmp_, toFile1);
+  cmpbit Comparator(cnt, cnt_, cmp, cmp_, eqin_, zin_, eqout_, zout_);
+}
+

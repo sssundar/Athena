@@ -1,0 +1,6 @@
+define nor2()(node a,b; node out) {
+	prs {
+		~a & ~b -> out+
+		a | b -> out-	
+	}
+}

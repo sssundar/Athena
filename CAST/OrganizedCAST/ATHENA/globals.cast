@@ -1,0 +1,118 @@
+import "nor4.cast";
+import "nor3.cast";
+import "nor2.cast";
+import "and4.cast";
+import "inverter.cast";
+
+// True Global Signals
+
+// Clocks
+node phi0, phi0_, phi1, phi1_;
+
+// Reset
+node RESET, RESET_;
+inverter RESETGen(RESET,RESET_);
+
+// Signals Aggregated for CASTing Convenience
+
+// Identify Input Port
+node[8] in;
+
+// Identify Output Port
+node[8] out;
+
+// Identify address bus
+node[15] addr;
+
+// Identify PWM output
+node pwmOut;
+
+// Identify Datapath
+node[8] dataPath;
+
+// Useful Constants (make sure to set in testing!)
+node ALWAYSLOW, ALWAYSHIGH;
+
+// Instruction Cycle Counter Latches & Flags
+node iccB0, iccB1;
+node iccB0_, iccB1_;
+inverter iccinv0(iccB0,iccB0_);
+inverter iccinv1(iccB1,iccB1_);
+node instructionCycleCountIs0, instructionCycleCountIs1, instructionCycleCountIs2; 
+nor2 IdentifyInstructionCycleCountIs0(iccB0,iccB1,instructionCycleCountIs0);
+nor2 IdentifyInstructionCycleCountIs1(iccB0_,iccB1,instructionCycleCountIs1);
+nor2 IdentifyInstructionCycleCountIs2(iccB0,iccB1_,instructionCycleCountIs2);
+
+// Current Instruction in IR is on the controlPath for instructionCycleCountIs1,2.
+node[8] controlPath, controlPath_;
+
+// Useful controlPath flags.
+node BranchInstruction, InputInstruction, OutputInstruction, ArithmeticInstruction, ShiftInstruction, LogicalInstruction, PWMInstruction;
+node BranchInstruction_;
+inverter BrIinv(BranchInstruction,BranchInstruction_);
+nor3 IdentifyBranchInstruction(controlPath[7],controlPath[6],controlPath_[5],BranchInstruction);
+nor2 IdentifyInputInstruction(controlPath[7],controlPath_[6],InputInstruction);
+nor4 IdentifyOutputInstruction(controlPath_[7],controlPath[6],controlPath[2],controlPath_[1],OutputInstruction);
+nor4 IdentifyArithmeticInstruction(controlPath_[7],controlPath[6],controlPath[2],controlPath[1],ArithmeticInstruction);
+nor3 IdentifyLogicalInstruction(controlPath_[7],controlPath[6],controlPath_[2],LogicalInstruction);
+nor4 IdentifyShiftInstruction(controlPath[7],controlPath[6],controlPath[5],controlPath_[1],ShiftInstruction);
+nor4 IdentifyPWMInstruction(controlPath[7],controlPath[6],controlPath[5],controlPath_[4],PWMInstruction);
+
+// Select Register Flags (read/write, IR543/IR210)
+// IR76 are simpleRead/Write
+// IR543 are RegisterXRead (simple)
+// IR210 are RegisterXWrite (simple)
+node simpleRead, simpleWrite; 
+simpleRead = controlPath[7];
+simpleWrite = controlPath[6];
+
+node Register0Read, Register1Read, Register2Read, Register3Read, Register4Read, Register5Read, Register6Read, Register7Read;
+node Register0Write, Register1Write, Register2Write, Register3Write, Register4Write, Register5Write, Register6Write, Register7Write;
+
+nor3 IDrg0r(controlPath[5],controlPath[4],controlPath[3],Register0Read);
+nor3 IDrg1r(controlPath[5],controlPath[4],controlPath_[3],Register1Read);
+nor3 IDrg2r(controlPath[5],controlPath_[4],controlPath[3],Register2Read);
+nor3 IDrg3r(controlPath[5],controlPath_[4],controlPath_[3],Register3Read);
+nor3 IDrg4r(controlPath_[5],controlPath[4],controlPath[3],Register4Read);
+nor3 IDrg5r(controlPath_[5],controlPath[4],controlPath_[3],Register5Read);
+nor3 IDrg6r(controlPath_[5],controlPath_[4],controlPath[3],Register6Read);
+nor3 IDrg7r(controlPath_[5],controlPath_[4],controlPath_[3],Register7Read);
+
+nor3 IDrg0w(controlPath[2],controlPath[1],controlPath[0],Register0Write);
+nor3 IDrg1w(controlPath[2],controlPath[1],controlPath_[0],Register1Write);
+nor3 IDrg2w(controlPath[2],controlPath_[1],controlPath[0],Register2Write);
+nor3 IDrg3w(controlPath[2],controlPath_[1],controlPath_[0],Register3Write);
+nor3 IDrg4w(controlPath_[2],controlPath[1],controlPath[0],Register4Write);
+nor3 IDrg5w(controlPath_[2],controlPath[1],controlPath_[0],Register5Write);
+nor3 IDrg6w(controlPath_[2],controlPath_[1],controlPath[0],Register6Write);
+nor3 IDrg7w(controlPath_[2],controlPath_[1],controlPath_[0],Register7Write);
+
+// Useful Branching Flags
+node latchedCarryOut;
+node logicalAccumulatorIs0;
+
+// Identify and Define Control Signals Facing Outward
+// memselect needs to assert only on phi1 of Cycle1 of the IN instruction.
+// addrselect needs to assert only on phi0 of Cycle1 of an ADDR instruction (so the out-bus can stabilize on the previous phi1).
+// datawrite must assert only on phi0 of Cycle1 of an OUT instruction (so the out-bus can stabilize on the previous phi1).
+node memselect, addrselect, datawrite;
+
+and4 msel(instructionCycleCountIs1,phi1,InputInstruction,controlPath[3], memselect);
+and4 asel(instructionCycleCountIs1,phi0,OutputInstruction,controlPath[0], addrselect);
+and4 dwri(instructionCycleCountIs1,phi0,OutputInstruction,controlPath_[0], datawrite);
+
+// Useful Testing Nodes
+
+// Register File
+node[8] reg0;
+node[8] reg1;
+node[8] reg2;
+node[8] reg3;
+node[8] reg4;
+node[8] reg5;
+node[8] reg6;
+node[8] reg7;
+// PWM count
+node[8] pwmc;
+
+

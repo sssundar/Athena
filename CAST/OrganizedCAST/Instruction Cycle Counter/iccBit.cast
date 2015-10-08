@@ -1,0 +1,17 @@
+import "globals.cast";
+
+// Single Bit of the instruction cycle counter
+// Takes input bit from incrementer logic.
+// Latches it internally on phi0 if INC is high, and if INC_ (CLR) is high then on phi0 sets latch high.
+// Outputs this value to the incrementer logic on phi1. 
+// Resettable
+define iccBit()(node fromInc, INC; node toInc)
+{
+	node latchedBit_;
+	prs {
+		phi0 & (INC  &  fromInc)  -> latchedBit_-
+		~phi0_ & (~fromInc | ~INC | ~RESET_) -> latchedBit_+
+		phi1  &  latchedBit_ -> toInc-
+		~phi1_ & ~latchedBit_ -> toInc+
+	}
+}

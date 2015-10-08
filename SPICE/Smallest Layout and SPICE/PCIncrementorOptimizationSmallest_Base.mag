@@ -1,0 +1,69 @@
+magic
+tech scmos
+timestamp 1434165362
+<< polysilicon >>
+rect 22 16 24 26
+<< metal1 >>
+rect 57 67 87 71
+rect 57 41 61 67
+rect -30 38 -7 41
+rect 16 38 61 41
+rect -30 -16 -27 38
+rect 38 35 44 38
+rect 34 31 44 35
+rect 1826 22 1851 36
+rect -24 13 -4 17
+rect 28 15 71 16
+rect 28 12 87 15
+rect 72 11 79 12
+rect 83 11 87 12
+rect 17 -5 87 -3
+rect 17 -9 21 -5
+rect 25 -7 87 -5
+rect 25 -9 40 -7
+rect -30 -20 76 -16
+rect 84 -24 87 -21
+rect 64 -39 68 -31
+rect 78 -65 82 -58
+rect 78 -66 87 -65
+rect 25 -69 87 -66
+<< metal2 >>
+rect 21 -5 24 -4
+rect 21 -65 24 -9
+rect 68 -10 71 8
+rect 65 -13 71 -10
+rect 79 -9 83 8
+rect 79 -13 87 -9
+rect 64 -27 68 -13
+<< polycontact >>
+rect 20 12 24 16
+rect 68 -39 72 -35
+<< m2contact >>
+rect 68 8 72 12
+rect 79 8 83 12
+rect 21 -9 25 -5
+rect 64 -31 68 -27
+rect 21 -69 25 -65
+use latchOutputMimic  latchOutputMimic_0
+timestamp 1434159590
+transform 1 0 6 0 1 22
+box -16 -31 17 19
+use inv_p8n4  inv_p8n4_1
+timestamp 1434159005
+transform 1 0 30 0 1 19
+box -6 -26 8 16
+use inv_p8n4  inv_p8n4_0
+timestamp 1434159005
+transform -1 0 80 0 1 -32
+box -6 -26 8 16
+use PCIncrementorOptimizationSmallest_BaseCell  PCIncrementorOptimizationSmallest_BaseCell_0
+array 0 6 249 0 0 153
+timestamp 1434165108
+transform 1 0 0 0 1 0
+box 87 -82 336 71
+<< labels >>
+rlabel metal1 -22 15 -22 15 3 chainStart
+rlabel metal1 22 39 22 39 1 Vdd
+rlabel metal1 25 -6 25 -6 1 GND
+rlabel metal1 1846 29 1846 29 7 FINALOUTPUT
+<< end >>

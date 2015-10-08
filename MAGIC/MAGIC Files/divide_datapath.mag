@@ -1,0 +1,254 @@
+magic
+tech scmos
+timestamp 1431680467
+<< polysilicon >>
+rect -334 1012 -322 1014
+rect -300 1012 -287 1014
+rect -334 887 -322 889
+rect -300 887 -287 889
+rect -334 762 -322 764
+rect -300 762 -287 764
+rect -334 637 -322 639
+rect -300 637 -287 639
+rect -334 512 -322 514
+rect -300 512 -287 514
+rect -334 387 -322 389
+rect -300 387 -287 389
+rect -334 262 -322 264
+rect -300 262 -287 264
+rect -334 137 -324 139
+rect -298 137 -287 139
+<< metal1 >>
+rect -329 1003 -322 1007
+rect -315 1000 -311 1005
+rect -300 1003 -293 1007
+rect 82 987 86 1023
+rect -329 878 -322 882
+rect -315 875 -311 880
+rect -300 878 -290 882
+rect -329 753 -322 757
+rect -315 750 -311 755
+rect -300 753 -290 757
+rect -329 628 -322 632
+rect -315 625 -311 630
+rect -300 628 -290 632
+rect -329 503 -322 507
+rect -315 500 -311 505
+rect -300 503 -290 507
+rect -329 378 -322 382
+rect -315 375 -311 380
+rect -300 378 -290 382
+rect -329 253 -322 257
+rect -315 250 -311 255
+rect -300 253 -290 257
+rect -329 128 -322 132
+rect -315 125 -311 130
+rect -300 128 -293 132
+rect -422 12 -419 72
+rect -391 4 -388 72
+rect -329 12 -326 60
+rect -293 4 -290 63
+<< metal2 >>
+rect -321 1152 -317 1168
+rect -321 1148 -250 1152
+rect -254 1107 -250 1148
+rect -254 1103 23 1107
+rect -321 1054 -317 1074
+rect -419 1050 -230 1054
+rect -419 1018 -415 1050
+rect -234 1035 -230 1050
+rect -234 1031 43 1035
+rect 0 1023 82 1027
+rect -315 968 -311 1016
+rect 0 997 4 1023
+rect -191 993 4 997
+rect -191 988 -187 993
+rect -194 972 4 976
+rect 0 971 4 972
+rect -433 964 -429 968
+rect -378 964 -273 968
+rect -315 843 -311 891
+rect -194 847 4 851
+rect 0 846 4 847
+rect -433 839 -429 843
+rect -378 839 -273 843
+rect -315 718 -311 766
+rect -194 722 4 726
+rect 0 721 4 722
+rect -433 714 -429 718
+rect -378 714 -273 718
+rect -315 593 -311 641
+rect -194 597 4 601
+rect 0 596 4 597
+rect -433 589 -429 593
+rect -378 589 -273 593
+rect -315 468 -311 516
+rect -194 472 4 476
+rect 0 471 4 472
+rect -433 464 -429 468
+rect -378 464 -273 468
+rect -315 343 -311 391
+rect -194 347 4 351
+rect 0 346 4 347
+rect -433 339 -429 343
+rect -379 339 -273 343
+rect -315 218 -311 266
+rect -194 222 4 226
+rect 0 221 4 222
+rect -433 214 -429 218
+rect -378 214 -273 218
+rect -433 89 -429 93
+rect -377 89 -347 93
+rect -315 89 -311 141
+rect -178 97 4 101
+rect 0 92 4 97
+rect -418 8 -329 12
+rect -325 8 -263 12
+rect 255 8 259 12
+rect -422 0 -391 4
+rect -387 0 -293 4
+rect -289 0 -263 4
+rect 255 0 259 4
+<< polycontact >>
+rect -338 1011 -334 1015
+rect -287 1011 -283 1015
+rect -315 1005 -311 1009
+rect -338 886 -334 890
+rect -287 886 -283 890
+rect -315 880 -311 884
+rect -338 761 -334 765
+rect -287 761 -283 765
+rect -315 755 -311 759
+rect -338 636 -334 640
+rect -287 636 -283 640
+rect -315 630 -311 634
+rect -338 511 -334 515
+rect -287 511 -283 515
+rect -315 505 -311 509
+rect -338 386 -334 390
+rect -287 386 -283 390
+rect -315 380 -311 384
+rect -338 261 -334 265
+rect -287 261 -283 265
+rect -315 255 -311 259
+rect -338 136 -334 140
+rect -287 136 -283 140
+rect -315 130 -311 134
+<< m2contact >>
+rect -312 1214 -308 1218
+rect -225 1176 -221 1180
+rect 48 1179 52 1183
+rect -321 1168 -317 1172
+rect -312 1116 -308 1120
+rect -225 1077 -221 1081
+rect 48 1080 52 1084
+rect -410 1060 -406 1064
+rect 218 1032 222 1036
+rect -43 1022 -39 1026
+rect 82 1023 86 1027
+rect -419 1014 -415 1018
+rect -315 1016 -311 1020
+rect -191 984 -187 988
+rect -154 984 -150 988
+rect 119 987 123 991
+rect -409 964 -405 968
+rect -315 891 -311 895
+rect -409 839 -405 843
+rect -315 766 -311 770
+rect -409 714 -405 718
+rect -315 641 -311 645
+rect -409 589 -405 593
+rect -315 516 -311 520
+rect -409 464 -405 468
+rect -315 391 -311 395
+rect -409 339 -405 343
+rect -315 266 -311 270
+rect -409 214 -405 218
+rect -315 141 -311 145
+rect -409 89 -405 93
+rect -422 8 -418 12
+rect -329 8 -325 12
+rect -391 0 -387 4
+rect -293 0 -289 4
+use input_register  input_register_0
+timestamp 1430484508
+transform 1 0 -433 0 1 89
+box 0 -17 56 975
+use latch  latch_7
+timestamp 1430426212
+transform 0 1 -322 1 0 1009
+box -6 -2 10 24
+use latch  latch_6
+timestamp 1430426212
+transform 0 1 -322 1 0 884
+box -6 -2 10 24
+use latch  latch_5
+timestamp 1430426212
+transform 0 1 -322 1 0 759
+box -6 -2 10 24
+use latch  latch_4
+timestamp 1430426212
+transform 0 1 -322 1 0 634
+box -6 -2 10 24
+use latch  latch_3
+timestamp 1430426212
+transform 0 1 -322 1 0 509
+box -6 -2 10 24
+use latch  latch_2
+timestamp 1430426212
+transform 0 1 -322 1 0 384
+box -6 -2 10 24
+use latch  latch_1
+timestamp 1430426212
+transform 0 1 -322 1 0 259
+box -6 -2 10 24
+use latch  latch_0
+timestamp 1430426212
+transform 0 1 -322 1 0 134
+box -6 -2 10 24
+use register  register_0
+timestamp 1431679428
+transform 1 0 -322 0 1 89
+box -26 -29 49 1129
+use subtract  subtract_0
+timestamp 1431669756
+transform 1 0 -128 0 1 38
+box -150 -38 128 1142
+use increment  increment_0
+timestamp 1431667015
+transform 1 0 133 0 1 48
+box -133 -48 126 1135
+<< labels >>
+rlabel m2contact -43 1022 -39 1026 1 scarry
+rlabel m2contact 218 1032 222 1036 1 icarry
+rlabel m2contact 48 1179 52 1183 5 ireg_wr
+rlabel m2contact 48 1080 52 1084 1 ireg_rd
+rlabel m2contact 119 987 123 991 1 ireg_reset
+rlabel m2contact -225 1176 -221 1180 5 sreg_wr
+rlabel m2contact -225 1077 -221 1081 1 sreg_rd
+rlabel m2contact -154 984 -150 988 1 sreg_reset
+rlabel metal2 255 8 259 12 7 GND
+rlabel metal2 255 0 259 4 8 Vdd
+rlabel m2contact -191 984 -187 988 1 phi1_
+rlabel metal2 -433 89 -429 93 3 out0
+rlabel m2contact -409 89 -405 93 1 in0
+rlabel metal2 -433 214 -429 218 3 out1
+rlabel m2contact -409 214 -405 218 1 in1
+rlabel metal2 -433 339 -429 343 3 out2
+rlabel m2contact -409 339 -405 343 1 in2
+rlabel metal2 -433 464 -429 468 3 out3
+rlabel m2contact -409 464 -405 468 1 in3
+rlabel metal2 -433 589 -429 593 3 out4
+rlabel m2contact -409 589 -405 593 1 in4
+rlabel metal2 -433 714 -429 718 3 out5
+rlabel m2contact -409 714 -405 718 1 in5
+rlabel metal2 -433 839 -429 843 3 out6
+rlabel m2contact -409 839 -405 843 1 in6
+rlabel metal2 -433 964 -429 968 3 out7
+rlabel m2contact -409 964 -405 968 1 in7
+rlabel m2contact -419 1014 -415 1018 1 phi1
+rlabel m2contact -410 1060 -406 1064 1 io_rd
+rlabel m2contact -321 1168 -317 1172 1 phi0
+rlabel m2contact -312 1214 -308 1218 5 reg_wr
+rlabel m2contact -312 1116 -308 1120 1 reg_rd
+<< end >>

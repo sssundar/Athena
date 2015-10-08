@@ -1,0 +1,382 @@
+timestamp 1434181101
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use register_controller register_controller_0 1 0 14 0 1 593
+use staticizer staticizer_0 0 1 9 -1 0 424
+use staticizer staticizer_1 0 1 9 -1 0 355
+use staticizer staticizer_2 0 1 9 -1 0 286
+use staticizer staticizer_3 0 1 9 -1 0 217
+use staticizer staticizer_4 0 1 9 -1 0 148
+use staticizer staticizer_5 0 1 9 -1 0 79
+use staticizer staticizer_6 0 1 9 -1 0 10
+use regbit regbit_0[0:0:67][0:7:69] 1 0 15 0 1 27
+node "dp0" 0 1900 37 27 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136 76 0 0
+node "dp1" 0 1900 37 96 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136 76 0 0
+node "dp2" 0 1900 37 165 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136 76 0 0
+node "dp3" 0 1900 37 234 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136 76 0 0
+node "dp4" 0 1900 37 303 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136 76 0 0
+node "dp5" 0 1900 37 372 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136 76 0 0
+node "dp6" 0 1900 37 441 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136 76 0 0
+node "dp7" 0 2584 37 510 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136 76 0 0
+node "m1_56_27#" 0 564 56 27 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_49_27#" 0 564 49 27 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_43_27#" 0 564 43 27 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_56_62#" 0 705 56 62 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_49_62#" 0 705 49 62 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_43_62#" 0 705 43 62 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "op0" 0 3621 21 59 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 176 96 0 0
+node "m1_7_62#" 0 705 7 62 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n1_62#" 0 705 -1 62 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n8_62#" 0 705 -8 62 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_56_96#" 0 564 56 96 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_49_96#" 0 564 49 96 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_43_96#" 0 564 43 96 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_56_131#" 0 705 56 131 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_49_131#" 0 705 49 131 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_43_131#" 0 705 43 131 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "op1" 0 3621 21 128 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 176 96 0 0
+node "m1_7_131#" 0 705 7 131 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n1_131#" 0 705 -1 131 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n8_131#" 0 705 -8 131 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_56_165#" 0 564 56 165 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_49_165#" 0 564 49 165 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_43_165#" 0 564 43 165 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_56_200#" 0 705 56 200 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_49_200#" 0 705 49 200 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_43_200#" 0 705 43 200 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "op2" 0 3621 21 197 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 176 96 0 0
+node "m1_7_200#" 0 705 7 200 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n1_200#" 0 705 -1 200 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n8_200#" 0 705 -8 200 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_56_234#" 0 564 56 234 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_49_234#" 0 564 49 234 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_43_234#" 0 564 43 234 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_56_269#" 0 705 56 269 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_49_269#" 0 705 49 269 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_43_269#" 0 705 43 269 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "op3" 0 3621 21 266 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 176 96 0 0
+node "m1_7_269#" 0 705 7 269 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n1_269#" 0 705 -1 269 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n8_269#" 0 705 -8 269 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_56_303#" 0 564 56 303 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_49_303#" 0 564 49 303 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_43_303#" 0 564 43 303 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_56_338#" 0 705 56 338 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_49_338#" 0 705 49 338 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_43_338#" 0 705 43 338 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "op4" 0 3621 21 335 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 176 96 0 0
+node "m1_7_338#" 0 705 7 338 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n1_338#" 0 705 -1 338 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n8_338#" 0 705 -8 338 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_56_372#" 0 564 56 372 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_49_372#" 0 564 49 372 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_43_372#" 0 564 43 372 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_56_407#" 0 705 56 407 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_49_407#" 0 705 49 407 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_43_407#" 0 705 43 407 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "op5" 0 3621 21 404 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 176 96 0 0
+node "m1_7_407#" 0 705 7 407 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n1_407#" 0 705 -1 407 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n8_407#" 0 705 -8 407 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_56_441#" 0 564 56 441 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_49_441#" 0 564 49 441 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_43_441#" 0 564 43 441 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "m1_56_476#" 0 705 56 476 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_49_476#" 0 705 49 476 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_43_476#" 0 705 43 476 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "op6" 0 3621 21 473 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 176 96 0 0
+node "m1_7_476#" 0 705 7 476 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n1_476#" 0 705 -1 476 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n8_476#" 0 705 -8 476 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_56_545#" 0 705 56 545 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_49_545#" 0 705 49 545 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_43_545#" 0 705 43 545 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "op7" 0 3621 21 542 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 176 96 0 0
+node "m1_7_545#" 0 705 7 545 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n1_545#" 0 705 -1 545 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "m1_n8_545#" 0 705 -8 545 m1 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0
+node "Vdd" 0 423 43 640 m1 0 0 0 0 0 0 0 0 0 0 0 0 9 12 0 0 0 0
+node "GND" 0 564 7 640 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "simpleWrite" 251 5318 38 574 p 0 0 0 0 42 46 0 0 0 0 0 0 0 0 0 0 0 0
+node "phi0" 251 5318 38 582 p 0 0 0 0 42 46 0 0 0 0 0 0 0 0 0 0 0 0
+node "RegisterWriteID" 251 5318 38 590 p 0 0 0 0 42 46 0 0 0 0 0 0 0 0 0 0 0 0
+node "RegisterReadID" 251 5318 38 598 p 0 0 0 0 42 46 0 0 0 0 0 0 0 0 0 0 0 0
+node "phi1" 251 5318 38 606 p 0 0 0 0 42 46 0 0 0 0 0 0 0 0 0 0 0 0
+node "simpleRead" 251 5318 38 614 p 0 0 0 0 42 46 0 0 0 0 0 0 0 0 0 0 0 0
+cap "op7" "m1_56_545#" 135
+cap "m1_56_372#" "dp5" 540
+cap "m1_43_372#" "dp5" 540
+cap "m1_49_441#" "dp6" 540
+cap "op7" "m1_49_545#" 135
+cap "m1_56_165#" "dp2" 540
+cap "op4" "m1_43_338#" 135
+cap "m1_49_96#" "dp1" 540
+cap "op5" "m1_56_407#" 135
+cap "m1_43_234#" "dp3" 540
+cap "m1_43_131#" "op1" 135
+cap "m1_49_27#" "dp0" 540
+cap "op3" "m1_49_269#" 135
+cap "op4" "m1_56_338#" 135
+cap "m1_56_234#" "dp3" 540
+cap "op7" "m1_43_545#" 135
+cap "op0" "m1_43_62#" 135
+cap "m1_56_303#" "dp4" 540
+cap "m1_56_200#" "op2" 135
+cap "m1_43_441#" "dp6" 540
+cap "op0" "m1_56_62#" 135
+cap "m1_49_303#" "dp4" 540
+cap "op6" "m1_56_476#" 135
+cap "op5" "m1_43_407#" 135
+cap "m1_49_372#" "dp5" 540
+cap "m1_56_441#" "dp6" 540
+cap "m1_43_96#" "dp1" 540
+cap "op5" "m1_49_407#" 135
+cap "op6" "m1_49_476#" 135
+cap "m1_49_165#" "dp2" 540
+cap "m1_43_27#" "dp0" 540
+cap "op3" "m1_43_269#" 135
+cap "m1_43_200#" "op2" 135
+cap "op4" "m1_49_338#" 135
+cap "m1_56_96#" "dp1" 540
+cap "m1_43_165#" "dp2" 540
+cap "m1_49_234#" "dp3" 540
+cap "m1_56_27#" "dp0" 540
+cap "op3" "m1_56_269#" 135
+cap "m1_49_131#" "op1" 135
+cap "op6" "m1_43_476#" 135
+cap "m1_56_131#" "op1" 135
+cap "op0" "m1_49_62#" 135
+cap "m1_43_303#" "dp4" 540
+cap "m1_49_200#" "op2" 135
+cap "regbit_0[0]/out" "regbit_0[0]/w_" 405
+cap "regbit_0[0]/out" "regbit_0[0]/r_" 405
+cap "staticizer_5/Vdd" "regbit_0[0]/out" 405
+cap "staticizer_5/in" "staticizer_5/inverter_0/out" -240
+cap "staticizer_5/Vdd" "staticizer_6/in" -240
+cap "staticizer_5/in" "staticizer_5/Vdd" -240
+cap "staticizer_6/in" "staticizer_6/inverter_0/out" -240
+cap "staticizer_4/inverter_0/out" "staticizer_4/in" -240
+cap "regbit_0[1]/out" "regbit_0[1]/r_" 405
+cap "regbit_0[1]/out" "regbit_0[1]/w_" 405
+cap "regbit_0[1]/out" "staticizer_4/Vdd" 405
+cap "regbit_0[2]/out" "regbit_0[1]/r_" 135
+cap "regbit_0[1]/w_" "regbit_0[2]/out" 135
+cap "staticizer_4/Vdd" "staticizer_4/in" -240
+cap "staticizer_4/Vdd" "regbit_0[2]/out" 135
+cap "regbit_0[2]/r_" "regbit_0[2]/out" 270
+cap "staticizer_3/in" "staticizer_3/inverter_0/out" -240
+cap "staticizer_2/in" "staticizer_2/Vdd" -240
+cap "staticizer_2/Vdd" "regbit_0[2]/out" 270
+cap "regbit_0[2]/w_" "regbit_0[2]/out" 270
+cap "regbit_0[3]/out" "regbit_0[2]/r_" 405
+cap "staticizer_2/inverter_0/out" "staticizer_2/in" -240
+cap "staticizer_2/Vdd" "staticizer_3/in" -240
+cap "staticizer_2/Vdd" "regbit_0[3]/out" 405
+cap "regbit_0[3]/out" "regbit_0[2]/w_" 405
+cap "regbit_0[4]/out" "staticizer_1/Vdd" 405
+cap "staticizer_1/Vdd" "staticizer_1/in" -240
+cap "staticizer_1/inverter_0/out" "staticizer_1/in" -240
+cap "regbit_0[4]/r_" "regbit_0[4]/out" 405
+cap "regbit_0[4]/out" "regbit_0[4]/w_" 405
+cap "staticizer_0/Vdd" "regbit_0[5]/out" 405
+cap "regbit_0[5]/r_" "regbit_0[5]/out" 405
+cap "staticizer_0/Vdd" "regbit_0[6]/out" 405
+cap "regbit_0[5]/w_" "regbit_0[5]/out" 405
+cap "staticizer_0/in" "staticizer_0/inverter_0/out" -240
+cap "regbit_0[5]/r_" "regbit_0[6]/out" 405
+cap "regbit_0[6]/out" "regbit_0[5]/w_" 405
+cap "staticizer_0/in" "staticizer_0/Vdd" -240
+cap "register_controller_0/regw" "register_controller_0/r_" 180
+cap "register_controller_0/Vdd" "regbit_0[7]/in" 540
+cap "register_controller_0/r_" "regbit_0[7]/in" 540
+cap "register_controller_0/Vdd" "regbit_0[7]/out" 405
+cap "regbit_0[7]/out" "register_controller_0/r_" 405
+cap "register_controller_0/Vdd" "register_controller_0/phi0" 180
+cap "register_controller_0/phi0" "register_controller_0/r_" 180
+cap "register_controller_0/w_" "regbit_0[7]/in" 540
+cap "register_controller_0/Vdd" "register_controller_0/wr_id" 180
+cap "register_controller_0/w_" "regbit_0[7]/out" 405
+cap "register_controller_0/regw" "register_controller_0/Vdd" 180
+cap "register_controller_0/wr_id" "register_controller_0/r_" 180
+cap "register_controller_0/inverter_0/out" "register_controller_0/regr" 180
+cap "register_controller_0/inverter_0/out" "register_controller_0/rd_id" 180
+cap "register_controller_0/Vdd" "register_controller_0/phi1" 180
+cap "register_controller_0/inverter_0/out" "register_controller_0/phi1" 180
+cap "register_controller_0/Vdd" "register_controller_0/regr" 180
+cap "register_controller_0/Vdd" "register_controller_0/rd_id" 180
+merge "regbit_0[0]/r" "regbit_0[1]/r" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "regbit_0[1]/r" "m1_n1_62#"
+merge "m1_n1_62#" "regbit_0[2]/r"
+merge "regbit_0[2]/r" "m1_n1_131#"
+merge "m1_n1_131#" "regbit_0[3]/r"
+merge "regbit_0[3]/r" "regbit_0[4]/r"
+merge "regbit_0[4]/r" "m1_n1_269#"
+merge "m1_n1_269#" "m1_n1_200#"
+merge "m1_n1_200#" "regbit_0[5]/r"
+merge "regbit_0[5]/r" "m1_n1_338#"
+merge "m1_n1_338#" "regbit_0[6]/r"
+merge "regbit_0[6]/r" "regbit_0[7]/r"
+merge "regbit_0[7]/r" "m1_n1_476#"
+merge "m1_n1_476#" "m1_n1_407#"
+merge "m1_n1_407#" "register_controller_0/r"
+merge "register_controller_0/r" "m1_n1_545#"
+merge "regbit_0[0]/r_" "regbit_0[1]/r_" -846 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "regbit_0[1]/r_" "m1_49_96#"
+merge "m1_49_96#" "m1_49_62#"
+merge "m1_49_62#" "m1_49_27#"
+merge "m1_49_27#" "regbit_0[2]/r_"
+merge "regbit_0[2]/r_" "m1_49_165#"
+merge "m1_49_165#" "m1_49_131#"
+merge "m1_49_131#" "regbit_0[3]/r_"
+merge "regbit_0[3]/r_" "regbit_0[4]/r_"
+merge "regbit_0[4]/r_" "m1_49_269#"
+merge "m1_49_269#" "m1_49_234#"
+merge "m1_49_234#" "m1_49_200#"
+merge "m1_49_200#" "regbit_0[5]/r_"
+merge "regbit_0[5]/r_" "m1_49_372#"
+merge "m1_49_372#" "m1_49_338#"
+merge "m1_49_338#" "m1_49_303#"
+merge "m1_49_303#" "regbit_0[6]/r_"
+merge "regbit_0[6]/r_" "regbit_0[7]/r_"
+merge "regbit_0[7]/r_" "m1_49_476#"
+merge "m1_49_476#" "m1_49_441#"
+merge "m1_49_441#" "m1_49_407#"
+merge "m1_49_407#" "register_controller_0/r_"
+merge "register_controller_0/r_" "m1_49_545#"
+merge "regbit_0[5]/GND" "regbit_0[6]/GND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "regbit_0[6]/GND" "staticizer_0/GND"
+merge "staticizer_0/GND" "regbit_0[7]/GND"
+merge "regbit_0[7]/GND" "m1_7_476#"
+merge "m1_7_476#" "m1_7_407#"
+merge "m1_7_407#" "register_controller_0/GND"
+merge "register_controller_0/GND" "m1_7_545#"
+merge "m1_7_545#" "GND"
+merge "regbit_0[1]/staticizer_0/in" "staticizer_5/in" -11781 -20 -18 -20 -18 -88 -88 0 0 0 0 0 0 -123 -86 0 0 0 0
+merge "regbit_0[0]/out" "op0" -1892 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
+merge "regbit_0[0]/w" "regbit_0[1]/w" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "regbit_0[1]/w" "m1_n8_62#"
+merge "m1_n8_62#" "regbit_0[2]/w"
+merge "regbit_0[2]/w" "m1_n8_131#"
+merge "m1_n8_131#" "regbit_0[3]/w"
+merge "regbit_0[3]/w" "regbit_0[4]/w"
+merge "regbit_0[4]/w" "m1_n8_269#"
+merge "m1_n8_269#" "m1_n8_200#"
+merge "m1_n8_200#" "regbit_0[5]/w"
+merge "regbit_0[5]/w" "m1_n8_338#"
+merge "m1_n8_338#" "regbit_0[6]/w"
+merge "regbit_0[6]/w" "regbit_0[7]/w"
+merge "regbit_0[7]/w" "m1_n8_476#"
+merge "m1_n8_476#" "m1_n8_407#"
+merge "m1_n8_407#" "register_controller_0/w"
+merge "register_controller_0/w" "m1_n8_545#"
+merge "regbit_0[3]/in" "dp3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "regbit_0[0]/outlatch/in" "staticizer_6/in" -11781 -20 -18 -20 -18 -88 -88 0 0 0 0 0 0 -123 -86 0 0 0 0
+merge "regbit_0[0]/w_" "regbit_0[1]/w_" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "regbit_0[1]/w_" "m1_56_96#"
+merge "m1_56_96#" "m1_56_62#"
+merge "m1_56_62#" "m1_56_27#"
+merge "m1_56_27#" "regbit_0[2]/w_"
+merge "regbit_0[2]/w_" "m1_56_165#"
+merge "m1_56_165#" "m1_56_131#"
+merge "m1_56_131#" "regbit_0[3]/w_"
+merge "regbit_0[3]/w_" "regbit_0[4]/w_"
+merge "regbit_0[4]/w_" "m1_56_269#"
+merge "m1_56_269#" "m1_56_234#"
+merge "m1_56_234#" "m1_56_200#"
+merge "m1_56_200#" "regbit_0[5]/w_"
+merge "regbit_0[5]/w_" "m1_56_372#"
+merge "m1_56_372#" "m1_56_338#"
+merge "m1_56_338#" "m1_56_303#"
+merge "m1_56_303#" "regbit_0[6]/w_"
+merge "regbit_0[6]/w_" "regbit_0[7]/w_"
+merge "regbit_0[7]/w_" "m1_56_476#"
+merge "m1_56_476#" "m1_56_441#"
+merge "m1_56_441#" "m1_56_407#"
+merge "m1_56_407#" "register_controller_0/w_"
+merge "register_controller_0/w_" "m1_56_545#"
+merge "regbit_0[0]/GND" "staticizer_6/GND" 0 -48 -40 0 0 0 0 0 0 0 0 0 0 -32 -44 0 0 0 0
+merge "staticizer_6/GND" "regbit_0[1]/staticizer_0/GND"
+merge "regbit_0[1]/staticizer_0/GND" "staticizer_5/GND"
+merge "staticizer_5/GND" "m1_7_62#"
+merge "regbit_0[5]/Vdd" "regbit_0[6]/Vdd" -846 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "regbit_0[6]/Vdd" "staticizer_0/Vdd"
+merge "staticizer_0/Vdd" "regbit_0[7]/Vdd"
+merge "regbit_0[7]/Vdd" "m1_43_476#"
+merge "m1_43_476#" "m1_43_441#"
+merge "m1_43_441#" "m1_43_407#"
+merge "m1_43_407#" "register_controller_0/Vdd"
+merge "register_controller_0/Vdd" "m1_43_545#"
+merge "m1_43_545#" "Vdd"
+merge "register_controller_0/regr" "simpleRead" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "regbit_0[4]/in" "dp4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "register_controller_0/wr_id" "RegisterWriteID" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "regbit_0[6]/staticizer_0/inverter_0/out" "staticizer_0/inverter_0/out" -15964 -20 -18 -40 -26 -192 -88 0 0 0 0 0 0 -128 -72 0 0 0 0
+merge "regbit_0[1]/Vdd" "regbit_0[2]/Vdd" -2068 0 0 -88 -56 0 0 0 0 0 0 0 0 -124 -110 0 0 0 0
+merge "regbit_0[2]/Vdd" "staticizer_4/Vdd"
+merge "staticizer_4/Vdd" "m1_43_165#"
+merge "m1_43_165#" "m1_43_131#"
+merge "m1_43_131#" "regbit_0[0]/Vdd"
+merge "regbit_0[0]/Vdd" "staticizer_6/Vdd"
+merge "staticizer_6/Vdd" "regbit_0[1]/staticizer_0/Vdd"
+merge "regbit_0[1]/staticizer_0/Vdd" "staticizer_5/Vdd"
+merge "staticizer_5/Vdd" "m1_43_96#"
+merge "m1_43_96#" "m1_43_62#"
+merge "m1_43_62#" "m1_43_27#"
+merge "m1_43_27#" "regbit_0[3]/Vdd"
+merge "regbit_0[3]/Vdd" "staticizer_3/Vdd"
+merge "staticizer_3/Vdd" "regbit_0[4]/staticizer_0/Vdd"
+merge "regbit_0[4]/staticizer_0/Vdd" "staticizer_2/Vdd"
+merge "staticizer_2/Vdd" "m1_43_269#"
+merge "m1_43_269#" "m1_43_234#"
+merge "m1_43_234#" "m1_43_200#"
+merge "regbit_0[7]/out" "op7" -1892 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
+merge "regbit_0[6]/in" "dp6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "regbit_0[5]/in" "dp5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "regbit_0[5]/staticizer_0/in" "staticizer_1/in" -11781 -20 -18 -20 -18 -88 -88 0 0 0 0 0 0 -123 -86 0 0 0 0
+merge "regbit_0[7]/in" "dp7" -684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "register_controller_0/regw" "simpleWrite" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "regbit_0[4]/staticizer_0/inverter_0/out" "staticizer_2/inverter_0/out" -14692 -20 -18 -40 -26 -176 -76 0 0 0 0 0 0 -128 -72 0 0 0 0
+merge "regbit_0[0]/staticizer_0/inverter_0/out" "staticizer_6/inverter_0/out" -15964 -20 -18 -40 -26 -192 -88 0 0 0 0 0 0 -128 -72 0 0 0 0
+merge "regbit_0[2]/staticizer_0/inverter_0/out" "staticizer_4/inverter_0/out" -15964 -20 -18 -40 -26 -192 -88 0 0 0 0 0 0 -128 -72 0 0 0 0
+merge "regbit_0[4]/Vdd" "regbit_0[5]/staticizer_0/Vdd" -1880 0 0 -44 -28 0 0 0 0 0 0 0 0 -80 -76 0 0 0 0
+merge "regbit_0[5]/staticizer_0/Vdd" "staticizer_1/Vdd"
+merge "staticizer_1/Vdd" "m1_43_372#"
+merge "m1_43_372#" "m1_43_338#"
+merge "m1_43_338#" "m1_43_303#"
+merge "regbit_0[6]/out" "op6" -1892 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
+merge "regbit_0[4]/outlatch/in" "regbit_0[4]/staticizer_0/in" -11781 -20 -18 -20 -18 -88 -88 0 0 0 0 0 0 -123 -86 0 0 0 0
+merge "regbit_0[4]/staticizer_0/in" "staticizer_2/in"
+merge "regbit_0[1]/GND" "regbit_0[2]/GND" 0 -48 -40 0 0 0 0 0 0 0 0 0 0 -32 -56 0 0 0 0
+merge "regbit_0[2]/GND" "staticizer_4/GND"
+merge "staticizer_4/GND" "m1_7_131#"
+merge "m1_7_131#" "regbit_0[3]/GND"
+merge "regbit_0[3]/GND" "staticizer_3/GND"
+merge "staticizer_3/GND" "regbit_0[4]/staticizer_0/GND"
+merge "regbit_0[4]/staticizer_0/GND" "staticizer_2/GND"
+merge "staticizer_2/GND" "m1_7_269#"
+merge "m1_7_269#" "m1_7_200#"
+merge "regbit_0[2]/outlatch/in" "staticizer_4/in" -11781 -20 -18 -20 -18 -88 -88 0 0 0 0 0 0 -123 -86 0 0 0 0
+merge "regbit_0[5]/out" "op5" -1892 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
+merge "regbit_0[0]/in" "dp0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "regbit_0[6]/outlatch/in" "staticizer_0/in" -11781 -20 -18 -20 -18 -88 -88 0 0 0 0 0 0 -123 -86 0 0 0 0
+merge "regbit_0[4]/GND" "regbit_0[5]/staticizer_0/GND" 0 -24 -20 0 0 0 0 0 0 0 0 0 0 -16 -28 0 0 0 0
+merge "regbit_0[5]/staticizer_0/GND" "staticizer_1/GND"
+merge "staticizer_1/GND" "m1_7_338#"
+merge "register_controller_0/rd_id" "RegisterReadID" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "regbit_0[1]/out" "op1" -1892 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
+merge "regbit_0[4]/out" "op4" -1892 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
+merge "regbit_0[2]/out" "op2" -1892 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
+merge "regbit_0[3]/out" "op3" -1892 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
+merge "regbit_0[4]/staticizer_0/a_n14_2#" "staticizer_2/a_n14_2#" -1272 0 0 0 0 -16 -12 0 0 0 0 0 0 0 0 0 0 0 0
+merge "regbit_0[3]/outlatch/in" "staticizer_3/in" -11781 -20 -18 -20 -18 -88 -88 0 0 0 0 0 0 -123 -86 0 0 0 0
+merge "regbit_0[1]/inlatch/in" "regbit_0[1]/in" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "regbit_0[1]/in" "dp1"
+merge "regbit_0[5]/staticizer_0/inverter_0/out" "staticizer_1/inverter_0/out" -15964 -20 -18 -40 -26 -192 -88 0 0 0 0 0 0 -128 -72 0 0 0 0
+merge "register_controller_0/phi0" "phi0" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "register_controller_0/phi1" "phi1" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "regbit_0[1]/staticizer_0/inverter_0/out" "staticizer_5/inverter_0/out" -15964 -20 -18 -40 -26 -192 -88 0 0 0 0 0 0 -128 -72 0 0 0 0
+merge "regbit_0[3]/staticizer_0/inverter_0/out" "staticizer_3/inverter_0/out" -15964 -20 -18 -40 -26 -192 -88 0 0 0 0 0 0 -128 -72 0 0 0 0
+merge "regbit_0[2]/in" "dp2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0

@@ -1,0 +1,110 @@
+magic
+tech scmos
+timestamp 1434158463
+<< polysilicon >>
+rect 35 120 126 122
+rect 35 101 37 120
+rect 51 114 117 116
+rect 51 93 53 114
+rect 124 110 126 120
+rect 96 108 126 110
+rect 96 82 98 108
+rect 134 92 143 94
+rect 141 84 143 92
+rect 141 82 190 84
+rect 96 80 104 82
+rect 134 79 175 80
+rect 134 78 171 79
+rect 262 63 282 65
+rect 188 30 192 32
+rect 190 28 214 30
+rect 280 25 282 63
+rect 262 23 282 25
+<< metal1 >>
+rect 6 98 9 122
+rect 13 98 16 122
+rect 21 98 24 122
+rect 57 98 60 122
+rect 63 98 66 122
+rect 70 98 73 122
+rect 76 106 79 122
+rect 83 106 86 122
+rect 90 106 93 122
+rect 117 101 121 109
+rect 131 106 134 122
+rect 137 99 140 122
+rect 144 99 147 122
+rect 151 99 154 122
+rect 158 99 161 122
+rect 194 99 197 122
+rect 201 99 204 122
+rect 208 99 211 122
+rect 221 97 224 122
+rect 228 97 231 122
+rect 267 97 270 122
+rect 274 97 277 122
+rect 6 9 9 34
+rect 13 9 16 34
+rect 21 9 24 34
+rect 57 9 60 34
+rect 63 9 66 34
+rect 70 9 73 34
+rect 214 31 218 32
+rect 137 9 140 31
+rect 144 9 147 31
+rect 151 9 154 31
+rect 158 9 161 31
+rect 194 9 197 31
+rect 201 9 204 31
+rect 208 9 211 31
+rect 221 9 224 31
+rect 228 22 231 31
+rect 245 29 249 36
+rect 228 18 238 22
+rect 267 22 270 31
+rect 245 18 249 19
+rect 260 18 270 22
+rect 228 9 231 18
+rect 267 9 270 18
+rect 274 9 277 31
+<< metal2 >>
+rect 35 65 51 69
+rect 35 37 39 65
+rect 214 58 249 62
+rect 214 36 218 58
+rect 175 14 245 15
+rect 175 11 249 14
+<< polycontact >>
+rect 34 97 38 101
+rect 117 113 121 117
+rect 117 97 121 101
+rect 171 75 175 79
+rect 245 36 249 40
+rect 214 27 218 31
+rect 245 19 249 23
+<< m2contact >>
+rect 35 33 39 37
+rect 214 32 218 36
+rect 171 11 175 15
+rect 245 14 249 18
+use regbit  regbit_0
+timestamp 1431679428
+transform 1 0 29 0 -1 69
+box -23 -29 44 36
+use cmpbit  cmpbit_0
+timestamp 1433953518
+transform -1 0 134 0 1 75
+box 0 -66 58 31
+use pwmaccumbit  pwmaccumbit_0
+timestamp 1433955363
+transform 1 0 181 0 -1 34
+box -44 -65 30 21
+use incbit  incbit_0
+timestamp 1433960711
+transform 1 0 232 0 -1 62
+box -11 -35 45 31
+use inverter  inverter_0
+timestamp 1430424850
+transform 0 1 231 1 0 23
+box -5 5 7 31
+<< end >>

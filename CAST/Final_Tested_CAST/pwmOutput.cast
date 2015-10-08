@@ -1,0 +1,13 @@
+import "globals.cast";
+
+// Output Controller handles PWM output and RESET
+// pwmOut must be staticized.
+define pwmOutput()(node oe_, equal_, zero_, RESET; node pwmOut) {  
+node equal;
+prs {
+	equal_ -> equal-
+	~equal_ -> equal+   
+	~equal & ~zero_ & ~oe_ -> pwmOut+
+	equal | oe_ | RESET -> pwmOut-	
+}
+}

@@ -1,0 +1,267 @@
+| units: 100 tech: scmos format: MIT
+p staticizer_6/in Vdd staticizer_6/inverter_0/out 2 8 27 4
+n staticizer_6/in GND staticizer_6/inverter_0/out 2 4 13 4
+p staticizer_6/inverter_0/out staticizer_6/in Vdd 8 4 27 18
+n staticizer_6/inverter_0/out staticizer_6/in GND 13 4 13 23
+p dp0 Vdd regbit_0[0]/inlatch/a_1_14# 2 8 28 44
+p regbit_0[7]/w_ regbit_0[0]/inlatch/a_1_14# staticizer_6/in 2 8 28 40
+n dp0 GND regbit_0[0]/inlatch/a_1_0# 2 4 14 44
+n regbit_0[7]/w regbit_0[0]/inlatch/a_1_0# staticizer_6/in 2 4 14 40
+p staticizer_6/in Vdd regbit_0[0]/outlatch/a_1_14# 2 8 28 51
+p regbit_0[7]/r_ regbit_0[0]/outlatch/a_1_14# op0 2 8 28 55
+n staticizer_6/in GND regbit_0[0]/outlatch/a_1_0# 2 4 14 51
+n regbit_0[7]/r regbit_0[0]/outlatch/a_1_0# op0 2 4 14 55
+p staticizer_5/in Vdd staticizer_5/inverter_0/out 2 8 27 73
+n staticizer_5/in GND staticizer_5/inverter_0/out 2 4 13 73
+p staticizer_5/inverter_0/out staticizer_5/in Vdd 8 4 27 87
+n staticizer_5/inverter_0/out staticizer_5/in GND 13 4 13 92
+p dp1 Vdd regbit_0[1]/inlatch/a_1_14# 2 8 28 113
+p regbit_0[7]/w_ regbit_0[1]/inlatch/a_1_14# staticizer_5/in 2 8 28 109
+n dp1 GND regbit_0[1]/inlatch/a_1_0# 2 4 14 113
+n regbit_0[7]/w regbit_0[1]/inlatch/a_1_0# staticizer_5/in 2 4 14 109
+p staticizer_5/in Vdd regbit_0[1]/outlatch/a_1_14# 2 8 28 120
+p regbit_0[7]/r_ regbit_0[1]/outlatch/a_1_14# op1 2 8 28 124
+n staticizer_5/in GND regbit_0[1]/outlatch/a_1_0# 2 4 14 120
+n regbit_0[7]/r regbit_0[1]/outlatch/a_1_0# op1 2 4 14 124
+p staticizer_4/in Vdd staticizer_4/inverter_0/out 2 8 27 142
+n staticizer_4/in GND staticizer_4/inverter_0/out 2 4 13 142
+p staticizer_4/inverter_0/out staticizer_4/in Vdd 8 4 27 156
+n staticizer_4/inverter_0/out staticizer_4/in GND 13 4 13 161
+p dp2 Vdd regbit_0[2]/inlatch/a_1_14# 2 8 28 182
+p regbit_0[7]/w_ regbit_0[2]/inlatch/a_1_14# staticizer_4/in 2 8 28 178
+n dp2 GND regbit_0[2]/inlatch/a_1_0# 2 4 14 182
+n regbit_0[7]/w regbit_0[2]/inlatch/a_1_0# staticizer_4/in 2 4 14 178
+p staticizer_4/in Vdd regbit_0[2]/outlatch/a_1_14# 2 8 28 189
+p regbit_0[7]/r_ regbit_0[2]/outlatch/a_1_14# op2 2 8 28 193
+n staticizer_4/in GND regbit_0[2]/outlatch/a_1_0# 2 4 14 189
+n regbit_0[7]/r regbit_0[2]/outlatch/a_1_0# op2 2 4 14 193
+p staticizer_3/in Vdd staticizer_3/inverter_0/out 2 8 27 211
+n staticizer_3/in GND staticizer_3/inverter_0/out 2 4 13 211
+p staticizer_3/inverter_0/out staticizer_3/in Vdd 8 4 27 225
+n staticizer_3/inverter_0/out staticizer_3/in GND 13 4 13 230
+p dp3 Vdd regbit_0[3]/inlatch/a_1_14# 2 8 28 251
+p regbit_0[7]/w_ regbit_0[3]/inlatch/a_1_14# staticizer_3/in 2 8 28 247
+n dp3 GND regbit_0[3]/inlatch/a_1_0# 2 4 14 251
+n regbit_0[7]/w regbit_0[3]/inlatch/a_1_0# staticizer_3/in 2 4 14 247
+p staticizer_3/in Vdd regbit_0[3]/outlatch/a_1_14# 2 8 28 258
+p regbit_0[7]/r_ regbit_0[3]/outlatch/a_1_14# op3 2 8 28 262
+n staticizer_3/in GND regbit_0[3]/outlatch/a_1_0# 2 4 14 258
+n regbit_0[7]/r regbit_0[3]/outlatch/a_1_0# op3 2 4 14 262
+p staticizer_2/in Vdd staticizer_2/inverter_0/out 2 8 27 280
+n staticizer_2/in GND staticizer_2/inverter_0/out 2 4 13 280
+p staticizer_2/inverter_0/out staticizer_2/in Vdd 8 4 27 294
+n staticizer_2/inverter_0/out staticizer_2/in GND 13 4 13 299
+p dp4 Vdd regbit_0[4]/inlatch/a_1_14# 2 8 28 320
+p regbit_0[7]/w_ regbit_0[4]/inlatch/a_1_14# staticizer_2/in 2 8 28 316
+n dp4 GND regbit_0[4]/inlatch/a_1_0# 2 4 14 320
+n regbit_0[7]/w regbit_0[4]/inlatch/a_1_0# staticizer_2/in 2 4 14 316
+p staticizer_2/in Vdd regbit_0[4]/outlatch/a_1_14# 2 8 28 327
+p regbit_0[7]/r_ regbit_0[4]/outlatch/a_1_14# op4 2 8 28 331
+n staticizer_2/in GND regbit_0[4]/outlatch/a_1_0# 2 4 14 327
+n regbit_0[7]/r regbit_0[4]/outlatch/a_1_0# op4 2 4 14 331
+p staticizer_1/in Vdd staticizer_1/inverter_0/out 2 8 27 349
+n staticizer_1/in GND staticizer_1/inverter_0/out 2 4 13 349
+p staticizer_1/inverter_0/out staticizer_1/in Vdd 8 4 27 363
+n staticizer_1/inverter_0/out staticizer_1/in GND 13 4 13 368
+p dp5 Vdd regbit_0[5]/inlatch/a_1_14# 2 8 28 389
+p regbit_0[7]/w_ regbit_0[5]/inlatch/a_1_14# staticizer_1/in 2 8 28 385
+n dp5 GND regbit_0[5]/inlatch/a_1_0# 2 4 14 389
+n regbit_0[7]/w regbit_0[5]/inlatch/a_1_0# staticizer_1/in 2 4 14 385
+p staticizer_1/in Vdd regbit_0[5]/outlatch/a_1_14# 2 8 28 396
+p regbit_0[7]/r_ regbit_0[5]/outlatch/a_1_14# op5 2 8 28 400
+n staticizer_1/in GND regbit_0[5]/outlatch/a_1_0# 2 4 14 396
+n regbit_0[7]/r regbit_0[5]/outlatch/a_1_0# op5 2 4 14 400
+p staticizer_0/in Vdd staticizer_0/inverter_0/out 2 8 27 418
+n staticizer_0/in GND staticizer_0/inverter_0/out 2 4 13 418
+p staticizer_0/inverter_0/out staticizer_0/in Vdd 8 4 27 432
+n staticizer_0/inverter_0/out staticizer_0/in GND 13 4 13 437
+p dp6 Vdd regbit_0[6]/inlatch/a_1_14# 2 8 28 458
+p regbit_0[7]/w_ regbit_0[6]/inlatch/a_1_14# staticizer_0/in 2 8 28 454
+n dp6 GND regbit_0[6]/inlatch/a_1_0# 2 4 14 458
+n regbit_0[7]/w regbit_0[6]/inlatch/a_1_0# staticizer_0/in 2 4 14 454
+p staticizer_0/in Vdd regbit_0[6]/outlatch/a_1_14# 2 8 28 465
+p regbit_0[7]/r_ regbit_0[6]/outlatch/a_1_14# op6 2 8 28 469
+n staticizer_0/in GND regbit_0[6]/outlatch/a_1_0# 2 4 14 465
+n regbit_0[7]/r regbit_0[6]/outlatch/a_1_0# op6 2 4 14 469
+p regbit_0[7]/outlatch/in Vdd regbit_0[7]/staticizer_0/inverter_0/out 2 8 27 487
+n regbit_0[7]/outlatch/in GND regbit_0[7]/staticizer_0/inverter_0/out 2 4 13 487
+p regbit_0[7]/staticizer_0/inverter_0/out regbit_0[7]/outlatch/in Vdd 8 4 27 501
+n regbit_0[7]/staticizer_0/inverter_0/out regbit_0[7]/outlatch/in GND 13 4 13 506
+p dp7 Vdd regbit_0[7]/inlatch/a_1_14# 2 8 28 527
+p regbit_0[7]/w_ regbit_0[7]/inlatch/a_1_14# regbit_0[7]/outlatch/in 2 8 28 523
+n dp7 GND regbit_0[7]/inlatch/a_1_0# 2 4 14 527
+n regbit_0[7]/w regbit_0[7]/inlatch/a_1_0# regbit_0[7]/outlatch/in 2 4 14 523
+p regbit_0[7]/outlatch/in Vdd regbit_0[7]/outlatch/a_1_14# 2 8 28 534
+p regbit_0[7]/r_ regbit_0[7]/outlatch/a_1_14# op7 2 8 28 538
+n regbit_0[7]/outlatch/in GND regbit_0[7]/outlatch/a_1_0# 2 4 14 534
+n regbit_0[7]/r regbit_0[7]/outlatch/a_1_0# op7 2 4 14 538
+p staticizer_6/in Vdd staticizer_6/inverter_0/out 2 8 27 4
+n staticizer_6/in GND staticizer_6/inverter_0/out 2 4 13 4
+p staticizer_6/inverter_0/out staticizer_6/in Vdd 8 4 27 18
+n staticizer_6/inverter_0/out staticizer_6/in GND 13 4 13 23
+p staticizer_5/in Vdd staticizer_5/inverter_0/out 2 8 27 73
+n staticizer_5/in GND staticizer_5/inverter_0/out 2 4 13 73
+p staticizer_5/inverter_0/out staticizer_5/in Vdd 8 4 27 87
+n staticizer_5/inverter_0/out staticizer_5/in GND 13 4 13 92
+p staticizer_4/in Vdd staticizer_4/inverter_0/out 2 8 27 142
+n staticizer_4/in GND staticizer_4/inverter_0/out 2 4 13 142
+p staticizer_4/inverter_0/out staticizer_4/in Vdd 8 4 27 156
+n staticizer_4/inverter_0/out staticizer_4/in GND 13 4 13 161
+p staticizer_3/in Vdd staticizer_3/inverter_0/out 2 8 27 211
+n staticizer_3/in GND staticizer_3/inverter_0/out 2 4 13 211
+p staticizer_3/inverter_0/out staticizer_3/in Vdd 8 4 27 225
+n staticizer_3/inverter_0/out staticizer_3/in GND 13 4 13 230
+p staticizer_2/in Vdd staticizer_2/inverter_0/out 2 8 27 280
+n staticizer_2/in GND staticizer_2/inverter_0/out 2 4 13 280
+p staticizer_2/inverter_0/out staticizer_2/in Vdd 8 4 27 294
+n staticizer_2/inverter_0/out staticizer_2/in GND 13 4 13 299
+p staticizer_1/in Vdd staticizer_1/inverter_0/out 2 8 27 349
+n staticizer_1/in GND staticizer_1/inverter_0/out 2 4 13 349
+p staticizer_1/inverter_0/out staticizer_1/in Vdd 8 4 27 363
+n staticizer_1/inverter_0/out staticizer_1/in GND 13 4 13 368
+p staticizer_0/in Vdd staticizer_0/inverter_0/out 2 8 27 418
+n staticizer_0/in GND staticizer_0/inverter_0/out 2 4 13 418
+p staticizer_0/inverter_0/out staticizer_0/in Vdd 8 4 27 432
+n staticizer_0/inverter_0/out staticizer_0/in GND 13 4 13 437
+p regbit_0[7]/w register_controller_0/inverter_1/a_n5_21# regbit_0[7]/w_ 2 8 28 559
+n regbit_0[7]/w register_controller_0/inverter_1/a_n5_7# regbit_0[7]/w_ 2 4 14 559
+p regbit_0[7]/r Vdd regbit_0[7]/r_ 2 8 28 630
+n regbit_0[7]/r GND regbit_0[7]/r_ 2 4 14 630
+p simpleRead Vdd regbit_0[7]/r 2 8 28 614
+n simpleRead register_controller_0/a_0_11# regbit_0[7]/r 2 4 14 606
+p phi1 regbit_0[7]/r Vdd 2 8 28 606
+n phi1 register_controller_0/a_0_7# register_controller_0/a_0_11# 2 4 14 602
+n RegisterReadID register_controller_0/a_0_n1# register_controller_0/a_0_7# 2 4 14 598
+p RegisterReadID Vdd regbit_0[7]/r 2 8 28 598
+n RegisterWriteID register_controller_0/a_0_n5# register_controller_0/a_0_n1# 2 4 14 590
+p RegisterWriteID regbit_0[7]/w Vdd 2 8 28 590
+n phi0 register_controller_0/a_0_n9# register_controller_0/a_0_n5# 2 4 14 586
+n simpleWrite regbit_0[7]/w register_controller_0/a_0_n9# 2 4 14 582
+p phi0 Vdd regbit_0[7]/w 2 8 28 582
+p simpleWrite regbit_0[7]/w Vdd 2 8 28 574
+C simpleWrite GND 11.2
+R simpleWrite 656
+R register_controller_0/a_0_n9# 53
+C phi0 GND 10.2
+R phi0 608
+R register_controller_0/a_0_n5# 53
+C RegisterWriteID GND 9.3
+R RegisterWriteID 561
+R register_controller_0/a_0_n1# 40
+C RegisterReadID GND 9.3
+R RegisterReadID 561
+R register_controller_0/a_0_7# 53
+R register_controller_0/a_0_11# 53
+C phi1 GND 10.2
+R phi1 608
+C simpleRead GND 11.2
+R simpleRead 656
+R register_controller_0/inverter_1/a_n5_7# 33
+R register_controller_0/inverter_1/a_n5_21# 95
+R regbit_0[7]/outlatch/a_1_0# 53
+C op7 GND 3.3
+R op7 129
+R regbit_0[7]/outlatch/a_1_14# 238
+R regbit_0[7]/inlatch/a_1_0# 53
+R regbit_0[7]/inlatch/a_1_14# 238
+C dp7 GND 13.2
+R dp7 572
+C regbit_0[7]/staticizer_0/inverter_0/out GND 16.0
+R regbit_0[7]/staticizer_0/inverter_0/out 319
+C regbit_0[7]/outlatch/in GND 19.4
+R regbit_0[7]/outlatch/in 1345
+R regbit_0[6]/outlatch/a_1_0# 53
+C op6 GND 3.3
+R op6 129
+R regbit_0[6]/outlatch/a_1_14# 238
+R regbit_0[6]/inlatch/a_1_0# 53
+R regbit_0[6]/inlatch/a_1_14# 238
+C dp6 GND 13.2
+R dp6 572
+C staticizer_0/inverter_0/out GND 16.0
+R staticizer_0/inverter_0/out 319
+C staticizer_0/in GND 19.4
+R staticizer_0/in 1345
+R regbit_0[5]/outlatch/a_1_0# 53
+C op5 GND 3.3
+R op5 129
+R regbit_0[5]/outlatch/a_1_14# 238
+R regbit_0[5]/inlatch/a_1_0# 53
+R regbit_0[5]/inlatch/a_1_14# 238
+C dp5 GND 13.2
+R dp5 572
+C staticizer_1/inverter_0/out GND 16.0
+R staticizer_1/inverter_0/out 319
+C staticizer_1/in GND 19.4
+R staticizer_1/in 1345
+R regbit_0[4]/outlatch/a_1_0# 53
+C op4 GND 3.3
+R op4 129
+R regbit_0[4]/outlatch/a_1_14# 238
+R regbit_0[4]/inlatch/a_1_0# 53
+R regbit_0[4]/inlatch/a_1_14# 238
+C dp4 GND 13.2
+R dp4 572
+C staticizer_2/inverter_0/out GND 16.0
+R staticizer_2/inverter_0/out 319
+C staticizer_2/in GND 19.4
+R staticizer_2/in 1345
+R regbit_0[3]/outlatch/a_1_0# 53
+C op3 GND 3.3
+R op3 129
+R regbit_0[3]/outlatch/a_1_14# 238
+R regbit_0[3]/inlatch/a_1_0# 53
+R regbit_0[3]/inlatch/a_1_14# 238
+C dp3 GND 13.2
+R dp3 572
+C staticizer_3/inverter_0/out GND 16.0
+R staticizer_3/inverter_0/out 319
+C staticizer_3/in GND 19.4
+R staticizer_3/in 1345
+R regbit_0[2]/outlatch/a_1_0# 53
+C op2 GND 3.3
+R op2 129
+R regbit_0[2]/outlatch/a_1_14# 238
+R regbit_0[2]/inlatch/a_1_0# 53
+R regbit_0[2]/inlatch/a_1_14# 238
+C dp2 GND 13.2
+R dp2 572
+C staticizer_4/inverter_0/out GND 16.0
+R staticizer_4/inverter_0/out 319
+C Vdd GND 101.4
+R Vdd 6919
+C staticizer_4/in GND 19.4
+R staticizer_4/in 1345
+R regbit_0[1]/outlatch/a_1_0# 53
+C op1 GND 3.3
+R op1 129
+R regbit_0[1]/outlatch/a_1_14# 238
+R regbit_0[1]/inlatch/a_1_0# 53
+R regbit_0[1]/inlatch/a_1_14# 238
+C dp1 GND 13.2
+R dp1 572
+C staticizer_5/inverter_0/out GND 16.0
+R staticizer_5/inverter_0/out 319
+C staticizer_5/in GND 19.4
+R staticizer_5/in 1345
+R regbit_0[0]/outlatch/a_1_0# 53
+C regbit_0[7]/r GND 142.5
+R regbit_0[7]/r 3620
+C op0 GND 3.3
+R op0 129
+R regbit_0[0]/outlatch/a_1_14# 238
+C regbit_0[7]/r_ GND 143.3
+R regbit_0[7]/r_ 3495
+R regbit_0[0]/inlatch/a_1_0# 53
+C regbit_0[7]/w GND 151.9
+R regbit_0[7]/w 4263
+R regbit_0[0]/inlatch/a_1_14# 238
+C regbit_0[7]/w_ GND 147.4
+R regbit_0[7]/w_ 4137
+C dp0 GND 13.2
+R dp0 572
+R GND 5758
+C staticizer_6/inverter_0/out GND 16.0
+R staticizer_6/inverter_0/out 319
+C staticizer_6/in GND 19.4
+R staticizer_6/in 1345

@@ -1,0 +1,30 @@
+import "globals.cast";
+import "inverter.cast";
+
+// zin and zout are 'am zero' from the neighbor below,
+// and 'am zero' to the neighbor above. fin and out 
+// are input/output from/to the fbit.
+// toFile is for testing.
+define faccumbit()(node fin, fw, fw_, br, br_, bload, bload_, zin;
+                   node bus, fout, zout; node toFile)
+{
+  node reg_, zout_;
+  prs {
+    (fin & fw) | ( bload  & bus )  -> reg_-
+    (~fin & ~fw_) | (~bload_ & ~bus)  -> reg_+
+
+     br  &  reg_ -> bus-
+    ~br_ & ~reg_ -> bus+
+
+     phi1  &  reg_ -> fout-
+    ~phi1_ & ~reg_ -> fout+
+
+     zin &  reg_ -> zout_-
+    ~zin | ~reg_ -> zout_+
+
+     zout_ -> zout-
+    ~zout_ -> zout+
+  }
+  // testing
+  inverter f2i(reg_,toFile);
+}

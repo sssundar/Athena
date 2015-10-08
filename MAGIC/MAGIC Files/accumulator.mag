@@ -1,0 +1,204 @@
+magic
+tech scmos
+timestamp 1431665907
+<< metal1 >>
+rect 23 1014 24 1018
+rect 31 893 34 896
+rect 107 893 110 896
+rect 4 768 7 810
+rect 11 768 14 810
+rect 25 768 28 810
+rect 31 768 34 810
+rect 76 768 79 810
+rect 82 768 85 810
+rect 107 768 110 810
+rect 113 768 116 810
+rect 120 768 123 810
+rect 4 643 7 685
+rect 11 643 14 685
+rect 25 643 28 685
+rect 31 643 34 685
+rect 76 643 79 685
+rect 82 643 85 685
+rect 107 643 110 685
+rect 113 643 116 685
+rect 120 643 123 685
+rect 4 518 7 560
+rect 11 518 14 560
+rect 25 518 28 560
+rect 31 518 34 560
+rect 76 518 79 560
+rect 82 518 85 560
+rect 107 518 110 560
+rect 113 518 116 560
+rect 120 518 123 560
+rect 4 393 7 435
+rect 11 393 14 435
+rect 25 393 28 435
+rect 31 393 34 435
+rect 76 393 79 435
+rect 82 393 85 435
+rect 107 393 110 435
+rect 113 393 116 435
+rect 120 393 123 435
+rect 4 268 7 310
+rect 11 268 14 310
+rect 25 268 28 310
+rect 31 268 34 310
+rect 76 268 79 310
+rect 82 268 85 310
+rect 107 268 110 310
+rect 113 268 116 310
+rect 120 268 123 310
+rect 4 143 7 185
+rect 11 143 14 185
+rect 25 143 28 185
+rect 31 143 34 185
+rect 76 143 79 185
+rect 82 143 85 185
+rect 107 143 110 185
+rect 113 143 116 185
+rect 120 143 123 185
+rect 4 18 7 60
+rect 11 18 14 60
+rect 25 18 28 60
+rect 31 18 34 60
+rect 76 18 79 60
+rect 82 18 85 60
+rect 107 18 110 60
+rect 113 18 116 60
+rect 120 18 123 60
+<< metal2 >>
+rect 79 883 99 887
+rect 79 879 83 883
+rect 0 875 13 879
+rect 9 862 13 875
+rect 25 875 83 879
+rect 95 879 99 883
+rect 95 875 127 879
+rect 25 862 29 875
+rect 9 858 29 862
+rect 79 758 99 762
+rect 79 754 83 758
+rect 0 750 13 754
+rect 9 737 13 750
+rect 25 750 83 754
+rect 95 754 99 758
+rect 95 750 127 754
+rect 25 737 29 750
+rect 9 733 29 737
+rect 79 633 99 637
+rect 79 629 83 633
+rect 0 625 13 629
+rect 9 612 13 625
+rect 25 625 83 629
+rect 95 629 99 633
+rect 95 625 127 629
+rect 25 612 29 625
+rect 9 608 29 612
+rect 79 508 99 512
+rect 79 504 83 508
+rect 0 500 13 504
+rect 9 487 13 500
+rect 25 500 83 504
+rect 95 504 99 508
+rect 95 500 127 504
+rect 25 487 29 500
+rect 9 483 29 487
+rect 79 383 99 387
+rect 79 379 83 383
+rect 0 375 13 379
+rect 9 362 13 375
+rect 25 375 83 379
+rect 95 379 99 383
+rect 95 375 127 379
+rect 25 362 29 375
+rect 9 358 29 362
+rect 79 258 99 262
+rect 79 254 83 258
+rect 0 250 13 254
+rect 9 237 13 250
+rect 25 250 83 254
+rect 95 254 99 258
+rect 95 250 127 254
+rect 25 237 29 250
+rect 9 233 29 237
+rect 79 133 99 137
+rect 79 129 83 133
+rect 0 125 13 129
+rect 9 112 13 125
+rect 25 125 83 129
+rect 95 129 99 133
+rect 95 125 127 129
+rect 25 112 29 125
+rect 9 108 29 112
+rect 79 8 99 12
+rect 79 4 83 8
+rect 0 0 13 4
+rect 9 -13 13 0
+rect 25 0 83 4
+rect 95 4 99 8
+rect 95 0 127 4
+rect 25 -13 29 0
+rect 9 -17 29 -13
+<< m2contact >>
+rect 48 1087 52 1091
+rect 19 1014 23 1018
+rect 48 988 52 992
+rect 39 942 43 946
+rect 82 895 86 899
+rect 119 895 123 899
+use accumulator_control  accumulator_control_0
+timestamp 1430463534
+transform 1 0 36 0 1 1117
+box -32 -224 87 -26
+use accumbit  accumbit7
+timestamp 1430461504
+transform 1 0 43 0 1 848
+box -39 -40 80 45
+use accumbit  accumbit6
+timestamp 1430461504
+transform 1 0 43 0 1 723
+box -39 -40 80 45
+use accumbit  accumbit5
+timestamp 1430461504
+transform 1 0 43 0 1 598
+box -39 -40 80 45
+use accumbit  accumbit4
+timestamp 1430461504
+transform 1 0 43 0 1 473
+box -39 -40 80 45
+use accumbit  accumbit3
+timestamp 1430461504
+transform 1 0 43 0 1 348
+box -39 -40 80 45
+use accumbit  accumbit2
+timestamp 1430461504
+transform 1 0 43 0 1 223
+box -39 -40 80 45
+use accumbit  accumbit1
+timestamp 1430461504
+transform 1 0 43 0 1 98
+box -39 -40 80 45
+use accumbit  accumbit0
+timestamp 1430461504
+transform 1 0 43 0 1 -27
+box -39 -40 80 45
+<< labels >>
+rlabel m2contact 119 895 123 899 1 reset
+rlabel m2contact 82 895 86 899 1 phi1_
+rlabel m2contact 39 942 43 946 1 phi1
+rlabel m2contact 48 988 52 992 1 regr
+rlabel m2contact 19 1014 23 1018 1 phi0
+rlabel m2contact 48 1087 52 1091 5 regw
+rlabel metal1 107 893 110 896 1 Vdd
+rlabel metal1 31 893 34 896 1 GND
+rlabel metal2 123 875 127 879 7 bit7
+rlabel metal2 123 750 127 754 7 bit6
+rlabel metal2 123 625 127 629 7 bit5
+rlabel metal2 123 500 127 504 7 bit4
+rlabel metal2 123 375 127 379 7 bit3
+rlabel metal2 123 250 127 254 7 bit2
+rlabel metal2 123 125 127 129 7 bit1
+rlabel metal2 123 0 127 4 7 bit0
+<< end >>

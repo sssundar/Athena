@@ -1,0 +1,63 @@
+magic
+tech scmos
+timestamp 1434083745
+<< polysilicon >>
+rect -7 60 2 62
+rect -45 53 -2 55
+rect -40 45 -32 47
+rect -40 16 -38 45
+rect -4 39 -2 53
+rect 0 19 2 60
+rect -6 17 2 19
+rect -39 15 -38 16
+rect -39 13 -32 15
+rect -4 4 -2 17
+rect -7 2 -2 4
+<< metal1 >>
+rect -49 56 -46 113
+rect -36 52 -33 113
+rect -14 63 -10 113
+rect -14 59 -11 63
+rect -49 0 -46 52
+rect -36 48 -30 52
+rect -8 48 1 52
+rect -36 36 -33 48
+rect -36 32 -30 36
+rect -19 34 -15 40
+rect -43 11 -39 12
+rect -36 12 -33 32
+rect -8 32 4 36
+rect -8 20 -7 24
+rect -36 8 -30 12
+rect -8 8 4 12
+rect -36 0 -33 8
+rect -14 1 -11 4
+rect -14 0 -10 1
+<< metal2 >>
+rect -3 20 46 24
+<< polycontact >>
+rect -11 59 -7 63
+rect -49 52 -45 56
+rect -19 30 -15 34
+rect -43 12 -39 16
+rect -11 1 -7 5
+<< m2contact >>
+rect -43 7 -39 11
+rect -7 20 -3 24
+use inverter  inverter_0
+timestamp 1430424850
+transform 0 -1 -1 -1 0 47
+box -5 5 7 31
+use xor  xor_0
+timestamp 1433978507
+transform -1 0 -8 0 1 8
+box -6 0 28 31
+use adderbit  adderbit_0
+timestamp 1431664333
+transform 1 0 15 0 1 4
+box -15 -4 102 109
+<< labels >>
+rlabel m2contact -43 7 -39 11 3 bus
+rlabel metal1 -14 0 -10 4 1 sub
+rlabel metal1 -49 0 -46 3 2 add
+<< end >>

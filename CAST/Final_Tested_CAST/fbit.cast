@@ -1,0 +1,13 @@
+define fbit()(node a, b, g0_, g1_, g2_, g3_; node out)
+{
+  node a_, b_;
+  prs {
+    ~a -> a_+
+     a -> a_-
+    ~b -> b_+
+     b -> b_-
+
+    ( a_ &  b_ &  g0_) | ( a_ &  b  &  g1_) | ( a  &  b_ &  g2_) | ( a  &  b  &  g3_) -> out-
+    (~a  & ~b  & ~g0_) | (~a  & ~b_ & ~g1_) | (~a_ & ~b  & ~g2_) | (~a_ & ~b_ & ~g3_) -> out+
+  }
+}

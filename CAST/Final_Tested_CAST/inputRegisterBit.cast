@@ -1,0 +1,14 @@
+import "inverter.cast"; 
+// Single Bit of the Non-Inverting Input Register 
+// Takes input bit in from external world, latches it to out,
+// which is assumed staticized. See inputRegisterController.
+define inputRegisterBit()(node bitFromOutsideWorld, readToDataPath, readToDataPath_; node theDataPath)
+{
+  node bFOw_; 
+  inverter bFi(bitFromOutsideWorld, bFOw_);
+  prs {	
+	// a non-inverting latch overall
+	~readToDataPath_ & ~bFOw_ -> theDataPath+
+	readToDataPath  &  bFOw_ -> theDataPath-
+  }
+}

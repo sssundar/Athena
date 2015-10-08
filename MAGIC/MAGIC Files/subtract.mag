@@ -1,0 +1,240 @@
+magic
+tech scmos
+timestamp 1431669756
+<< polysilicon >>
+rect -9 922 -7 925
+rect -9 797 -7 800
+rect -9 672 -7 675
+rect -9 547 -7 550
+rect -9 422 -7 425
+rect -9 297 -7 300
+rect -9 172 -7 175
+rect -9 49 -7 50
+<< metal1 >>
+rect -14 929 -8 930
+rect -14 926 -10 929
+rect -14 913 -10 914
+rect -14 897 -11 904
+rect -14 894 8 897
+rect -14 804 -8 805
+rect -14 801 -10 804
+rect -14 788 -10 789
+rect -14 772 -11 779
+rect -14 769 8 772
+rect -14 679 -8 680
+rect -14 676 -10 679
+rect -14 663 -10 664
+rect -14 647 -11 654
+rect -14 644 8 647
+rect -14 554 -8 555
+rect -14 551 -10 554
+rect -14 538 -10 539
+rect -14 522 -11 529
+rect -14 519 8 522
+rect -14 429 -8 430
+rect -14 426 -10 429
+rect -14 413 -10 414
+rect -14 397 -11 404
+rect -14 394 8 397
+rect -14 304 -8 305
+rect -14 301 -10 304
+rect -14 288 -10 289
+rect -14 272 -11 279
+rect -14 269 8 272
+rect -14 179 -8 180
+rect -14 176 -10 179
+rect -14 163 -10 164
+rect -14 147 -11 154
+rect -14 144 8 147
+rect -14 54 -8 55
+rect -14 51 -10 54
+rect -14 38 -10 39
+rect -14 22 -11 29
+rect -14 19 8 22
+rect -100 -26 -96 -13
+rect -38 -34 -35 4
+rect 4 -26 8 4
+rect 85 0 121 4
+rect 116 -34 120 0
+<< metal2 >>
+rect -128 967 74 971
+rect -145 926 -141 930
+rect -128 917 -124 967
+rect -58 899 -54 930
+rect -40 911 -14 913
+rect -36 909 -14 911
+rect 1 905 12 909
+rect -58 895 125 899
+rect -128 842 74 846
+rect -145 801 -141 805
+rect -128 792 -124 842
+rect -58 774 -54 805
+rect -40 786 -14 788
+rect -36 784 -14 786
+rect 1 780 12 784
+rect -58 770 125 774
+rect -128 717 74 721
+rect -145 676 -141 680
+rect -128 667 -124 717
+rect -58 649 -54 680
+rect -40 661 -14 663
+rect -36 659 -14 661
+rect 1 655 12 659
+rect -58 645 125 649
+rect -128 592 74 596
+rect -145 551 -141 555
+rect -128 542 -124 592
+rect -58 524 -54 555
+rect -40 536 -14 538
+rect -36 534 -14 536
+rect 1 530 12 534
+rect -58 520 125 524
+rect -128 467 74 471
+rect -145 426 -141 430
+rect -128 417 -124 467
+rect -58 399 -54 430
+rect -40 411 -14 413
+rect -36 409 -14 411
+rect 1 405 12 409
+rect -58 395 125 399
+rect -128 342 74 346
+rect -145 301 -141 305
+rect -128 292 -124 342
+rect -58 274 -54 305
+rect -40 286 -14 288
+rect -36 284 -14 286
+rect 1 280 12 284
+rect -58 270 125 274
+rect -128 217 74 221
+rect -145 176 -141 180
+rect -128 167 -124 217
+rect -58 149 -54 180
+rect -40 161 -14 163
+rect -36 159 -14 161
+rect 1 155 12 159
+rect -58 145 125 149
+rect -128 92 74 96
+rect -145 51 -141 55
+rect -128 42 -124 92
+rect -58 24 -54 55
+rect -40 36 -14 38
+rect -36 34 -14 36
+rect -58 20 4 24
+rect -150 -30 -100 -26
+rect -96 -30 4 -26
+rect 8 -30 128 -26
+rect -150 -38 -38 -34
+rect -34 -38 116 -34
+rect 120 -38 128 -34
+<< polycontact >>
+rect -10 925 -6 929
+rect -10 800 -6 804
+rect -10 675 -6 679
+rect -10 550 -6 554
+rect -10 425 -6 429
+rect -10 300 -6 304
+rect -10 175 -6 179
+rect -10 50 -6 54
+<< m2contact >>
+rect -97 1138 -93 1142
+rect -126 1065 -122 1069
+rect -97 1039 -93 1043
+rect -106 993 -102 997
+rect 85 984 89 988
+rect -63 946 -59 950
+rect -26 946 -22 950
+rect -18 926 -14 930
+rect -40 907 -36 911
+rect -14 909 -10 913
+rect -3 905 1 909
+rect -18 801 -14 805
+rect -40 782 -36 786
+rect -14 784 -10 788
+rect -3 780 1 784
+rect -18 676 -14 680
+rect -40 657 -36 661
+rect -14 659 -10 663
+rect -3 655 1 659
+rect -18 551 -14 555
+rect -40 532 -36 536
+rect -14 534 -10 538
+rect -3 530 1 534
+rect -18 426 -14 430
+rect -40 407 -36 411
+rect -14 409 -10 413
+rect -3 405 1 409
+rect -18 301 -14 305
+rect -40 282 -36 286
+rect -14 284 -10 288
+rect -3 280 1 284
+rect -18 176 -14 180
+rect -40 157 -36 161
+rect -14 159 -10 163
+rect -3 155 1 159
+rect -18 51 -14 55
+rect -40 32 -36 36
+rect -14 34 -10 38
+rect -3 30 1 34
+rect -100 -30 -96 -26
+rect 4 -30 8 -26
+rect -38 -38 -34 -34
+rect 116 -38 120 -34
+use accumulator  accumulator_0
+timestamp 1431665907
+transform 1 0 -145 0 1 51
+box 0 -67 127 1091
+use inverter  inverter_7
+timestamp 1430424850
+transform 1 0 -9 0 1 893
+box -5 5 7 31
+use inverter  inverter_6
+timestamp 1430424850
+transform 1 0 -9 0 1 768
+box -5 5 7 31
+use inverter  inverter_5
+timestamp 1430424850
+transform 1 0 -9 0 1 643
+box -5 5 7 31
+use inverter  inverter_4
+timestamp 1430424850
+transform 1 0 -9 0 1 518
+box -5 5 7 31
+use inverter  inverter_3
+timestamp 1430424850
+transform 1 0 -9 0 1 393
+box -5 5 7 31
+use inverter  inverter_2
+timestamp 1430424850
+transform 1 0 -9 0 1 268
+box -5 5 7 31
+use inverter  inverter_1
+timestamp 1430424850
+transform 1 0 -9 0 1 143
+box -5 5 7 31
+use inverter  inverter_0
+timestamp 1430424850
+transform 1 0 -9 0 1 18
+box -5 5 7 31
+use adder  adder_0
+timestamp 1431665391
+transform 1 0 0 0 1 20
+box 0 -20 125 968
+<< labels >>
+rlabel metal2 -150 -30 -146 -26 3 GND
+rlabel metal2 -150 -38 -146 -34 2 Vdd
+rlabel metal2 -145 51 -141 55 1 bus0
+rlabel metal2 -145 176 -141 180 1 bus1
+rlabel metal2 -145 301 -141 305 1 bus2
+rlabel metal2 -145 426 -141 430 1 bus3
+rlabel metal2 -145 551 -141 555 1 bus4
+rlabel metal2 -145 676 -141 680 1 bus5
+rlabel metal2 -145 801 -141 805 1 bus6
+rlabel metal2 -145 926 -141 930 1 bus7
+rlabel m2contact 85 984 89 988 1 Cout
+rlabel m2contact -26 946 -22 950 1 reset
+rlabel m2contact -63 946 -59 950 1 phi1_
+rlabel m2contact -106 993 -102 997 1 phi1
+rlabel m2contact -97 1039 -93 1043 1 regr
+rlabel m2contact -97 1138 -93 1142 5 regw
+rlabel m2contact -126 1065 -122 1069 1 phi0
+<< end >>

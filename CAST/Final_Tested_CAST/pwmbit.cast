@@ -1,0 +1,23 @@
+import "inverter.cast";
+
+// This is for the PWM register, aka register 3
+// toFile is for testing.
+define pwmbit()(node in, w, w_, r, r_; node out, cmp, cmp_; node toFile)
+{
+  node reg_;
+  cmp_ = reg_;
+
+  prs {
+     w  &  in  -> reg_-
+    ~w_ & ~in  -> reg_+
+
+     r  &  reg_ -> out-
+    ~r_ & ~reg_ -> out+
+
+     cmp_ -> cmp-
+    ~cmp_ -> cmp+
+  }
+  
+  // testing
+  inverter pb2i(reg_, toFile);
+}

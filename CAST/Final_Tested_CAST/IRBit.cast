@@ -1,0 +1,21 @@
+import "globals.cast";
+import "inverter.cast";
+
+// Single Bit of the instruction register 
+// Takes input bit in from datapath, latches it internally, and
+// outputs it to the control path, both polarities, ungated.
+// When InstructionCycle = 0, outputs 0/1 to control path.
+// No other functionality. Resettable.
+define IRBit()(node bitFromDP, writeFromDP, writeFromDP_; node bitToCP, bitToCP_)
+{
+	node latchedBit_;
+	inverter b2CPi(bitToCP,bitToCP_);
+	prs {
+		writeFromDP  &  bitFromDP  -> latchedBit_-
+		(~writeFromDP_ & ~bitFromDP) | ~RESET_  -> latchedBit_+
+		
+		// Output both polarities to bitToCP if instruction cycle is not 0, else 0/1.
+		instructionCycleCountIs0 | latchedBit_ -> bitToCP-
+		~instructionCycleCountIs0 & ~latchedBit_ -> bitToCP+
+	}
+}

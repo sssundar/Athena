@@ -1,0 +1,6 @@
+define nand2()(node a,b; node out){
+prs{
+	a & b -> out-
+	~a | ~b -> out+
+}
+}

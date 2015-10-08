@@ -1,0 +1,20 @@
+define cmpbit()(node cnt, cnt_, cmp, cmp_, eqin_, zin_; node eqout_, zout_)
+{
+  node eq_, eqout, zout;
+  prs {
+    ( cnt_ &  cmp_) | ( cnt &  cmp ) -> eq_-
+    (~cnt_ & ~cmp ) | (~cnt & ~cmp_) -> eq_+
+
+     eq_ |  eqin_ -> eqout-
+    ~eq_ & ~eqin_ -> eqout+
+
+     eqout -> eqout_-
+    ~eqout -> eqout_+
+
+     zin_ |  cnt -> zout-
+    ~zin_ & ~cnt -> zout+
+
+     zout -> zout_-
+    ~zout -> zout_+
+  }
+}

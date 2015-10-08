@@ -1,0 +1,89 @@
+magic
+tech scmos
+timestamp 1434171198
+<< polysilicon >>
+rect 11 108 31 109
+rect 11 107 27 108
+rect 28 92 30 99
+rect 31 89 56 91
+rect 27 81 34 83
+rect 42 81 44 83
+rect 27 75 29 81
+rect 18 73 20 75
+rect 24 73 29 75
+rect 31 73 34 75
+rect 42 73 44 75
+rect 31 71 33 73
+rect 4 69 20 71
+rect 24 69 33 71
+rect 18 65 20 67
+rect 24 65 34 67
+rect 42 65 63 67
+<< ndiffusion >>
+rect 20 75 24 76
+rect 20 71 24 73
+rect 20 67 24 69
+rect 20 64 24 65
+<< pdiffusion >>
+rect 34 83 42 84
+rect 34 80 42 81
+rect 34 75 42 76
+rect 34 72 42 73
+rect 34 67 42 68
+rect 34 64 42 65
+<< metal1 >>
+rect 0 60 3 68
+rect 7 60 10 105
+rect 14 98 17 109
+rect 45 98 48 109
+rect 14 94 20 98
+rect 42 94 48 98
+rect 14 64 17 94
+rect 27 84 34 88
+rect 27 80 31 84
+rect 45 80 48 94
+rect 24 76 31 80
+rect 42 76 48 80
+rect 27 72 31 76
+rect 27 69 34 72
+rect 45 64 48 76
+rect 14 60 20 64
+rect 42 60 48 64
+rect 57 60 60 88
+rect 64 60 67 64
+<< ntransistor >>
+rect 20 73 24 75
+rect 20 69 24 71
+rect 20 65 24 67
+<< ptransistor >>
+rect 34 81 42 83
+rect 34 73 42 75
+rect 34 65 42 67
+<< polycontact >>
+rect 7 105 11 109
+rect 27 104 31 108
+rect 27 88 31 92
+rect 56 88 60 92
+rect 0 68 4 72
+rect 63 64 67 68
+<< ndcontact >>
+rect 20 76 24 80
+rect 20 60 24 64
+<< pdcontact >>
+rect 34 84 42 88
+rect 34 76 42 80
+rect 34 68 42 72
+rect 34 60 42 64
+use inverter  inverter_0
+timestamp 1430424850
+transform 0 1 13 1 0 99
+box -5 5 7 31
+<< labels >>
+rlabel polysilicon 43 82 43 82 1 phi0
+rlabel polycontact 2 70 2 70 3 cyclezero
+rlabel metal1 7 60 10 63 1 w
+rlabel metal1 14 60 17 63 1 GND
+rlabel metal1 45 60 48 63 1 Vdd
+rlabel metal1 57 60 60 63 7 w_
+rlabel metal1 64 60 67 63 8 reset_
+<< end >>

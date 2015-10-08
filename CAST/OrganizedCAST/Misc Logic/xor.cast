@@ -1,0 +1,14 @@
+import "inverter.cast";
+
+// not tricky 9Tx xor, just logic for CAST purposes
+define xor()(node a,b; node x){
+
+node a_, b_;
+inverter nota(a, a_);
+inverter notb(b, b_);
+
+prs{
+	(a&b)|(a_&b_) -> x-
+	(~a_&~b)|(~a&~b_) -> x+
+}
+}

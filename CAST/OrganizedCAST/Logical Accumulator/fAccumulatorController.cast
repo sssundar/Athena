@@ -1,0 +1,33 @@
+import "globals.cast";
+
+// This is quite similar to additiveAccumulatorController for many parts.
+// Reuse layout.
+define fAccumulatorController()(node writeFromDP, writeFromDP_, readToDP, readToDP_, writeFromFunction, writeFromFunction_, g0_, g1_, g2_, g3_) {  
+	// set gX_
+	g0_ = ALWAYSHIGH;
+	g3_ = controlPath[1];
+	g2_ = g1_;
+	nor2 gUno(controlPath[1],controlPath[0],g1_);
+
+	prs {
+		// accumulator signals        
+		 phi0 &  LogicalInstruction -> writeFromFunction_-
+		~phi0 | ~LogicalInstruction -> writeFromFunction_+
+
+		 writeFromFunction_ -> writeFromFunction-
+		~writeFromFunction_ -> writeFromFunction+
+
+		// as a simple register, we read/write by register 0 flags
+		phi0 & simpleWrite & Register1Write -> writeFromDP_-
+		~phi0 | ~simpleWrite | ~Register1Write -> writeFromDP_+
+
+		 writeFromDP_ -> writeFromDP-
+		~writeFromDP_ -> writeFromDP+
+
+		 phi1 & simpleRead & Register1Read -> readToDP_-
+		~phi1 | ~simpleRead | ~Register1Read -> readToDP_+
+
+		 readToDP_ -> readToDP-
+		~readToDP_ -> readToDP+		
+	}
+}

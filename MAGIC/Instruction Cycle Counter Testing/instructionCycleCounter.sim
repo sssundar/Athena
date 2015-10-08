@@ -1,0 +1,137 @@
+| units: 100 tech: scmos format: MIT
+p trickyxor2_0/a_ trickyxor2_0/b_ iccBit_1/fromInc 2 8 285 149
+p iccB1 Vdd trickyxor2_0/b_ 2 8 285 141
+n iccB0 trickyxor2_0/b_ iccBit_1/fromInc 2 4 319 149
+n iccB1 GND trickyxor2_0/b_ 2 4 319 141
+n iccB0 trickyxor2_0/a_ GND 2 4 308 132
+p iccB0 trickyxor2_0/a_ Vdd 2 8 285 125
+n trickyxor2_0/b_ trickyxor2_0/a_27_4# GND 2 4 319 125
+p trickyxor2_0/b_ iccBit_1/fromInc trickyxor2_0/a_ 2 8 285 117
+n trickyxor2_0/a_ iccBit_1/fromInc trickyxor2_0/a_27_4# 2 4 319 121
+p iccBit_1/a_51_55# iccBit_1/statnode Vdd 2 8 132 142
+p iccBit_1/statnode Vdd iccBit_1/a_51_55# 8 4 148 144
+n iccBit_1/a_51_55# iccBit_1/statnode GND 2 4 132 128
+n iccBit_1/statnode GND iccBit_1/a_51_55# 13 4 148 128
+p phi1_ iccBit_1/a_141_78# Vdd 2 8 222 145
+p RESET_ iccBit_1/a_102_70# iccBit_1/a_102_63# 2 8 183 141
+p phi0_ iccBit_1/a_102_70# Vdd 2 8 199 141
+p iccBit_1/a_102_63# iccB1 iccBit_1/a_141_78# 2 8 222 141
+p INC iccBit_1/a_102_63# iccBit_1/a_102_70# 2 8 183 133
+p iccBit_1/fromInc iccBit_1/a_102_63# iccBit_1/a_102_70# 2 8 199 133
+n iccBit_1/a_102_63# iccBit_1/a_143_52# iccB1 2 4 224 119
+n phi0 GND iccBit_1/a_109_49# 2 4 188 114
+n INC iccBit_1/a_109_49# iccBit_1/a_113_49# 2 4 192 114
+n iccBit_1/fromInc iccBit_1/a_113_49# iccBit_1/a_102_63# 2 4 196 114
+n phi1 GND iccBit_1/a_143_52# 2 4 224 115
+p iccBit_0/a_51_55# iccBit_0/statnode Vdd 2 8 -10 147
+p iccBit_0/statnode Vdd iccBit_0/a_51_55# 8 4 6 149
+n iccBit_0/a_51_55# iccBit_0/statnode GND 2 4 -10 133
+n iccBit_0/statnode GND iccBit_0/a_51_55# 13 4 6 133
+p phi1_ iccBit_0/a_141_78# Vdd 2 8 80 150
+p RESET_ iccBit_0/a_102_70# iccBit_0/a_102_63# 2 8 41 146
+p phi0_ iccBit_0/a_102_70# Vdd 2 8 57 146
+p iccBit_0/a_102_63# iccB0 iccBit_0/a_141_78# 2 8 80 146
+p INC iccBit_0/a_102_63# iccBit_0/a_102_70# 2 8 41 138
+p iccB0_ iccBit_0/a_102_63# iccBit_0/a_102_70# 2 8 57 138
+n iccBit_0/a_102_63# iccBit_0/a_143_52# iccB0 2 4 82 124
+n phi0 GND iccBit_0/a_109_49# 2 4 46 119
+n INC iccBit_0/a_109_49# iccBit_0/a_113_49# 2 4 50 119
+n iccB0_ iccBit_0/a_113_49# iccBit_0/a_102_63# 2 4 54 119
+n phi1 GND iccBit_0/a_143_52# 2 4 82 120
+p iccB0 nor2_2/a_n8_0# Vdd 2 8 -33 155
+p iccB1 ICC0 nor2_2/a_n8_0# 2 8 -33 151
+n iccB1 ICC0 GND 2 4 -28 132
+n iccB0 ICC0 GND 2 4 -32 124
+p iccB0_ nor2_1/a_n8_0# Vdd 2 8 -57 155
+p iccB1 ICC1 nor2_1/a_n8_0# 2 8 -57 151
+n iccB1 ICC1 GND 2 4 -52 132
+n iccB0_ ICC1 GND 2 4 -56 124
+p iccB0 nor2_0/a_n8_0# Vdd 2 8 -81 155
+p iccB1_ ICC2 nor2_0/a_n8_0# 2 8 -81 151
+n iccB1_ ICC2 GND 2 4 -76 132
+n iccB0 ICC2 GND 2 4 -80 124
+p BranchInstruction_ Vdd a_n175_106# 2 8 -175 127
+p BranchInstruction BranchInstruction_ Vdd 2 8 -111 145
+n RESET GND INC 2 4 -135 127
+n BranchInstruction_ a_n125_125# INC 2 4 -125 127
+p ICC2 a_n175_106# a_n156_116# 2 8 -158 116
+p RESET a_n156_116# INC 2 8 -154 116
+p iccB0 iccB0_ Vdd 2 8 107 144
+p ICC1 a_n175_106# Vdd 2 8 -175 111
+n ICC1 GND a_n125_125# 2 4 -125 123
+n BranchInstruction GND BranchInstruction_ 2 4 -109 123
+n ICC2 INC GND 2 4 -135 111
+p iccB1 iccB1_ Vdd 2 8 251 139
+n iccB0 GND iccB0_ 2 4 109 122
+n iccB1 GND iccB1_ 2 4 253 117
+C iccB1 iccB0 18.0
+C iccB1 iccBit_1/fromInc 2.2
+R a_n125_125# 53
+R a_n156_116# 238
+R BranchInstruction 692
+C RESET GND 23.8
+R RESET 775
+C a_n175_106# GND 4.2
+R a_n175_106# 631
+R BranchInstruction_ 833
+C ICC2 GND 50.6
+R ICC2 2117
+C iccB1_ GND 40.5
+R iccB1_ 1194
+R nor2_0/a_n8_0# 238
+C ICC1 GND 79.7
+R ICC1 3441
+R nor2_1/a_n8_0# 238
+C ICC0 GND 12.3
+R ICC0 255
+R nor2_2/a_n8_0# 238
+R iccBit_0/a_143_52# 53
+R iccBit_0/a_113_49# 53
+R iccBit_0/a_109_49# 53
+C iccB0_ GND 58.0
+R iccB0_ 1779
+R iccBit_0/a_102_70# 358
+R iccBit_0/a_141_78# 238
+C iccBit_0/a_102_63# GND 18.0
+R iccBit_0/a_102_63# 1212
+C iccBit_0/statnode GND 17.9
+R iccBit_0/statnode 278
+C iccBit_0/a_51_55# GND 19.1
+R iccBit_0/a_51_55# 919
+R iccBit_1/a_143_52# 53
+R iccBit_1/a_113_49# 53
+R iccBit_1/a_109_49# 53
+C INC GND 91.1
+R INC 2184
+R iccBit_1/a_102_70# 358
+R iccBit_1/a_141_78# 238
+C phi1 GND 50.3
+R phi1 1530
+C iccBit_1/a_102_63# GND 18.0
+R iccBit_1/a_102_63# 1212
+C iccBit_1/statnode GND 17.9
+R iccBit_1/statnode 278
+C iccBit_1/a_51_55# GND 19.1
+R iccBit_1/a_51_55# 919
+C phi1_ GND 33.5
+R phi1_ 766
+C phi0_ GND 36.5
+R phi0_ 862
+C RESET_ GND 36.5
+R RESET_ 814
+C phi0 GND 55.5
+R phi0 1602
+R trickyxor2_0/a_27_4# 53
+R GND 3640
+C iccB0 GND 110.8
+R iccB0 3690
+C Vdd GND 63.5
+R Vdd 5029
+C trickyxor2_0/b_ GND 25.3
+R trickyxor2_0/b_ 1087
+C trickyxor2_0/a_ GND 18.1
+R trickyxor2_0/a_ 888
+C iccBit_1/fromInc GND 44.9
+R iccBit_1/fromInc 2098
+C iccB1 GND 101.9
+R iccB1 4534

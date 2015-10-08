@@ -1,0 +1,164 @@
+import "globals.cast";
+import "athena.cast";
+
+athena myCPU();
+
+
+// Node Mappings
+node in0, in1, in2, in3, in4, in5, in6, in7;
+node out0, out1, out2, out3, out4, out5, out6, out7;
+node addr0, addr1, addr2, addr3, addr4, addr5, addr6, addr7, addr8, addr9, addr10, addr11, addr12, addr13, addr14;
+node dataPath0, dataPath1, dataPath2, dataPath3, dataPath4, dataPath5, dataPath6, dataPath7;
+node controlPath0, controlPath1, controlPath2, controlPath3, controlPath4, controlPath5, controlPath6, controlPath7;
+node controlPath_0, controlPath_1, controlPath_2, controlPath_3, controlPath_4, controlPath_5, controlPath_6, controlPath_7;
+node reg00, reg01, reg02, reg03, reg04, reg05, reg06, reg07;
+node reg10, reg11, reg12, reg13, reg14, reg15, reg16, reg17;
+node reg20, reg21, reg22, reg23, reg24, reg25, reg26, reg27;
+node reg30, reg31, reg32, reg33, reg34, reg35, reg36, reg37;
+node reg40, reg41, reg42, reg43, reg44, reg45, reg46, reg47;
+node reg50, reg51, reg52, reg53, reg54, reg55, reg56, reg57;
+node reg60, reg61, reg62, reg63, reg64, reg65, reg66, reg67;
+node reg70, reg71, reg72, reg73, reg74, reg75, reg76, reg77;
+node pwmc0, pwmc1, pwmc2, pwmc3, pwmc4, pwmc5, pwmc6, pwmc7;
+
+pwmc[0] = pwmc0;
+pwmc[1] = pwmc1;
+pwmc[2] = pwmc2;
+pwmc[3] = pwmc3;
+pwmc[4] = pwmc4;
+pwmc[5] = pwmc5;
+pwmc[6] = pwmc6;
+pwmc[7] = pwmc7;
+
+reg0[0] = reg00;
+reg0[1] = reg01;
+reg0[2] = reg02;
+reg0[3] = reg03;
+reg0[4] = reg04;
+reg0[5] = reg05;
+reg0[6] = reg06;
+reg0[7] = reg07;
+
+reg1[0] = reg10;
+reg1[1] = reg11;
+reg1[2] = reg12;
+reg1[3] = reg13;
+reg1[4] = reg14;
+reg1[5] = reg15;
+reg1[6] = reg16;
+reg1[7] = reg17;
+
+reg2[0] = reg20;
+reg2[1] = reg21;
+reg2[2] = reg22;
+reg2[3] = reg23;
+reg2[4] = reg24;
+reg2[5] = reg25;
+reg2[6] = reg26;
+reg2[7] = reg27;
+
+reg3[0] = reg30;
+reg3[1] = reg31;
+reg3[2] = reg32;
+reg3[3] = reg33;
+reg3[4] = reg34;
+reg3[5] = reg35;
+reg3[6] = reg36;
+reg3[7] = reg37;
+
+reg4[0] = reg40;
+reg4[1] = reg41;
+reg4[2] = reg42;
+reg4[3] = reg43;
+reg4[4] = reg44;
+reg4[5] = reg45;
+reg4[6] = reg46;
+reg4[7] = reg47;
+
+reg5[0] = reg50;
+reg5[1] = reg51;
+reg5[2] = reg52;
+reg5[3] = reg53;
+reg5[4] = reg54;
+reg5[5] = reg55;
+reg5[6] = reg56;
+reg5[7] = reg57;
+
+reg6[0] = reg60;
+reg6[1] = reg61;
+reg6[2] = reg62;
+reg6[3] = reg63;
+reg6[4] = reg64;
+reg6[5] = reg65;
+reg6[6] = reg66;
+reg6[7] = reg67;
+
+reg7[0] = reg70;
+reg7[1] = reg71;
+reg7[2] = reg72;
+reg7[3] = reg73;
+reg7[4] = reg74;
+reg7[5] = reg75;
+reg7[6] = reg76;
+reg7[7] = reg77;
+
+addr0 = addr[0];
+addr1 = addr[1];
+addr2 = addr[2];
+addr3 = addr[3];
+addr4 = addr[4];
+addr5 = addr[5];
+addr6 = addr[6];
+addr7 = addr[7];
+addr8 = addr[8];
+addr9 = addr[9];
+addr10 = addr[10];
+addr11 = addr[11];
+addr12 = addr[12];
+addr13 = addr[13];
+addr14 = addr[14];
+
+in0 = in[0];
+in1 = in[1];
+in2 = in[2];
+in3 = in[3];
+in4 = in[4];
+in5 = in[5];
+in6 = in[6];
+in7 = in[7];
+
+out0 = out[0];
+out1 = out[1];
+out2 = out[2];
+out3 = out[3];
+out4 = out[4];
+out5 = out[5];
+out6 = out[6];
+out7 = out[7];
+
+dataPath0 = dataPath[0];
+dataPath1 = dataPath[1];
+dataPath2 = dataPath[2];
+dataPath3 = dataPath[3];
+dataPath4 = dataPath[4];
+dataPath5 = dataPath[5];
+dataPath6 = dataPath[6];
+dataPath7 = dataPath[7];
+
+controlPath0 = controlPath[0];
+controlPath1 = controlPath[1];
+controlPath2 = controlPath[2];
+controlPath3 = controlPath[3];
+controlPath4 = controlPath[4];
+controlPath5 = controlPath[5];
+controlPath6 = controlPath[6];
+controlPath7 = controlPath[7];
+
+controlPath_0 = controlPath_[0];
+controlPath_1 = controlPath_[1];
+controlPath_2 = controlPath_[2];
+controlPath_3 = controlPath_[3];
+controlPath_4 = controlPath_[4];
+controlPath_5 = controlPath_[5];
+controlPath_6 = controlPath_[6];
+controlPath_7 = controlPath_[7];

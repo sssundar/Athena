@@ -1,0 +1,69 @@
+import "globals.cast";
+import "inputRegister.cast";
+import "inputRegisterController.cast";
+import "registerController.cast";
+import "register.cast";
+import "additiveAccumulator.cast";
+import "shiftblock.cast";
+import "fblock.cast";
+import "pwm.cast";
+import "programCounter.cast";
+import "instructionRegister.cast";
+import "instructionCycleCounter.cast";
+
+// Input Bus (input)
+//  in (MSB 7..0 LSB) 
+// Output Bus (output)
+//  out (MSB 7..0 LSB) 
+// Address Bus (output)
+//  addr (MSB 14..0 LSB) 
+// PWM Output
+//  pwmOut (single bit)
+// Control Signals (output)
+//  memselect (select Data Input Bus when 1, else Instruction Byte)
+//  addrselect (active on phi0 of final cycle of ADDR instruction; when high, output bus means an address)
+//  datawrite (active only on phi0 of final cycle of OUT instruction to avoid race conditions)
+define athena()() {	
+	// generate input register and controller
+	node inputRead, inputRead_;
+	inputRegisterController inputRegCtrl(inputRead, inputRead_);
+	inputRegister(8) inputReg(inputRead, inputRead_, in, dataPath);
+	
+	// wire up datapath to output bus. no drivers required, implicit pads.
+	out = dataPath;
+
+	// simple registers 4,5,6,7
+	node reg4w, reg4w_, reg4r, reg4r_;
+	node reg5w, reg5w_, reg5r, reg5r_;
+	node reg6w, reg6w_, reg6r, reg6r_;
+	node reg7w, reg7w_, reg7r, reg7r_;
+	registerController rc4(Register4Read, Register4Write, reg4w, reg4w_, reg4r, reg4r_);
+	registerController rc5(Register5Read, Register5Write, reg5w, reg5w_, reg5r, reg5r_);
+	registerController rc6(Register6Read, Register6Write, reg6w, reg6w_, reg6r, reg6r_);
+	registerController rc7(Register7Read, Register7Write, reg7w, reg7w_, reg7r, reg7r_);
+	register(8) register4(reg4w, reg4w_, reg4r, reg4r_, dataPath, dataPath, reg4);
+	register(8) register5(reg5w, reg5w_, reg5r, reg5r_, dataPath, dataPath, reg5);
+	register(8) register6(reg6w, reg6w_, reg6r, reg6r_, dataPath, dataPath, reg6);
+	register(8) register7(reg7w, reg7w_, reg7r, reg7r_, dataPath, dataPath, reg7);
+
+	// additive accumulator
+	additiveAccumulator(8) register0(latchedCarryOut, dataPath, dataPath, reg0);
+
+	// shifter
+	shiftblock(8) register2(dataPath, dataPath, reg2);
+
+	// logical accumulator
+	fblock(8) register1(logicalAccumulatorIs0, dataPath, reg1);
+
+	// pwm 
+	pwm(8) register3(dataPath, reg3, pwmc);
+
+	// Program Counter 
+	programCounter thePC();
+
+	// Instruction Register
+	instructionRegister(8) theIR(dataPath, controlPath, controlPath_);
+
+	// Instruction Cycle Counter
+	instructionCycleCounter theICC();
+}

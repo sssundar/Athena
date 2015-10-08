@@ -1,0 +1,23 @@
+import "globals.cast";
+import "inverter.cast";
+
+// Single bit of additive accumulator. Has gated read/write as a normal register, to/from datapath, but also
+// takes direct writeable input from Add/Sub cell, and outputs on phi1 to the same. 
+// toFile is for testing purposes only.
+define additiveAccumulatorBit()(node InFromDP, InFromAdder, writeFromDP, writeFromDP_, readToDP, readToDP_, writeFromAdder, writeFromAdder_; node toDataPath, toAdder; node toFile)
+{
+  node accumulated_;
+  prs {
+    ( writeFromDP & InFromDP ) | (writeFromAdder & InFromAdder) -> accumulated_-
+    (~writeFromDP_ & ~InFromDP) | (~writeFromAdder_ & ~InFromAdder) -> accumulated_+
+
+     readToDP & accumulated_ -> toDataPath-
+    ~readToDP_ & ~accumulated_ -> toDataPath+
+
+     phi1  &  accumulated_ -> toAdder-
+    ~phi1_ & ~accumulated_ -> toAdder+
+  }
+
+  // for testing
+  inverter a2i(accumulated_,toFile);
+}

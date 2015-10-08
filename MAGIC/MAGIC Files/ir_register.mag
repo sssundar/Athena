@@ -1,0 +1,165 @@
+magic
+tech scmos
+timestamp 1434186535
+<< error_p >>
+rect 27 519 29 520
+rect 29 517 30 519
+rect 27 502 29 503
+rect 29 500 30 502
+rect 27 419 29 420
+rect 29 417 30 419
+rect 27 402 29 403
+rect 29 400 30 402
+rect 27 319 29 320
+rect 29 317 30 319
+rect 27 302 29 303
+rect 29 300 30 302
+rect 27 219 29 220
+rect 29 217 30 219
+rect 27 202 29 203
+rect 29 200 30 202
+rect 27 119 29 120
+rect 29 117 30 119
+rect 27 102 29 103
+rect 29 100 30 102
+rect 27 19 29 20
+rect 29 17 30 19
+rect 27 2 29 3
+rect 29 0 30 2
+<< polysilicon >>
+rect 28 788 30 790
+rect 28 688 30 690
+rect 28 588 30 590
+rect 28 488 30 490
+rect 28 388 30 390
+rect 28 288 30 290
+rect 28 188 30 190
+rect 28 88 30 90
+<< metal1 >>
+rect 0 795 3 799
+rect 7 795 10 799
+rect 14 795 17 799
+rect 45 795 48 799
+rect 57 795 60 799
+rect 64 795 67 799
+rect 27 717 30 720
+rect 27 700 30 703
+rect 0 695 3 700
+rect 7 695 10 700
+rect 14 695 17 700
+rect 50 695 53 700
+rect 57 695 60 700
+rect 64 695 67 700
+rect 27 617 30 620
+rect 27 600 30 603
+rect 0 595 3 600
+rect 7 595 10 600
+rect 14 595 17 600
+rect 50 595 53 600
+rect 57 595 60 600
+rect 64 595 67 600
+rect 27 517 29 519
+rect 27 500 29 502
+rect 0 495 3 500
+rect 7 495 10 500
+rect 14 495 17 500
+rect 50 495 53 500
+rect 57 495 60 500
+rect 64 495 67 500
+rect 27 417 29 419
+rect 27 400 29 402
+rect 0 395 3 400
+rect 7 395 10 400
+rect 14 395 17 400
+rect 50 395 53 400
+rect 57 395 60 400
+rect 64 395 67 400
+rect 27 317 29 319
+rect 27 300 29 302
+rect 0 295 3 300
+rect 7 295 10 300
+rect 14 295 17 300
+rect 50 295 53 300
+rect 57 295 60 300
+rect 64 295 67 300
+rect 27 217 29 219
+rect 27 200 29 202
+rect 0 195 3 200
+rect 7 195 10 200
+rect 14 195 17 200
+rect 50 195 53 200
+rect 57 195 60 200
+rect 64 195 67 200
+rect 27 117 29 119
+rect 27 100 29 102
+rect 0 95 3 100
+rect 7 95 10 100
+rect 14 95 17 100
+rect 50 95 53 100
+rect 57 95 60 100
+rect 64 95 67 100
+rect 27 17 29 19
+rect 27 0 29 2
+use ircontroller  ircontroller_0
+timestamp 1434171198
+transform 1 0 0 0 1 739
+box 0 60 67 109
+use irbit  irbit_7
+timestamp 1434186535
+transform 1 0 89 0 1 780
+box -89 -80 14 15
+use irbit  irbit_6
+timestamp 1434186535
+transform 1 0 89 0 1 680
+box -89 -80 14 15
+use irbit  irbit_5
+timestamp 1434186535
+transform 1 0 89 0 1 580
+box -89 -80 14 15
+use irbit  irbit_4
+timestamp 1434186535
+transform 1 0 89 0 1 480
+box -89 -80 14 15
+use irbit  irbit_3
+timestamp 1434186535
+transform 1 0 89 0 1 380
+box -89 -80 14 15
+use irbit  irbit_2
+timestamp 1434186535
+transform 1 0 89 0 1 280
+box -89 -80 14 15
+use irbit  irbit_1
+timestamp 1434186535
+transform 1 0 89 0 1 180
+box -89 -80 14 15
+use irbit  irbit_0
+timestamp 1434186535
+transform 1 0 89 0 1 80
+box -89 -80 14 15
+<< labels >>
+rlabel polysilicon 28 788 30 790 1 in7
+rlabel metal1 27 717 30 720 1 out7
+rlabel metal1 27 700 30 703 1 out7_
+rlabel polysilicon 28 688 30 690 1 in6
+rlabel metal1 27 617 30 620 1 out6
+rlabel metal1 27 600 30 603 1 out6_
+rlabel polysilicon 28 588 30 590 1 in5
+rlabel metal1 27 517 29 519 1 out5
+rlabel metal1 27 500 29 502 1 out5_
+rlabel polysilicon 28 488 30 490 1 in4
+rlabel metal1 27 417 29 419 1 out4
+rlabel metal1 27 400 29 402 1 out4_
+rlabel polysilicon 28 388 30 390 1 in
+rlabel polysilicon 28 388 30 390 1 in3
+rlabel metal1 27 317 29 319 1 out3
+rlabel metal1 27 300 29 302 1 out3_
+rlabel polysilicon 28 288 30 290 1 in2
+rlabel metal1 27 217 29 219 1 out2
+rlabel metal1 27 200 29 202 1 out2_
+rlabel polysilicon 28 188 30 190 1 in1
+rlabel metal1 27 117 29 119 1 out1
+rlabel metal1 27 100 29 102 1 out1_
+rlabel polysilicon 28 88 30 90 1 in0
+rlabel metal1 27 17 29 19 1 out0
+rlabel metal1 27 0 29 2 1 out0_
+<< end >>

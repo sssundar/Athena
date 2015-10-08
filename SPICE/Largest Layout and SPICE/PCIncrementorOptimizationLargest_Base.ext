@@ -1,0 +1,95 @@
+timestamp 1434163595
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use latchOutputMimic latchOutputMimic_0 1 0 6 0 1 22
+use inv_p32n16 inv_p32n16_0 1 0 54 0 1 19
+use nand_p32n32 nand_p32n32_0 1 0 110 0 1 24
+use nor_p64n16 nor_p64n16_0 1 0 250 0 1 23
+use inv_p8n4 inv_p8n4_0 -1 0 80 0 1 -32
+use trickyxor2 trickyxor2_0 1 0 119 0 1 -53
+use inv_p8n4 inv_p8n4_1 -1 0 186 0 1 -38
+use trickyxnor2 trickyxnor2_0 1 0 220 0 1 -72
+use inv_p8n4 inv_p8n4_2 -1 0 312 0 1 -41
+use PCIncrementorOptimizationLargest_BaseCell PCIncrementorOptimizationLargest_BaseCell_0[0:5:249][0:0:153] 1 0 249 0 1 0
+node "m1_161_n64#" 4 52828 161 -64 m1 0 0 0 0 0 0 0 0 0 0 0 0 1124 598 0 0 0 0
+node "m1_84_n24#" 1 7238 84 -24 m1 0 0 0 0 0 0 0 0 0 0 0 0 154 94 0 0 0 0
+node "m1_56_n7#" 1 9212 56 -7 m1 0 0 0 0 0 0 0 0 0 0 0 0 196 106 0 0 0 0
+node "GND" 3 31305 17 -9 m1 0 0 0 0 0 0 0 0 0 0 0 0 603 328 203 140 0 0
+node "m1_137_n6#" 3 30127 137 -6 m1 0 0 0 0 0 0 0 0 0 0 0 0 641 426 0 0 0 0
+node "FINALOUTPUT" 0 14100 1826 26 m1 0 0 0 0 0 0 0 0 0 0 0 0 300 74 0 0 0 0
+node "chainStart" 0 3760 -24 13 m1 0 0 0 0 0 0 0 0 0 0 0 0 80 48 0 0 0 0
+node "m1_288_28#" 1 13191 288 28 m1 0 0 0 0 0 0 0 0 0 0 0 0 237 156 136 76 0 0
+node "m1_131_17#" 2 24161 131 17 m1 0 0 0 0 0 0 0 0 0 0 0 0 451 280 224 120 0 0
+node "m1_n30_n20#" 3 30785 -30 -20 m1 0 0 0 0 0 0 0 0 0 0 0 0 655 374 0 0 0 0
+node "Vdd" 7 92465 16 38 m1 0 0 0 0 0 0 0 0 0 0 0 0 1593 834 1076 510 0 0
+node "a_172_n48#" 42 6236 172 -48 pc 0 0 0 0 28 22 0 0 0 0 0 0 88 64 0 0 0 0
+node "a_301_n37#" 25 8531 301 -37 pc 0 0 0 0 16 16 0 0 0 0 0 0 157 110 0 0 0 0
+node "a_68_n39#" 26 19562 68 -39 pc 0 0 0 0 16 16 0 0 0 0 0 0 306 186 320 192 0 0
+node "a_20_12#" 164 4284 20 12 pc 0 0 0 0 36 36 0 0 0 0 0 0 16 16 0 0 0 0
+cap "Vdd" "m1_161_n64#" 540
+cap "Vdd" "m1_137_n6#" 1215
+cap "Vdd" "m1_131_17#" 540
+cap "a_68_n39#" "m1_n30_n20#" 720
+cap "m1_131_17#" "m1_137_n6#" 540
+cap "m1_n30_n20#" "GND" 540
+cap "Vdd" "m1_288_28#" 675
+cap "m1_288_28#" "m1_137_n6#" 540
+cap "a_68_n39#" "m1_56_n7#" 1260
+cap "latchOutputMimic_0/flip0to1" "latchOutputMimic_0/a_n16_n22#" 240
+cap "inv_p32n16_0/a_n30_5#" "inv_p32n16_0/a_n28_0#" 240
+merge "nor_p64n16_0/cout" "PCIncrementorOptimizationLargest_BaseCell_0[0]/m1_94_n31#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14 0 -8 0 0
+merge "PCIncrementorOptimizationLargest_BaseCell_0[0]/m1_94_n31#" "PCIncrementorOptimizationLargest_BaseCell_0[0]/nand_p32n32_0/cin"
+merge "PCIncrementorOptimizationLargest_BaseCell_0[0]/nand_p32n32_0/cin" "m1_288_28#"
+merge "inv_p32n16_0/a_n30_5#" "latchOutputMimic_0/latchReadMimic" -790 0 0 0 0 0 -4 0 0 0 0 0 0 -9 -12 0 0 0 0
+merge "latchOutputMimic_0/latchReadMimic" "a_20_12#"
+merge "nor_p64n16_0/cin" "trickyxnor2_0/a" -9321 0 0 0 0 0 0 0 0 0 0 0 0 -187 -129 -44 -26 0 0
+merge "trickyxnor2_0/a" "nand_p32n32_0/cout"
+merge "nand_p32n32_0/cout" "m1_131_17#"
+merge "PCIncrementorOptimizationLargest_BaseCell_0[0]/m1_87_67#" "nor_p64n16_0/a_n46_25#" -611 0 0 0 0 0 0 0 0 0 0 0 0 -10 -84 0 -8 0 0
+merge "nor_p64n16_0/a_n46_25#" "nand_p32n32_0/a_n8_n18#"
+merge "nand_p32n32_0/a_n8_n18#" "inv_p32n16_0/a_n28_7#"
+merge "inv_p32n16_0/a_n28_7#" "latchOutputMimic_0/a_n16_n22#"
+merge "latchOutputMimic_0/a_n16_n22#" "trickyxor2_0/Vdd"
+merge "trickyxor2_0/Vdd" "trickyxor2_0/a"
+merge "trickyxor2_0/a" "inv_p8n4_0/a_n4_7#"
+merge "inv_p8n4_0/a_n4_7#" "m1_n30_n20#"
+merge "m1_n30_n20#" "m1_84_n24#"
+merge "m1_84_n24#" "PCIncrementorOptimizationLargest_BaseCell_0[0]/m1_87_n40#"
+merge "PCIncrementorOptimizationLargest_BaseCell_0[0]/m1_87_n40#" "inv_p8n4_2/a_n4_7#"
+merge "inv_p8n4_2/a_n4_7#" "trickyxnor2_0/Vdd"
+merge "trickyxnor2_0/Vdd" "inv_p8n4_1/a_n4_7#"
+merge "inv_p8n4_1/a_n4_7#" "Vdd"
+merge "PCIncrementorOptimizationLargest_BaseCell_0[0]/m1_87_n69#" "PCIncrementorOptimizationLargest_BaseCell_0[0]/m1_87_n7#" -1034 0 0 0 0 0 0 0 0 0 0 0 0 -22 -100 0 0 0 0
+merge "PCIncrementorOptimizationLargest_BaseCell_0[0]/m1_87_n7#" "inv_p8n4_2/a_n2_n26#"
+merge "inv_p8n4_2/a_n2_n26#" "trickyxnor2_0/GND"
+merge "trickyxnor2_0/GND" "trickyxnor2_0/b"
+merge "trickyxnor2_0/b" "inv_p8n4_1/a_n2_n26#"
+merge "inv_p8n4_1/a_n2_n26#" "nor_p64n16_0/a_n48_23#"
+merge "nor_p64n16_0/a_n48_23#" "trickyxor2_0/GND"
+merge "trickyxor2_0/GND" "inv_p8n4_0/a_n2_n26#"
+merge "inv_p8n4_0/a_n2_n26#" "nand_p32n32_0/a_n5_n31#"
+merge "nand_p32n32_0/a_n5_n31#" "inv_p32n16_0/a_n14_n26#"
+merge "inv_p32n16_0/a_n14_n26#" "latchOutputMimic_0/a_n7_8#"
+merge "latchOutputMimic_0/a_n7_8#" "GND"
+merge "GND" "m1_56_n7#"
+merge "m1_56_n7#" "m1_137_n6#"
+merge "m1_137_n6#" "m1_161_n64#"
+merge "PCIncrementorOptimizationLargest_BaseCell_0[5]/m1_288_28#" "FINALOUTPUT" -282 0 0 0 0 0 0 0 0 0 0 0 0 -6 -10 0 0 0 0
+merge "trickyxor2_0/b" "inv_p8n4_0/a_n6_5#" -1768 0 0 0 0 0 -8 0 0 0 0 0 0 -16 -32 0 0 0 0
+merge "inv_p8n4_0/a_n6_5#" "nand_p32n32_0/cin"
+merge "nand_p32n32_0/cin" "inv_p32n16_0/a_n28_0#"
+merge "inv_p32n16_0/a_n28_0#" "a_68_n39#"
+merge "inv_p8n4_1/a_n6_5#" "trickyxor2_0/xor" -956 0 0 0 0 -4 -10 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "trickyxor2_0/xor" "a_172_n48#"
+merge "inv_p8n4_2/a_n6_5#" "trickyxnor2_0/xnor" -898 0 0 0 0 -3 -8 0 0 0 0 0 0 -3 -11 0 0 0 0
+merge "trickyxnor2_0/xnor" "a_301_n37#"
+merge "latchOutputMimic_0/flip0to1" "chainStart" -376 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "PCIncrementorOptimizationLargest_BaseCell_0[1:5]/m1_87_n69#" "PCIncrementorOptimizationLargest_BaseCell_0[0:4]/m1_161_n64#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "PCIncrementorOptimizationLargest_BaseCell_0[1:5]/m1_87_n7#" "PCIncrementorOptimizationLargest_BaseCell_0[0:4]/m1_137_n6#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "PCIncrementorOptimizationLargest_BaseCell_0[1:5]/m1_87_n40#" "PCIncrementorOptimizationLargest_BaseCell_0[1:5]/m1_87_67#" -1034 0 0 0 0 0 0 0 0 0 0 0 0 -22 -56 0 0 0 0
+merge "PCIncrementorOptimizationLargest_BaseCell_0[1:5]/m1_87_67#" "PCIncrementorOptimizationLargest_BaseCell_0[0:4]/m1_87_67#"
+merge "PCIncrementorOptimizationLargest_BaseCell_0[1:5]/m1_94_n31#" "PCIncrementorOptimizationLargest_BaseCell_0[1:5]/nand_p32n32_0/cin" -152 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -8 -20 0 0
+merge "PCIncrementorOptimizationLargest_BaseCell_0[1:5]/nand_p32n32_0/cin" "PCIncrementorOptimizationLargest_BaseCell_0[0:4]/m1_288_28#"

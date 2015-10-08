@@ -1,0 +1,235 @@
+magic
+tech scmos
+timestamp 1434174971
+<< polysilicon >>
+rect -33 1698 -31 1718
+rect 129 1698 131 1711
+rect 83 1696 131 1698
+<< metal1 >>
+rect -37 1711 -34 1720
+rect -37 1708 10 1711
+rect -34 1693 -30 1694
+rect -7 1680 -4 1683
+rect 0 1680 3 1683
+rect 7 1680 10 1708
+rect 14 1680 17 1701
+rect 21 1680 24 1683
+rect 57 1680 60 1711
+rect 64 1695 79 1698
+rect 64 1680 67 1695
+rect 73 1680 74 1681
+rect -7 1480 -4 1584
+rect 0 1576 3 1584
+rect 7 1576 10 1584
+rect 14 1576 17 1584
+rect 21 1576 24 1584
+rect 57 1576 60 1584
+rect 64 1576 67 1584
+rect 71 1576 74 1584
+rect 78 1576 81 1584
+rect 85 1576 88 1683
+rect 0 1480 3 1484
+rect 7 1480 10 1484
+rect 14 1480 17 1484
+rect 21 1480 24 1484
+rect 57 1480 60 1484
+rect 64 1480 67 1484
+rect 71 1480 74 1484
+rect 78 1480 81 1484
+rect -7 1277 -4 1381
+rect 0 1373 3 1381
+rect 7 1373 10 1381
+rect 14 1373 17 1381
+rect 21 1373 24 1381
+rect 57 1373 60 1381
+rect 64 1373 67 1381
+rect 71 1373 74 1381
+rect 78 1373 81 1381
+rect 85 1349 88 1484
+rect 0 1277 3 1281
+rect 7 1277 10 1281
+rect 14 1277 17 1281
+rect 21 1277 24 1281
+rect 57 1277 60 1281
+rect 64 1277 67 1281
+rect 71 1277 74 1281
+rect 78 1277 81 1281
+rect -7 1074 -4 1178
+rect 0 1170 3 1178
+rect 7 1170 10 1178
+rect 14 1170 17 1178
+rect 21 1170 24 1178
+rect 57 1170 60 1178
+rect 64 1170 67 1178
+rect 71 1170 74 1178
+rect 78 1170 81 1178
+rect 85 1146 88 1281
+rect 0 1074 3 1078
+rect 7 1074 10 1078
+rect 14 1074 17 1078
+rect 21 1074 24 1078
+rect 57 1074 60 1078
+rect 64 1074 67 1078
+rect 71 1074 74 1078
+rect 78 1074 81 1078
+rect -7 849 -4 1000
+rect 0 967 3 975
+rect 7 967 10 975
+rect 14 967 17 975
+rect 21 967 24 975
+rect 57 967 60 975
+rect 64 967 67 975
+rect 71 967 74 975
+rect 78 967 81 975
+rect 85 967 88 1078
+rect 0 849 3 875
+rect 7 849 10 875
+rect 14 849 17 875
+rect 21 849 24 875
+rect 57 849 60 875
+rect 64 849 67 875
+rect 71 849 74 875
+rect 78 849 81 875
+rect -7 599 -4 750
+rect 0 717 3 750
+rect 7 717 10 750
+rect 14 717 17 750
+rect 21 717 24 750
+rect 57 717 60 750
+rect 64 717 67 750
+rect 71 717 74 750
+rect 78 717 81 750
+rect 85 717 88 875
+rect 0 599 3 625
+rect 7 599 10 625
+rect 14 599 17 625
+rect 21 599 24 625
+rect 57 599 60 625
+rect 64 599 67 625
+rect 71 599 74 625
+rect 78 599 81 625
+rect -7 349 -4 500
+rect 0 467 3 500
+rect 7 467 10 500
+rect 14 467 17 500
+rect 21 467 24 500
+rect 57 467 60 500
+rect 64 467 67 500
+rect 71 467 74 500
+rect 78 467 81 500
+rect 85 467 88 689
+rect 0 349 3 375
+rect 7 349 10 375
+rect 14 349 17 375
+rect 21 349 24 375
+rect 57 349 60 375
+rect 64 349 67 375
+rect 71 349 74 375
+rect 78 349 81 375
+rect -7 99 -4 250
+rect 0 217 3 250
+rect 7 217 10 250
+rect 14 217 17 250
+rect 21 217 24 250
+rect 57 217 60 250
+rect 64 217 67 250
+rect 71 217 74 250
+rect 78 217 81 250
+rect 85 217 88 439
+rect 0 99 3 125
+rect 7 99 10 125
+rect 14 99 17 125
+rect 21 99 24 125
+rect 57 99 60 125
+rect 64 99 67 125
+rect 71 99 74 125
+rect 78 99 81 125
+rect 85 0 88 189
+<< metal2 >>
+rect 136 1705 140 1723
+rect 18 1701 140 1705
+rect -30 1689 74 1693
+rect 70 1687 74 1689
+<< polycontact >>
+rect -34 1694 -30 1698
+rect 79 1694 83 1698
+<< m2contact >>
+rect 136 1723 140 1727
+rect -34 1689 -30 1693
+rect 14 1701 18 1705
+rect 70 1683 74 1687
+use pc_controller  pc_controller_0
+timestamp 1434174869
+transform 1 0 35 0 1 1840
+box -73 -132 101 -17
+use pcevenbit  pc14
+timestamp 1434158463
+transform 1 0 26 0 1 1659
+box -33 -75 55 24
+use pcoddbit  pc13
+timestamp 1434099957
+transform 1 0 44 0 1 1531
+box -44 -47 44 45
+use pcevenbit  pc12
+timestamp 1434158463
+transform 1 0 26 0 1 1456
+box -33 -75 55 24
+use pcoddbit  pc11
+timestamp 1434099957
+transform 1 0 44 0 1 1328
+box -44 -47 44 45
+use pcevenbit  pc10
+timestamp 1434158463
+transform 1 0 26 0 1 1253
+box -33 -75 55 24
+use pcoddbit  pc9
+timestamp 1434099957
+transform 1 0 44 0 1 1125
+box -44 -47 44 45
+use pcevenbit  pc8
+timestamp 1434158463
+transform 1 0 26 0 1 1050
+box -33 -75 55 24
+use pcoddbit  pc7
+timestamp 1434099957
+transform 1 0 44 0 1 922
+box -44 -47 44 45
+use pcevenbit  pc6
+timestamp 1434158463
+transform 1 0 26 0 1 825
+box -33 -75 55 24
+use pcoddbit  pc5
+timestamp 1434099957
+transform 1 0 44 0 1 672
+box -44 -47 44 45
+use pcevenbit  pc4
+timestamp 1434158463
+transform 1 0 26 0 1 575
+box -33 -75 55 24
+use pcoddbit  pc3
+timestamp 1434099957
+transform 1 0 44 0 1 422
+box -44 -47 44 45
+use pcevenbit  pc2
+timestamp 1434158463
+transform 1 0 26 0 1 325
+box -33 -75 55 24
+use pcoddbit  pc1
+timestamp 1434099957
+transform 1 0 44 0 1 172
+box -44 -47 44 45
+use pcevenbit  pc0
+timestamp 1434158463
+transform 1 0 26 0 1 75
+box -33 -75 55 24
+<< labels >>
+rlabel metal1 -7 1680 -4 1683 4 reset
+rlabel metal1 0 1680 3 1683 5 phi1
+rlabel metal1 7 1680 10 1683 5 branch_w
+rlabel metal1 14 1680 17 1683 5 inc_w
+rlabel metal1 21 1680 24 1683 5 GND
+rlabel metal1 57 1680 60 1683 5 Vdd
+rlabel metal1 64 1680 67 1683 5 inc_w_
+rlabel space 71 1680 74 1683 5 branch_w_
+rlabel metal1 85 1680 88 1683 6 reset_
+<< end >>

@@ -1,0 +1,25 @@
+import "globals.cast";
+import "shift_control.cast";
+import "shiftcell.cast";
+
+// Here we only invert "sign" because in MAGIC we'll take it out of
+// the register internally (see shift_control.cast), and we can't do that in CAST.
+// toFile is for testing.
+define shiftblock(int N)(node[N] busIn, busOut, toFile) {
+  node w, w_, r, r_, shift, shift_;
+  node MSBsign, MSBsign_, shiftInToMSB;
+  node[N+1] s;
+
+  s[N] = shiftInToMSB;
+  MSBsign = s[N-1];
+
+  shift_control Ctl(MSBsign_, shift, shift_, w, w_, r, r_, shiftInToMSB);
+
+  < i: N : shiftcell SReg[i](busIn[i], w, w_, r, r_, shift, shift_, s[i+1],
+                            busOut[i], s[i], toFile[i]); >
+
+  prs {
+     MSBsign -> MSBsign_-
+    ~MSBsign -> MSBsign_+
+  }
+}

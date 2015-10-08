@@ -1,0 +1,104 @@
+magic
+tech scmos
+timestamp 1434165108
+<< polysilicon >>
+rect 176 -48 179 -44
+<< metal1 >>
+rect 87 67 184 71
+rect 188 70 336 71
+rect 188 67 310 70
+rect 107 39 111 67
+rect 231 57 237 67
+rect 258 57 262 67
+rect 314 67 336 70
+rect 197 29 239 32
+rect 197 28 220 29
+rect 197 20 200 28
+rect 224 28 239 29
+rect 288 28 334 31
+rect 131 17 200 20
+rect 258 -3 262 20
+rect 321 15 324 28
+rect 321 11 326 15
+rect 330 11 336 15
+rect 87 -7 105 -3
+rect 112 -6 336 -3
+rect 112 -7 138 -6
+rect 87 -36 90 -21
+rect 94 -27 97 -14
+rect 184 -22 188 -21
+rect 269 -21 297 -18
+rect 220 -27 224 -21
+rect 94 -31 99 -27
+rect 294 -33 297 -21
+rect 310 -22 317 -21
+rect 310 -25 319 -22
+rect 311 -27 336 -25
+rect 316 -28 336 -27
+rect 87 -40 99 -36
+rect 212 -39 220 -35
+rect 294 -36 301 -33
+rect 92 -45 96 -40
+rect 92 -49 100 -45
+rect 172 -53 175 -48
+rect 156 -56 175 -53
+rect 139 -65 142 -63
+rect 161 -64 188 -60
+rect 87 -69 142 -65
+rect 184 -78 188 -64
+rect 212 -78 215 -39
+rect 292 -78 296 -48
+rect 310 -78 314 -67
+rect 333 -78 336 -65
+rect 184 -82 336 -78
+<< metal2 >>
+rect 87 -13 94 -9
+rect 184 -17 188 67
+rect 314 66 315 67
+rect 220 -17 224 25
+rect 188 -21 210 -17
+rect 206 -44 210 -21
+rect 220 -27 224 -21
+rect 310 -17 315 66
+rect 326 -9 330 11
+rect 326 -13 336 -9
+rect 314 -21 315 -17
+rect 310 -25 315 -21
+rect 206 -48 220 -44
+<< polycontact >>
+rect 301 -37 305 -33
+rect 172 -48 176 -44
+<< m2contact >>
+rect 184 67 188 71
+rect 310 66 314 70
+rect 220 25 224 29
+rect 326 11 330 15
+rect 94 -14 98 -10
+rect 184 -21 188 -17
+rect 220 -21 224 -17
+rect 310 -21 314 -17
+use nand_p8n8  nand_p8n8_0
+timestamp 1434160513
+transform 1 0 110 0 1 24
+box -23 -31 21 17
+use nor_p16n4  nor_p16n4_0
+timestamp 1434160018
+transform 1 0 250 0 1 23
+box -11 -5 38 34
+use trickyxor2  trickyxor2_0
+timestamp 1434144344
+transform 1 0 119 0 1 -53
+box -20 -11 44 43
+use inv_p8n4  inv_p8n4_1
+timestamp 1434159005
+transform -1 0 186 0 1 -38
+box -6 -26 8 16
+use trickyxnor2  trickyxnor2_0
+timestamp 1434146939
+transform 1 0 220 0 1 -72
+box 0 4 76 54
+use inv_p8n4  inv_p8n4_2
+timestamp 1434159005
+transform -1 0 312 0 1 -41
+box -6 -26 8 16
+<< end >>

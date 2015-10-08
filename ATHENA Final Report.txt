@@ -1,0 +1,381 @@
+#############################################################
+# Sushant Sundaresh & Brian Kubisiak						#
+# CS 181 Spring 2015 ATHENA Microprocessor, Final project  	#
+# Revised Proposal, Documentation, and Final Report. 		#
+#############################################################
+
+This documentation should be read alongside the ATHENA spec.
+
+###########################
+# Full ATHENA System CAST #
+###########################
+The system CAST passes in its entirety.
+
+Please see ~/CAST/OrganizedCast for an easier view into the system plan.
+
+See athenaCASTTest.tcl, systest.tcl and CASTpassesSYSTEST.tcl in ~/CAST/IRSIM CAST Test Logs for test benches.
+
+The CAST .sim file is provided to configure and run the systest.tcl testbench.
+
+####################################
+# Full ATHENA System MAGIC Testing #
+####################################
+We were not able to get our full MAGIC working. 
+
+Here's what we know for sure: we fit within 1900x1900 square lambda.
+Our CAST is perfect & our individual MAGIC block layouts work. 
+Our critical path has been identified & SPICE simulated, and 
+its transistor sizing has been optimized.
+
+At midnight on June 13, 2015, we had the datapath finished, with registers tested. 
+Every element of logic needed for the full system had been laid out individually, but the 
+control block elements had not yet been wired in.
+
+We ran out of time. Our choices were to rush, invariably make errors, then turn in a complete but 
+useless layout, or leave things as they were - with an equally functional end-layout. 
+
+#######################
+# Approximate Numbers #
+#######################
+
+Transistor Count
+NFET 1516
+PFET 1561
+
+IRSIM CAST Min Clock Parameters were approximately 50ns steps.
+Thus a first order estimate of 20MHz is expected for the design.
+
+Our adder (optimized) simulates in SPICE at about 20GHz worst case.
+
+######################
+######################
+## Revised Proposal ##
+######################
+######################
+
+###############
+# Description #
+###############
+For our project, we will be doing an Athena processor. 
+
+We will, in addition,
+- design a PWM peripheral (and 2 accompanying instructions)
+- design the control logic entirely by hand (no PLAs)
+- optimize our program counter incrementor
+
+The PC must for branch instructions increment every clock cycle and therefore
+its ripple carry chain is the most likely candidate for our critical path, which
+we are trying to minimize using a combination of common sense, logic minimization, 
+and transistor sizing aided by SPICE. 
+
+The PWM module will consist of the following components:
+ -  An 8-bit counter that will increment every clock cycle.
+ -  An 8-bit compare register (register 3) defining the duty cycle of the PWM output.
+ -  Some combinational logic for setting the state of the output.
+
+For controlling the PWM, the following instructions will be supported:
+ -  PWMA: Activate the PWM output.
+ -  PWMD: Disable the PWM output, tying the output to ground (as on reset)
+A MOV instruction should be sufficient to set the duty cycle of the PWM output to the value 
+stored in the given register. In order to free up a pin for the PWM output, our processor 
+will only support 15-bit addresses.
+
+The PWM will be intended for audio applications and the like - not for interrupt generation.
+It can glitch for at most one PWM cycle on changes to its compare register.
+
+######################
+# Inputs and Outputs #
+######################
+All of the inputs/outputs for our project are listed below. All buses have
+the high index as their MSB.
+
+Pin     Pin Name    Description
+--------------------------------------------------------------------------------
+0..7    out[0..7]   Output bus for data/address lines to the data memory.
+8..15   in[0..7]    Input bus for reading from the data or instruction memory.
+16..30  addr[0..14] Address bus to the instruction memory.
+31      pwm         PWM output, controlled by the PWM register.
+32      datawrite   Indicates a write to the data memory. Guaranteed to be asserted
+		    only after the out bus has stabilized (one clock phase separted).
+33      addrselect  Write a new address to the data memory address bus. Guaranteed to be asserted
+		    only after the out bus has stabilized (one clock phase separted).
+34      memselect   Select whether to read from data or instruction memory.
+
+It is assumed that memselect controls a combinational mux between the data memory input
+and the instruction memory input. It is assumed that addrselect latches the out bus
+to the data memory external address register on a 4-phase clock as we do, though
+the current design would work even for edge-latching.
+
+#############
+# Floorplan # 
+#############
+The blocks for the floorplan are labeled below.
+  
+ 1  Input Register.
+ 2  Output Bus
+ 3  Instruction Register
+ 4  Control Path & Complement, and upper dataPath branch
+ 5  PC Most Significant Byte Register (for holding 7 MSBs of the 2nd instruction byte of JMP/BRZ/BRC)
+ 6  Register 7.
+ 7  Register 6.
+ 8  Register 5.
+ 9  Register 4.
+ 10 Register 3 (PWM compare register)
+    PWM counter register
+    PWM counter incrementer
+    PWM comparator
+ 11 Register 2 (adder accumulator)
+    Adder/subtracter & carry flag latch
+ 12 Register 1 (logical accumulator and zero flag node)
+    FBlock
+ 13 Register 0 (shifter accumulator)
+ 14 Optimized PC incrementer
+    Program counter
+ 15 Instruction Cycle Counter
+ 16 Register/PC/IR/InputRegister Controllers & Instruction Decoding
+
+##################
+# Major Sections #
+##################
+Above, elements [1,3,4,5,14,15,16] comprise the control block (which contains a branch of the lower datapath into (5).
+The remainder comprise the data/compute path consisting of all registers in the register file detailed below, and their associated
+functional compute blocks, also detailed below.
+
+We have one large control block roughly organized into instruction decoders and register controllers. 
+The layout for these controllers follows that of the lower branch of the datapath. 
+The logic is entirely by hand - no PLAs.
+
+########################
+# Instruction Encoding # 
+########################
+Instruction 	FirstByte 	Bytes 		Clocks 	 	Description
+MOV d, r 	11rrrddd 	1 		2		Overwrite register d with value in register r		
+ADD a, r	10rrr000	1		2 		add register r to register a, overwriting a, and setting carry-out flag
+SUB a, r	10rrr001	1		2 		subtract register r from register a, overwriting a, and setting carry flag
+OUT r		10rrr010	1		2 		write the value in register r to the data memory, at whatever address
+										is currently latched into the external address register. only asserts
+										datawrite on phi0 to ensure output bus has time to stabilize on previous phi1.
+ADDR r		10rrr011	1		2 		write the value in register r to the external address register. addrselect
+										is asserted on phi0 for the same reason as above.
+AND l, r	10rrr100	1		2 		bitwise AND of registers r and l, stored in l. changes z flag.
+OR l, r		10rrr101	1		2 		bitwise OR 
+XOR l, r	10rrr110	1		2 		bitwise XOR
+IN d		01001ddd	1		2 		sets memselect on phi1 of its second clock cycle (after instruction has been
+										latched) to take the input bus from the data memory. writes this byte into register d.
+CIN d		01010ddd	2		2 		writes the 2nd instruction byte in program memory into register d.
+JMP 		00110000	3		3 		set instruction address to the trailing 2 bytes (MSB of the first byte is ignored for 15 bit address).
+BRZ			00101000	3		3		JMP conditional on zero flag being set.
+BRC			00100100	3		3	 	JMP condiitonal on carry flag being set.
+LSR s		00000010	1		2	 	shift register s right by one bit, shifting in a 0 to the MSB
+ASR s		00000011	1		2	  	shift register s right by one bit, shifting in the MSB to the MSB (sign extension).
+PWMA		00011000	1		2		activate the output enable of the PWM on the second cycle phi0 of this instruction. 
+PWMD 		00010100	1		2		deactivate the output enable of the PWM on the second cycle phi0 of this instruction. 
+NOP 		00000000	1		2 		no operation, just increment program counter
+
+#################
+# Register File #
+#################
+The instructions operate on an 8-bit register file, described below. This comprises the storage internal to our CPU. 
+All these registers lie along the lower branch of the datapath. The special registers serve dual purpose - 
+they all have associated logic (incrementors, f-cells, shifting logic, pwm output logic) that confer functionality upon our CPU.
+
+Register File 	Special Function 		Designation
+0 				additive accumulator 		a
+1  				logical accumulator 		l
+2 				right shift register		s
+3 				pwm duty-cycle register		p
+4				non-specific 				-
+5				non-specific 				-
+6				non-specific 				-
+7				non-specific 				-
+
+#################
+# Compute Flags #
+#################
+Operations on the additive and logical accumulators can in addition set the following flags:
+
+flags 		Set by 										Description
+c 			add/sub instructions, latched				asserted if last add/sub instruction yielded a carry-out of 1 using
+														twos complement addition for subtraction. that is, 2-1 will set c.
+z  			and/or/xor/mov instructions, combinational  asserted if current logical accumulator is 0 (combinationally, unlatched,
+														so even MOV instructions can set this).
+
+These flags are used exclusively by the BRC and BRZ instructions for conditional branching. 
+
+########################
+# Additional Registers # 
+########################
+It should be noted that there exist five other registers not shown in the register file. These, the PWM count accumulator, program counter, 
+program counter branch-address holding register, instruction register, and input register, have clear functionality and are 
+better associated with the control path than the datapath. 
+
+#####################################
+# Control Logic & Timing Discussion #
+#####################################
+I'm going to describe the system timing by example.
+
+Consider first JMP/BRZ/BRC instruction. We're aligned on phi1-phi0.
+
+Clock Phase 		Activity 	
+phi0 (prev instr) 	PC->PC+1 written, directly outputs to addr, new instruction stabilizes on in bus.
+
+Instruction Cycle 0
+phi1 (this instr) 	instruction cycle count (ICC) stabilizes to 0. in this time we might repeat
+			some "read" activities of the previous instruction to various buses. this is only possibly problematic
+			for external logic - e.g. OUT, ADDR, but in those instructions we do not modify the things we read,
+			so reading them again onto the dataPath (and therefore the output bus) is no issue.
+
+			then, the ICC -> 0. Immediately we force the control path to NOP so no 'previous instruction' writes
+			can happen again - which WOULD be a problem.
+			
+			now we read the input bus into the datapath through the input egister
+			and we compute the increment of the PC, and the ICC.
+
+phi0 			we write the ICC++ (doesn't yet update perceived ICC) and PC++ (direct to addr)
+			we write the IR from the datapath (not yet perceived by control path).
+
+Instruction Cycle 1
+phi1 			ICC stabilizes on reading out to 1. But the 'old instruction' was a NOP - so nothing happens.
+			we read the input bus (next instruction byte) into the datapath, and read the
+			actual instruction to the control path from IR.
+			notice if we had not latched the previous instruction byte, but had tried to do the instruction->control path
+			in one cycle, there's a strong chance in a physical system with latency, that we'd overwrite some of our
+			IR bits with the next instruction byte.
+
+phi0 			we write the ICC++ and PC++ but since ICC = 1 we do not write a new IR.
+			we write the next instruction byte to our PC' most-significant-byte register for future loading into the PC.
+
+Instruction Cycle 2
+phi1 			once ICC stabilizes to 2, we read the IR to the control path again, which is no issue - it's stable.
+			we also read again from the input bus to the datapath, and by using a PC' register, and a 4 phase clock,
+			guarantee that there's no chance of accidental mixup between the upper and lower bytes of the branch address.
+			we read PC' to the PC branch address load inputs, and the lower datapath goes the the PC branch address load
+			as well. Here, we compute whether or not to branch based on long-stable flags.
+
+phi0 			we write the ICC->0 and either write the increment of the PC or the branch address to the PC. 
+
+Now we can just move on to the next instruction.
+
+The point being, there was a good reason for latching the IR and the PC' as separate registers intead of just half-registers. 
+I was paranoid about IRSIM timing issues and opted for a minimum 2-cycle instruction over a faster 1-cycle instruction
+with likely race conditions.
+
+Notice now that for other instructions, the first cycle (cycle0) is common, and in the second cycle, for everything but IN/CIN, we have
+
+ICC = 1
+phi1 			ICC->0 compute
+phi0 			write ICC 0 and do not write the incremented PC
+
+and for IN, we have
+ICC = 1
+phi1 			ICC->0 compute, set MEMSEL, read IN to DP 
+phi0 			write ICC 0 and do not write the incremented PC
+
+whereas for CIN, we have
+ICC = 1
+phi1 			ICC->0 compute, do not set MEMSEL, read IN to DP 
+phi0 			write ICC 0 and do write the incremented PC
+
+
+As for system control logic, well, it's pretty evident from the instruction encoding that the instruction bytes are well organized into
+functional blocks. Take a look at my globals.cast - specifically the flags for BranchInstruction, ... PWMInstruction. They make it fairly clear how to decode the bytes using mostly nor2,3,4 gates. 
+
+##########################################
+# Aside on the use of the PWM Peripheral #
+##########################################
+You'll have noticed that when you change the PWM compare register, the change happens immediately. So if you're actively outputting a PWM signal, 
+and you're in the middle of a PWM cycle, there's a strong change the current cycle will not be accurate. So if you're using the PWM to generate an interrupt, 
+good luck, but if you're running audio or motor control, that's what it was designed for.
+
+################
+# Misc. Asides #
+################
+- CAST does not exactly match layout; for the most part it does,
+but tricky XOR, XNOR, and some funny feedback tricks Brian found
+for simplifying the shift register extend logic were not CASTED
+as they were laid out.
+
+- Please follow the RESET and clocking convention defined in
+~/CAST/OrganizedCAST/Testing/systest.tcl
+
+##############################
+# Aside on Transistor Sizing #
+##############################
+Where possible transistors were balanced, but we felt that the ripple carry chain in the
+15-bit program counter was likely to be so slow that even with optimization,
+we could afford in some cases, in the control logic, to leave transistors unbalanced.
+The largest number of transistors in series was 4.
+
+###############################################
+# Aside on Placement of Drivers & Staticizers #
+###############################################
+You'll notice the control path is not staticized - that's because it is driven combinationally by the IR.
+You'll also notice the output bus is not driven; that's because we expect to be sending the bus to a pad.
+The same is true of all external outputs, such as addrselect. 
+
+####################
+# Aside on Testing #
+####################
+Local testing was critical to getting our ATHENA CAST to work, but only tests demonstrating full system 
+functionality are documented, for brevity.
+
+###################
+# Aside on resets #
+###################
+Only our PC, IR, ICC, and PWM Counter reset on startup. Everything else (including the carry-out latch) will show up as an X.
+Our specification is thus: if you use a functionality before preparing for it, i.e. BRC off the bat, then we do not guarantee defined results. 
+
+
+################################################
+# Discussion of SPICE-Optimized PC Incrementor #
+################################################
+The PC incrementor is a 15-bit ripple carry chain. The PC is added to 0 with a carry-in of 1. It turns out this type of addition can be 
+simplified to a pure XOR for computing the sum, and an AND for computing the carry, if everything is done in positive logic.
+However, if you just allow polarity switching, and start with an inverted carry-in, it can be shown that the following works as well:
+
+nor2 - nand2 - nor2 - nand2 ... for the carry chain
+xnor - xor   - xnor - xor 	for the sum computation
+
+cin0_ is required. Since we're incrementing, cin0_ = 0, and the first nor2 and xnor reduce to a single inverter. That is, 
+
+inv - nand2 - nor2 - nand2 ... for the carry chain
+inv - xor   - xnor - xor 	for the sum computation
+
+Now, The even bits (0,2,..) must be inverted, that is, when loaded, the loading value must be inverted before it is latched, and when 
+outputting to the address bus from the latched internal node (ungated, as we designed, so that address changes happen on phi0 with time 
+to spare before a new address is required on phi0), no inverter is necessary. The odd bits (1,3..) can take the loading input as is, 
+but must be inverted to the address bus from the internal latched node. 
+
+The beauty of this design is, the inverters for loading/outputting to the address bus only matter on phi0 cycles. On phi1 cycles, when 
+the incrementor is in play, they are already charged up and present no load. Thus we took the original xor-and incrementor and converted 
+it into purely negative logic along the ripple chain, with xor/xnor sum computations direct to registers, which means our "load" at each 
+element of the ripple carry chain is one negative sized nand/nor and one small xor/xnor. 
+
+We can keep the xor/xnor balanced but small because their delay is tiny relative to the ripple. The final xor/xnor to the 15th bit of the PC 
+could be sized, but its effect on the full delay is additive and small relative to the ripple, again. The initial inverter should be sized, 
+and at this point, it isn't clear if an exponential-gain stage is required from the PCbit0 latch output to the first inverter.
+
+We chose to focus on the ripple exclusively for SPICE-based sizing simulations. 
+
+We modeled only the combinational elements for SPICE optimization. We put a normal sized inverter on the output of each xnor/xor to simulate a 
+gate load, and in the beginning, we placed a latch mimic (two series transistors) to set of the carry chain, modeling the output of the PC bit0
+latch. The initial inverter, and all nor/nands, were balanced, then sized either 1x, 2x, or 4x. 
+
+These elements can be seen in SPICE/Sized(NAND/NOR/Inverters) and SPICE/Latch Mimic.
+
+The final layouts with the whole chain were preset to mimic a register value of 0x7FFF - so an increment would ripple the whole way, the worst case delay. 
+
+These are shown for the smallest and largest sized chains in SPICE/Smallest Layout and SPICE and its counterpart. 
+
+Now, in SPICE/Delay Plots it's clear that the larger transistors produce an incrementor with about a 20GHz max clock speed, while the smaller 
+ones produce a 6.2GHz max clock.
+
+Since we really do not expect this microprocessor to be running at 20GHz, and since 20GHz takes transistors that still only require about 100 
+lambda of width for the full incrementor, we decided that it was not worth further optimization, that we'd just stick with the largest transistors 
+tested, safe in the knowledge that our critical path lies elsewhere. 
+
+Since the inverter at the start of the chain is only 4x the size of a normal inverter, technically since the latch output of the first PC 
+bit has two transistors in series the effective strength is about 1/2, and it would seem we would gain from sizing a gain stage at the 
+start of the chain. But, since our adder is already too fast, we don't care - the size cost isn't offset by the speed gain.
+
+The final worst case delay of the sized incrementor (0x7FFF + 1) was found to be about 48 picoseconds.

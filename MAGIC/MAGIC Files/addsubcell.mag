@@ -1,0 +1,59 @@
+magic
+tech scmos
+timestamp 1434084532
+<< polysilicon >>
+rect -47 92 -14 94
+rect -16 74 -14 92
+rect -30 72 -14 74
+rect -30 70 -28 72
+rect -44 68 -28 70
+<< metal1 >>
+rect -104 88 -101 113
+rect -97 88 -94 113
+rect -90 88 -87 113
+rect -83 88 -80 113
+rect -76 88 -73 113
+rect -51 95 -47 96
+rect -34 88 -31 113
+rect -27 88 -24 113
+rect -20 88 -17 113
+rect -13 88 -10 113
+rect -6 88 -3 113
+rect 49 110 53 113
+rect 130 110 134 113
+rect 162 110 166 113
+rect -48 35 -46 39
+<< metal2 >>
+rect -47 96 119 100
+rect -63 11 -59 84
+rect -42 35 61 39
+rect 57 34 61 35
+rect -63 7 10 11
+<< polycontact >>
+rect -51 91 -47 95
+<< m2contact >>
+rect -51 96 -47 100
+rect -46 35 -42 39
+use accumbit  accumbit_0
+timestamp 1433920747
+transform 1 0 -69 0 1 69
+box -35 -69 66 19
+use addsubbit  addsubbit_0
+timestamp 1434083745
+transform 1 0 49 0 1 0
+box -49 0 117 113
+<< labels >>
+rlabel metal1 -104 110 -101 113 4 phi1
+rlabel metal1 -97 110 -94 113 5 ld
+rlabel metal1 -90 110 -87 113 5 w
+rlabel metal1 -83 110 -80 113 5 r
+rlabel metal1 -27 110 -24 113 5 r_
+rlabel metal1 -20 110 -17 113 5 w_
+rlabel metal1 -13 110 -10 113 5 ld_
+rlabel metal1 -6 110 -3 113 5 phi1_
+rlabel space 0 110 3 113 5 add
+rlabel space 35 110 39 113 5 sub
+rlabel metal1 130 110 134 113 5 cout
+rlabel metal1 162 110 166 113 6 Vdd
+rlabel metal1 49 110 53 113 5 GND
+<< end >>

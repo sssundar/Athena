@@ -1,0 +1,194 @@
+magic
+tech scmos
+timestamp 1434182311
+<< error_s >>
+rect 27 481 28 486
+rect 13 425 17 438
+rect 27 425 31 433
+rect 13 417 17 419
+rect 27 417 35 419
+rect 27 412 28 417
+rect 13 356 17 369
+rect 27 356 31 364
+rect 13 348 17 350
+rect 27 348 35 350
+rect 27 343 28 348
+rect 13 287 17 300
+rect 27 287 31 295
+rect 13 279 17 281
+rect 27 279 35 281
+rect 27 274 28 279
+rect 13 218 17 231
+rect 27 218 31 226
+rect 13 210 17 212
+rect 27 210 35 212
+<< polysilicon >>
+rect 38 614 59 616
+rect 38 606 59 608
+rect 38 598 59 600
+rect 38 590 59 592
+rect 38 582 59 584
+rect 38 574 59 576
+<< metal1 >>
+rect 7 640 10 644
+rect 43 640 46 643
+rect -8 560 -5 563
+rect -8 545 -5 550
+rect -1 545 2 550
+rect 7 545 10 550
+rect 43 545 46 550
+rect 49 545 52 550
+rect 56 545 59 550
+rect 29 481 35 485
+rect -8 476 -5 481
+rect -1 476 2 481
+rect 7 476 10 481
+rect 43 476 46 481
+rect 49 476 52 481
+rect 56 476 59 481
+rect 43 441 46 445
+rect 49 441 52 445
+rect 56 441 59 445
+rect -8 407 -5 412
+rect -1 407 2 412
+rect 7 407 10 412
+rect 43 407 46 412
+rect 49 407 52 412
+rect 56 407 59 412
+rect 43 372 46 376
+rect 49 372 52 376
+rect 56 372 59 376
+rect -8 338 -5 343
+rect -1 338 2 343
+rect 7 338 10 343
+rect 43 338 46 343
+rect 49 338 52 343
+rect 56 338 59 343
+rect 43 303 46 307
+rect 49 303 52 307
+rect 56 303 59 307
+rect -8 269 -5 274
+rect -1 269 2 274
+rect 7 269 10 274
+rect 43 269 46 274
+rect 49 269 52 274
+rect 56 269 59 274
+rect 43 234 46 238
+rect 49 234 52 238
+rect 56 234 59 238
+rect -8 200 -5 205
+rect -1 200 2 205
+rect 7 200 10 205
+rect 43 200 46 205
+rect 49 200 52 205
+rect 56 200 59 205
+rect 43 165 46 169
+rect 49 165 52 169
+rect 56 165 59 169
+rect -8 131 -5 136
+rect -1 131 2 136
+rect 7 131 10 136
+rect 43 131 46 136
+rect 49 131 52 136
+rect 56 131 59 136
+rect 43 96 46 100
+rect 49 96 52 100
+rect 56 96 59 100
+rect -8 62 -5 67
+rect -1 62 2 67
+rect 7 62 10 67
+rect 43 62 46 67
+rect 49 62 52 67
+rect 56 62 59 67
+rect 43 27 46 31
+rect 49 27 52 31
+rect 56 27 59 31
+<< metal2 >>
+rect 25 542 65 546
+rect 37 510 71 514
+rect 25 473 65 477
+rect 37 441 71 445
+rect 25 404 65 408
+rect 37 372 71 376
+rect 25 335 65 339
+rect 37 303 71 307
+rect 25 266 65 270
+rect 37 234 71 238
+rect 25 197 65 201
+rect 37 165 71 169
+rect 25 128 65 132
+rect 37 96 71 100
+rect 25 59 65 63
+rect 37 27 71 31
+<< m2contact >>
+rect 21 542 25 546
+rect 21 473 25 477
+rect 21 404 25 408
+rect 21 335 25 339
+rect 21 266 25 270
+rect 21 197 25 201
+rect 21 128 25 132
+rect 21 59 25 63
+use register_controller  register_controller_0
+timestamp 1434142375
+transform 1 0 14 0 1 593
+box -22 -43 45 47
+use staticizer  staticizer_0
+timestamp 1430428783
+transform 0 1 9 -1 0 424
+box -19 2 12 32
+use staticizer  staticizer_1
+timestamp 1430428783
+transform 0 1 9 -1 0 355
+box -19 2 12 32
+use staticizer  staticizer_2
+timestamp 1430428783
+transform 0 1 9 -1 0 286
+box -19 2 12 32
+use staticizer  staticizer_3
+timestamp 1430428783
+transform 0 1 9 -1 0 217
+box -19 2 12 32
+use staticizer  staticizer_4
+timestamp 1430428783
+transform 0 1 9 -1 0 148
+box -19 2 12 32
+use staticizer  staticizer_5
+timestamp 1430428783
+transform 0 1 9 -1 0 79
+box -19 2 12 32
+use staticizer  staticizer_6
+timestamp 1430428783
+transform 0 1 9 -1 0 10
+box -19 2 12 32
+use regbit  regbit_0
+array 0 0 67 0 7 69
+timestamp 1431679428
+transform 1 0 15 0 1 27
+box -23 -29 44 36
+<< labels >>
+rlabel metal1 9 643 9 643 5 GND
+rlabel metal1 45 642 45 642 5 Vdd
+rlabel polysilicon 58 615 58 615 7 simpleRead
+rlabel polysilicon 58 575 58 575 7 simpleWrite
+rlabel polysilicon 57 583 57 583 7 phi0
+rlabel polysilicon 57 607 57 607 7 phi1
+rlabel polysilicon 56 599 56 599 7 RegisterReadID
+rlabel polysilicon 56 590 56 590 7 RegisterWriteID
+rlabel metal2 70 29 70 29 7 dp0
+rlabel metal2 68 98 68 98 7 dp1
+rlabel metal2 68 167 68 167 7 dp2
+rlabel metal2 69 236 69 236 7 dp3
+rlabel metal2 69 304 69 304 7 dp4
+rlabel metal2 68 374 68 374 7 dp5
+rlabel metal2 69 443 69 443 7 dp6
+rlabel metal2 69 512 69 512 7 dp7
+rlabel metal2 63 60 63 60 1 op0
+rlabel metal2 62 130 62 130 1 op1
+rlabel metal2 63 200 63 200 1 op2
+rlabel metal2 63 267 63 267 1 op3
+rlabel metal2 63 338 63 338 1 op4
+rlabel metal2 63 407 63 407 1 op5
+rlabel metal2 63 475 63 475 1 op6
+rlabel metal2 62 544 62 544 1 op7
+<< end >>

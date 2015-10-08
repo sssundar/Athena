@@ -1,0 +1,61 @@
+magic
+tech scmos
+timestamp 1434180000
+<< polysilicon >>
+rect 408 39 410 47
+<< metal1 >>
+rect 409 94 412 148
+rect 367 91 412 94
+rect 367 60 370 91
+rect 406 75 410 79
+rect 367 56 400 60
+rect 395 32 399 37
+rect 412 35 413 39
+rect 395 28 397 32
+rect 383 0 414 3
+<< metal2 >>
+rect 410 87 422 91
+rect 410 79 414 87
+rect 404 56 422 60
+rect 417 35 422 39
+rect 401 28 422 31
+<< polycontact >>
+rect 408 35 412 39
+<< m2contact >>
+rect 410 75 414 79
+rect 400 56 404 60
+rect 413 35 417 39
+rect 397 28 401 32
+use PCincrementorCellFinal  PCincrementorCellFinal_0
+timestamp 1434180000
+transform 1 0 0 0 1 1335
+box 300 148 422 344
+use PCincrementorCell100  PCincrementorCell100_2
+timestamp 1434180000
+transform 1 0 0 0 1 1130
+box 298 148 422 357
+use PCincrementorCell100  PCincrementorCell100_1
+timestamp 1434180000
+transform 1 0 0 0 1 925
+box 298 148 422 357
+use PCincrementorCell100  PCincrementorCell100_0
+timestamp 1434180000
+transform 1 0 0 0 1 720
+box 298 148 422 357
+use PCincrementorCell  PCincrementorCell_0
+array 0 0 124 0 2 250
+timestamp 1434179908
+transform 1 0 0 0 1 0
+box 298 148 422 398
+use inv_p32n16  inv_p32n16_0
+timestamp 1434159157
+transform 1 0 402 0 1 63
+box -30 -26 8 16
+<< labels >>
+rlabel metal2 420 89 420 89 1 Vdd
+rlabel metal2 420 29 420 29 1 GND
+rlabel metal1 398 1 398 1 1 BOTTOMOFINCREMENTOR
+rlabel metal1 369 89 369 89 3 Cin1
+rlabel metal2 420 58 420 58 1 inc_in0
+rlabel metal2 420 37 420 37 1 inc_out0
+<< end >>

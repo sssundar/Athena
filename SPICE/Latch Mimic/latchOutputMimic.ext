@@ -1,0 +1,17 @@
+timestamp 1434159590
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "a_n3_n20#" 53 0 -3 -20 ndiff 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "latchReadMimic" 129 4512 -5 -1 pdc 20 18 40 26 0 0 0 0 0 0 0 0 152 84 0 0 0 0
+node "flip0to1" 524 9208 -10 -9 pc 0 0 0 0 96 96 0 0 0 0 0 0 16 16 0 0 0 0
+node "a_n5_6#" 238 0 -5 6 pdiff 0 0 16 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n7_8#" 772 14062 -7 8 p 20 18 16 16 122 122 0 0 0 0 0 0 72 44 0 0 0 0
+node "a_n16_n22#" 876 16389 -16 -22 p 32 24 40 26 130 130 0 0 0 0 0 0 113 64 0 0 0 0
+cap "latchReadMimic" "a_n7_8#" 240
+device mosfet nfet -3 -22 -2 -21 2 4 "Gnd!" "a_n16_n22#" 4 0 "a_n7_8#" 4 0 "a_n3_n20#" 4 0
+device mosfet nfet -3 -18 -2 -17 2 4 "Gnd!" "flip0to1" 4 0 "a_n3_n20#" 4 0 "latchReadMimic" 4 0
+device mosfet pfet -5 4 -4 5 2 8 "Vdd!" "flip0to1" 4 0 "latchReadMimic" 8 0 "a_n5_6#" 8 0
+device mosfet pfet -5 8 -4 9 2 8 "Vdd!" "a_n7_8#" 4 0 "a_n5_6#" 8 0 "a_n16_n22#" 8 0

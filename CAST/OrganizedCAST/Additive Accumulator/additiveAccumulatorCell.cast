@@ -1,0 +1,11 @@
+import "addsubbit.cast";
+import "additiveAccumulatorBit.cast";
+
+// toFile is for testing purposes only.
+define additiveAccumulatorCell()(node InFromDP, writeFromDP, writeFromDP_, readToDP, readToDP_, writeFromAdder, writeFromAdder_, add, sub, cin; node toDataPath, cout; node toFile)
+{
+  node toAdder, fromAdder;
+
+  addsubbit asb(toAdder, InFromDP, cin, add, sub, fromAdder, cout);
+  additiveAccumulatorBit aab(InFromDP, fromAdder, writeFromDP, writeFromDP_, readToDP, readToDP_, writeFromAdder, writeFromAdder_, toDataPath, toAdder, toFile);
+}

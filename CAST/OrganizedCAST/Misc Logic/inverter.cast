@@ -1,0 +1,7 @@
+define inverter()(node in; node out) {
+	prs {
+		~in -> out+
+		in -> out-
+	}
+}
+

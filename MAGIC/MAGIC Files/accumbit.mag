@@ -1,0 +1,106 @@
+magic
+tech scmos
+timestamp 1433920747
+<< polysilicon >>
+rect -10 11 -3 13
+rect 23 11 41 13
+rect 23 -1 25 1
+rect -17 -5 -3 -3
+rect 23 -5 48 -3
+rect 22 -9 45 -7
+rect -24 -13 -3 -11
+rect 22 -13 24 -9
+rect 43 -11 45 -9
+rect 43 -13 55 -11
+rect 23 -17 28 -15
+rect -31 -29 -3 -27
+rect 7 -43 9 -24
+rect 23 -29 62 -27
+<< metal1 >>
+rect -35 -26 -32 19
+rect -28 -10 -25 19
+rect -21 -2 -18 19
+rect -14 14 -11 19
+rect -35 -69 -32 -30
+rect -28 -69 -25 -14
+rect -21 -69 -18 -6
+rect -14 -69 -11 10
+rect -7 6 -4 19
+rect -7 2 -1 6
+rect 35 6 38 19
+rect 42 14 45 19
+rect -7 -18 -4 2
+rect -7 -22 -1 -18
+rect 6 -20 10 4
+rect 21 2 38 6
+rect 28 -15 32 -14
+rect -7 -46 -4 -22
+rect 21 -22 25 -18
+rect 35 -22 38 2
+rect 22 -25 38 -22
+rect 6 -34 10 -31
+rect 35 -46 38 -25
+rect -7 -50 -1 -46
+rect 27 -50 38 -46
+rect -7 -69 -4 -50
+rect 35 -69 38 -50
+rect 42 -69 45 10
+rect 49 -2 52 19
+rect 49 -69 52 -6
+rect 56 -10 59 19
+rect 56 -69 59 -14
+rect 63 -26 66 19
+rect 63 -69 66 -30
+<< metal2 >>
+rect 10 15 32 19
+rect 28 -10 32 15
+<< polycontact >>
+rect -14 10 -10 14
+rect 41 10 45 14
+rect 6 4 10 8
+rect -21 -6 -17 -2
+rect 48 -6 52 -2
+rect -28 -14 -24 -10
+rect 55 -14 59 -10
+rect 28 -19 32 -15
+rect 6 -24 10 -20
+rect -35 -30 -31 -26
+rect 62 -30 66 -26
+<< m2contact >>
+rect 6 15 10 19
+rect 28 -14 32 -10
+use latch  latch_0
+timestamp 1430426212
+transform 0 1 -1 1 0 8
+box -6 -2 10 24
+use latch  latch_1
+timestamp 1430426212
+transform 0 1 -1 -1 0 0
+box -6 -2 10 24
+use latch  latch_3
+timestamp 1430426212
+transform 0 1 -1 1 0 -16
+box -6 -2 10 24
+use latch  latch_2
+timestamp 1430426212
+transform 0 1 -1 -1 0 -24
+box -6 -2 10 24
+use staticizer  staticizer_0
+timestamp 1430428783
+transform 0 1 -5 1 0 -50
+box -19 2 12 32
+<< labels >>
+rlabel metal1 35 16 38 19 6 Vdd
+rlabel metal1 6 -34 10 -31 1 out
+rlabel metal1 -7 16 -4 19 4 GND
+rlabel m2contact 6 15 10 19 5 bus
+rlabel metal1 -14 16 -11 19 5 r
+rlabel metal1 42 16 45 19 5 r_
+rlabel polysilicon 24 0 24 0 1 in
+rlabel metal1 -21 16 -18 19 5 w
+rlabel metal1 49 16 52 19 5 w_
+rlabel metal1 56 16 59 19 5 ld_
+rlabel metal1 -28 16 -25 19 5 ld
+rlabel metal1 -35 16 -32 19 4 phi1
+rlabel metal1 63 16 66 19 6 phi1_
+<< end >>

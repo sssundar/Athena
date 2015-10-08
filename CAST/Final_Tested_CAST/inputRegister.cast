@@ -1,0 +1,8 @@
+import "globals.cast";
+import "inputRegisterBit.cast";
+import "inputRegisterController.cast";
+
+define inputRegister(int N)(node inputRead, inputRead_; node[N] byteFromOutsideWorld, theDataPath)
+{
+	< i: N : inputRegisterBit ireg[i](byteFromOutsideWorld[i], inputRead, inputRead_, theDataPath[i]); >
+}

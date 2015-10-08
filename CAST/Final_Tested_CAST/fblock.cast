@@ -1,0 +1,20 @@
+import "fcell.cast";
+import "fAccumulatorController.cast";
+
+// This is the logical accumulator with attached f-logic.
+// It outputs an ungated 'am zero' signal.
+// toFile is for testing.
+define fblock(int N)(node zout; node[N] bus, toFile)
+{
+  node[N+1] z;
+  z[0] = ALWAYSHIGH;
+  zout = z[N];
+
+  node fw, fw_, br, br_, bw, bw_;
+  node g0_, g1_, g2_, g3_;
+
+  fAccumulatorController Ctl(bw, bw_, br, br_, fw, fw_, g0_, g1_, g2_, g3_);
+  < i: N : fcell FNode[i](fw, fw_, br, br_, bw, bw_, z[i], g0_, g1_, g2_, g3_, bus[i], z[i+1], toFile[i]); >
+}
+
+

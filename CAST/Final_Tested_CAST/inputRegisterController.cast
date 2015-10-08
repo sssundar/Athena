@@ -1,0 +1,26 @@
+import "globals.cast";
+
+// Control Logic for Input Register
+// Inputs (all global)
+//  instructionCycleCountIs0, instructionCycleCountIs1, instructionCycleCountIs2
+//  controlPath, controlPath_ & flags BranchInstruction, InputInstruction
+//  phi1_
+// Outputs
+//  read, read_: clock-gated register read-to-datapath control signals
+define inputRegisterController()(node read, read_)
+{
+
+  node ungatedRead_;
+  prs {
+	instructionCycleCountIs0 | (instructionCycleCountIs1 & (BranchInstruction | InputInstruction)) 
+				 | instructionCycleCountIs2 -> ungatedRead_-
+	~instructionCycleCountIs0 & (~instructionCycleCountIs1 | (~BranchInstruction & ~InputInstruction)) & ~instructionCycleCountIs2 
+							-> ungatedRead_+
+
+	// Generate gated read and complement, with driving transistors.
+	~phi1_ & ~ungatedRead_ -> read+
+	phi1_ | ungatedRead_ -> read-
+	~read -> read_+
+	read -> read_-
+  }
+}

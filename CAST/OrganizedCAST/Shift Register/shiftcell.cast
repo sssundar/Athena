@@ -1,0 +1,21 @@
+import "globals.cast";
+import "inverter.cast";
+
+// toFile is for testing.
+define shiftcell()(node in, w, w_, r, r_, shift, shift_, sin; node out, sout; node toFile)
+{
+  node reg;
+  prs {
+    ( sin &  shift)  | ( w  &  in) -> reg-
+    (~sin & ~shift_) | (~w_ & ~in) -> reg+
+
+     shift_ &  reg -> sout-
+    ~shift  & ~reg -> sout+
+
+     r  &  reg -> out-
+    ~r_ & ~reg -> out+
+  }
+  // testing
+  inverter s2i(reg,toFile);
+
+}

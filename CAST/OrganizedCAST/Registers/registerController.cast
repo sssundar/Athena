@@ -1,0 +1,26 @@
+import "globals.cast";
+
+// Common register controller, generating gated read/write signals.
+
+// Takes Register4Read, Register5Read, Register6Read, Register7Read
+// and Register4Write, Register5Write, Register6Write, Register7Write
+// as RegisterReadID, RegisterWriteID.
+
+// uses simpleRead, simpleWrite as enables.
+
+define registerController()(node RegisterReadID, RegisterWriteID; node write, write_, read, read_)
+{
+  prs {
+     phi0 & simpleWrite & RegisterWriteID -> write_-
+    ~phi0 | ~simpleWrite | ~RegisterWriteID -> write_+
+
+     write_ -> write-
+    ~write_ -> write+
+
+     phi1 & simpleRead & RegisterReadID -> read_-
+    ~phi1 | ~simpleRead | ~RegisterReadID -> read_+
+
+     read_ -> read-
+    ~read_ -> read+
+  }
+}

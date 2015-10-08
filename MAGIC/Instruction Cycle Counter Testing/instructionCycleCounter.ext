@@ -1,0 +1,167 @@
+timestamp 1434156374
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use nor2 nor2_0 1 0 -73 0 1 153
+use nor2 nor2_1 1 0 -49 0 1 153
+use nor2 nor2_2 1 0 -25 0 1 153
+use iccBit iccBit_0 1 0 -61 0 1 70
+use iccBit iccBit_1 1 0 81 0 1 65
+use trickyxor2 trickyxor2_0 1 0 292 0 1 119
+node "phi1" 3 20164 95 167 m1 0 0 0 0 0 0 0 0 0 0 0 0 275 194 449 304 0 0
+node "phi1_" 3 20449 87 167 m1 0 0 0 0 0 0 0 0 0 0 0 0 275 194 473 320 0 0
+node "phi0_" 3 21589 64 167 m1 0 0 0 0 0 0 0 0 0 0 0 0 275 194 542 366 0 0
+node "RESET_" 3 22498 50 166 m1 0 0 0 0 0 0 0 0 0 0 0 0 281 198 584 394 0 0
+node "phi0" 3 23959 28 166 m1 0 0 0 0 0 0 0 0 0 0 0 0 285 198 660 442 0 0
+node "InstructionCycleCountIs0" 1 10857 -42 142 m1 0 0 0 0 0 0 0 0 0 0 0 0 231 160 0 0 0 0
+equiv "InstructionCycleCountIs0" "ICC0"
+node "a_205_102#" 918 20406 205 102 p 0 0 0 0 162 162 0 0 0 0 0 0 40 32 0 0 0 0
+node "a_253_112#" 34 7128 253 112 ndc 20 18 0 0 0 0 0 0 0 0 0 0 124 90 158 110 0 0
+node "a_109_117#" 34 4136 109 117 ndc 20 18 0 0 0 0 0 0 0 0 0 0 104 72 0 0 0 0
+node "a_244_138#" 739 14761 244 138 pc 0 0 0 0 132 132 0 0 0 0 0 0 43 34 0 0 0 0
+node "a_251_141#" 96 7097 251 141 pdiff 0 0 40 26 0 0 0 0 0 0 0 0 189 112 0 0 0 0
+node "iccB0_" 190 23513 -58 106 pc 0 0 0 0 40 40 0 0 0 0 0 0 445 302 0 0 0 0
+node "iccB0" 602 65908 -80 99 pc 0 0 0 0 108 108 0 0 0 0 0 0 1180 788 37 30 0 0
+equiv "iccB0" "iccB0"
+node "a_107_139#" 130 8934 107 139 pdc 20 18 40 26 0 0 0 0 0 0 0 0 230 152 120 68 0 0
+node "a_100_143#" 608 11579 100 143 pc 0 0 0 0 110 110 0 0 0 0 0 0 31 26 0 0 0 0
+node "iccB1" 1364 55941 -46 92 pc 0 0 0 0 236 236 0 0 0 0 0 0 621 418 439 298 0 0
+node "iccB1_" 873 57093 -70 85 pc 20 18 40 26 132 132 0 0 0 0 0 0 780 518 522 338 0 0
+equiv "iccB1_" "iccB1_"
+node "a_n125_125#" 53 0 -125 125 ndiff 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n156_116#" 238 0 -156 116 pdiff 0 0 16 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "GND" 439 14946 -135 113 ndiff 80 72 16 16 0 0 0 0 0 0 0 0 440 286 0 0 0 0
+node "INC" 371 58797 -152 116 pdiff 60 54 40 26 0 0 0 0 0 0 0 0 1349 900 0 0 0 0
+node "a_107_146#" 96 4700 107 146 pdiff 0 0 40 26 0 0 0 0 0 0 0 0 132 74 0 0 0 0
+node "BranchInstruction" 692 21752 -118 152 pc 0 0 0 0 124 124 0 0 0 0 0 0 228 122 0 0 0 0
+equiv "BranchInstruction" "BranchInstruction"
+node "RESET" 775 23606 -154 114 p 0 0 0 0 138 138 0 0 0 0 0 0 232 124 0 0 0 0
+equiv "RESET" "RESET"
+node "Vdd" 687 21747 -175 113 pdiff 32 24 120 78 0 0 0 0 0 0 0 0 435 286 587 390 0 0
+node "a_n175_106#" 631 4230 -175 106 pdc 0 0 120 78 0 0 0 0 0 0 0 0 186 120 0 0 0 0
+node "BranchInstruction_" 833 23776 -178 127 p 20 18 40 26 126 126 0 0 0 0 0 0 334 208 0 0 0 0
+node "InstructionCycleCountIs1" 3187 77860 -185 138 pc 0 0 0 0 550 546 0 0 0 0 0 0 366 236 0 0 0 0
+equiv "InstructionCycleCountIs1" "ICC1"
+equiv "InstructionCycleCountIs1" "instructionCycleCountIs1"
+node "InstructionCycleCountIs2" 1863 49280 -161 151 pc 0 0 0 0 328 324 0 0 0 0 0 0 334 220 0 0 0 0
+equiv "InstructionCycleCountIs2" "ICC2"
+equiv "InstructionCycleCountIs2" "instructionCycleCountIs2"
+cap "RESET" "InstructionCycleCountIs2" 240
+cap "phi1_" "phi0" 1215
+cap "RESET_" "phi1" 1215
+cap "phi0" "phi0_" 1215
+cap "InstructionCycleCountIs1" "INC" 180
+cap "GND" "iccB1" 360
+cap "iccB1" "iccB0" 18045
+cap "InstructionCycleCountIs2" "INC" 180
+cap "phi1_" "phi0_" 1215
+cap "a_107_139#" "iccB0" 405
+cap "iccB1_" "iccB1" 180
+cap "phi0" "phi1" 1215
+cap "a_205_102#" "iccB0" 180
+cap "GND" "iccB0_" 180
+cap "a_253_112#" "iccB0" 405
+cap "iccB0" "iccB0_" 360
+cap "BranchInstruction_" "InstructionCycleCountIs2" 180
+cap "Vdd" "InstructionCycleCountIs1" 1125
+cap "InstructionCycleCountIs2" "Vdd" 945
+cap "phi1_" "phi1" 1215
+cap "iccB1_" "a_205_102#" 114
+cap "iccB1_" "a_253_112#" 1528
+cap "phi0_" "phi1" 1215
+cap "iccB1_" "iccB0_" 180
+cap "InstructionCycleCountIs2" "InstructionCycleCountIs1" 420
+cap "a_251_141#" "a_244_138#" 180
+cap "InstructionCycleCountIs1" "GND" 180
+cap "RESET" "INC" 180
+cap "a_109_117#" "a_107_139#" 1528
+cap "a_205_102#" "iccB1" 114
+cap "Vdd" "BranchInstruction" 540
+cap "iccB1" "iccB0_" 360
+cap "phi0" "RESET_" 1215
+cap "InstructionCycleCountIs1" "BranchInstruction" 240
+cap "GND" "iccB0" 360
+cap "InstructionCycleCountIs0" "Vdd" 405
+cap "BranchInstruction_" "RESET" 180
+cap "InstructionCycleCountIs2" "BranchInstruction" 240
+cap "phi1_" "RESET_" 1215
+cap "a_253_112#" "a_205_102#" 405
+cap "RESET" "Vdd" 540
+cap "RESET_" "phi0_" 1215
+cap "iccB1_" "GND" 180
+cap "iccB1_" "iccB0" 585
+cap "RESET" "InstructionCycleCountIs1" 240
+device mosfet nfet 253 117 254 118 2 4 "Gnd!" "a_244_138#" 4 0 "a_253_112#" 4 0 "iccB1_" 4 0
+device mosfet nfet 109 122 110 123 2 4 "Gnd!" "a_100_143#" 4 0 "a_109_117#" 4 0 "a_107_139#" 4 0
+device mosfet pfet 251 139 252 140 2 8 "Vdd!" "a_244_138#" 4 0 "iccB1_" 8 0 "a_251_141#" 8 0
+device mosfet nfet -135 111 -134 112 2 4 "Gnd!" "InstructionCycleCountIs2" 4 0 "INC" 4 0 "GND" 4 0
+device mosfet nfet -109 123 -108 124 2 4 "Gnd!" "BranchInstruction" 4 0 "GND" 4 0 "BranchInstruction_" 4 0
+device mosfet nfet -125 123 -124 124 2 4 "Gnd!" "InstructionCycleCountIs1" 4 0 "GND" 4 0 "a_n125_125#" 4 0
+device mosfet pfet -175 111 -174 112 2 8 "Vdd!" "InstructionCycleCountIs1" 4 0 "a_n175_106#" 8 0 "Vdd" 8 0
+device mosfet pfet 107 144 108 145 2 8 "Vdd!" "a_100_143#" 4 0 "a_107_139#" 8 0 "a_107_146#" 8 0
+device mosfet pfet -154 116 -153 117 2 8 "Vdd!" "RESET" 4 0 "a_n156_116#" 8 0 "INC" 8 0
+device mosfet pfet -158 116 -157 117 2 8 "Vdd!" "InstructionCycleCountIs2" 4 0 "a_n175_106#" 8 0 "a_n156_116#" 8 0
+device mosfet nfet -125 127 -124 128 2 4 "Gnd!" "BranchInstruction_" 4 0 "a_n125_125#" 4 0 "INC" 4 0
+device mosfet nfet -135 127 -134 128 2 4 "Gnd!" "RESET" 4 0 "GND" 4 0 "INC" 4 0
+device mosfet pfet -111 145 -110 146 2 8 "Vdd!" "BranchInstruction" 4 0 "BranchInstruction_" 8 0 "Vdd" 8 0
+device mosfet pfet -175 127 -174 128 2 8 "Vdd!" "BranchInstruction_" 4 0 "Vdd" 8 0 "a_n175_106#" 8 0
+cap "nor2_0/a" "nor2_0/out" 480
+cap "nor2_1/a" "nor2_1/out" 180
+cap "nor2_0/a" "nor2_2/out" 180
+cap "iccB1_" "iccBit_0/INC" 180
+cap "iccBit_0/INC" "iccBit_0/fromInc" 180
+cap "iccBit_0/toInc" "iccBit_0/GND" 405
+cap "iccB1" "iccBit_0/INC" 180
+cap "iccBit_0/INC" "iccBit_0/toInc" 180
+cap "iccB0" "iccBit_1/INC" 180
+cap "iccB1_" "iccBit_1/INC" 114
+cap "iccBit_1/toInc" "iccBit_1/GND" 405
+merge "trickyxor2_0/a" "iccBit_0/toInc" -12655 0 0 0 0 0 -8 0 0 0 0 0 0 -246 -179 0 -6 0 0
+merge "iccBit_0/toInc" "a_100_143#"
+merge "a_100_143#" "nor2_2/a"
+merge "nor2_2/a" "nor2_0/a"
+merge "nor2_0/a" "iccB0"
+merge "iccBit_0/fromInc" "nor2_1/a" -282 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "nor2_1/a" "iccB0_"
+merge "iccB0_" "a_107_139#"
+merge "trickyxor2_0/b" "iccBit_1/toInc" -15090 0 0 0 0 0 -12 0 0 0 0 0 0 -297 -209 -246 -173 0 0
+merge "iccBit_1/toInc" "a_244_138#"
+merge "a_244_138#" "nor2_2/b"
+merge "nor2_2/b" "nor2_1/b"
+merge "nor2_1/b" "iccB1"
+merge "trickyxor2_0/GND" "iccBit_1/GND" -6460 -20 -18 0 0 0 0 0 0 0 0 0 0 -111 -82 -139 -95 0 0
+merge "iccBit_1/GND" "iccBit_0/GND"
+merge "iccBit_0/GND" "nor2_2/GND"
+merge "nor2_2/GND" "nor2_1/GND"
+merge "nor2_1/GND" "nor2_0/GND"
+merge "nor2_0/GND" "GND"
+merge "GND" "a_109_117#"
+merge "a_109_117#" "a_253_112#"
+merge "iccBit_1/RESET_" "iccBit_0/RESET_" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "iccBit_0/RESET_" "RESET_"
+merge "trickyxor2_0/Vdd" "iccBit_1/Vdd" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "iccBit_1/Vdd" "iccBit_0/Vdd"
+merge "iccBit_0/Vdd" "nor2_2/Vdd"
+merge "nor2_2/Vdd" "nor2_1/Vdd"
+merge "nor2_1/Vdd" "nor2_0/Vdd"
+merge "nor2_0/Vdd" "Vdd"
+merge "Vdd" "a_107_146#"
+merge "a_107_146#" "a_251_141#"
+merge "iccBit_1/phi1_" "iccBit_0/phi1_" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "iccBit_0/phi1_" "phi1_"
+merge "iccBit_1/phi1" "iccBit_0/phi1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "iccBit_0/phi1" "phi1"
+merge "iccBit_1/phi0" "iccBit_0/phi0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14 0 0 0 0
+merge "iccBit_0/phi0" "phi0"
+merge "iccBit_1/INC" "iccBit_0/INC" -752 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 0 0 0 0
+merge "iccBit_0/INC" "INC"
+merge "nor2_2/out" "InstructionCycleCountIs0" -846 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0 0 0
+merge "iccBit_1/phi0_" "iccBit_0/phi0_" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "iccBit_0/phi0_" "phi0_"
+merge "nor2_0/b" "iccB1_" -25490 -20 -18 -40 -26 0 -4 0 0 0 0 0 0 -419 -281 -522 -338 0 0
+merge "nor2_1/out" "InstructionCycleCountIs1" -846 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0 0 0
+merge "nor2_0/out" "InstructionCycleCountIs2" -1316 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0 0 0
+merge "trickyxor2_0/xor" "iccBit_1/fromInc" -1413 0 0 0 0 -8 -12 0 0 0 0 0 0 -3 -8 0 0 0 0
+merge "iccBit_1/fromInc" "a_205_102#"

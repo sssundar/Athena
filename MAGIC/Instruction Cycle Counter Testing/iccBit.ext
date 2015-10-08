@@ -1,0 +1,51 @@
+timestamp 1434151948
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "a_143_52#" 53 0 143 52 ndiff 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_113_49#" 53 0 113 49 ndiff 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_109_49#" 53 0 109 49 ndiff 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "toInc" 129 5551 141 71 pdc 20 18 40 26 0 0 0 0 0 0 0 0 143 88 88 64 0 0
+node "fromInc" 691 12540 115 46 p 0 0 0 0 124 124 0 0 0 0 0 0 16 16 0 0 0 0
+node "INC" 882 16348 100 68 p 0 0 0 0 156 156 0 0 0 0 0 0 16 16 0 0 0 0
+node "a_102_70#" 358 1504 102 70 pdiff 0 0 96 56 0 0 0 0 0 0 0 0 96 56 0 0 0 0
+node "a_141_78#" 238 0 141 78 pdiff 0 0 16 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "phi1" 739 15076 141 50 p 0 0 0 0 132 132 0 0 0 0 0 0 16 16 0 0 0 0
+node "a_102_63#" 1212 17956 102 63 pdc 20 18 120 78 100 100 0 0 0 0 0 0 320 190 0 0 0 0
+node "GND" 726 17437 53 63 ndiff 80 72 32 32 0 0 0 0 0 0 0 0 485 314 0 0 0 0
+node "Vdd" 1042 13630 53 77 pdiff 64 48 140 96 0 0 0 0 0 0 0 0 496 288 0 0 0 0
+node "statnode" 278 17864 46 63 ndc 20 18 40 26 200 82 0 0 0 0 0 0 172 94 0 0 0 0
+node "a_51_55#" 919 18962 51 55 p 20 18 20 18 144 144 0 0 0 0 0 0 140 82 0 0 0 0
+node "phi1_" 356 6508 139 80 p 0 0 0 0 68 68 0 0 0 0 0 0 16 16 0 0 0 0
+node "phi0_" 404 7460 116 76 p 0 0 0 0 76 76 0 0 0 0 0 0 16 16 0 0 0 0
+node "RESET_" 380 6984 100 76 p 0 0 0 0 72 72 0 0 0 0 0 0 16 16 0 0 0 0
+node "phi0" 775 15790 89 92 pc 0 0 0 0 138 138 0 0 0 0 0 0 16 16 0 0 0 0
+cap "statnode" "a_51_55#" 240
+cap "Vdd" "phi1" 180
+cap "phi0_" "Vdd" 180
+cap "phi1" "toInc" 180
+cap "Vdd" "phi0" 180
+cap "GND" "INC" 180
+cap "GND" "fromInc" 180
+cap "a_102_63#" "INC" 240
+cap "a_102_63#" "fromInc" 240
+cap "RESET_" "Vdd" 180
+cap "a_51_55#" "GND" 180
+cap "Vdd" "phi1_" 180
+device mosfet nfet 143 50 144 51 2 4 "Gnd!" "phi1" 4 0 "GND" 4 0 "a_143_52#" 4 0
+device mosfet nfet 115 49 116 50 2 4 "Gnd!" "fromInc" 4 0 "a_113_49#" 4 0 "a_102_63#" 4 0
+device mosfet nfet 111 49 112 50 2 4 "Gnd!" "INC" 4 0 "a_109_49#" 4 0 "a_113_49#" 4 0
+device mosfet nfet 107 49 108 50 2 4 "Gnd!" "phi0" 4 0 "GND" 4 0 "a_109_49#" 4 0
+device mosfet nfet 143 54 144 55 2 4 "Gnd!" "a_102_63#" 4 0 "a_143_52#" 4 0 "toInc" 4 0
+device mosfet pfet 118 68 119 69 2 8 "Vdd!" "fromInc" 4 0 "a_102_63#" 8 0 "a_102_70#" 8 0
+device mosfet pfet 102 68 103 69 2 8 "Vdd!" "INC" 4 0 "a_102_63#" 8 0 "a_102_70#" 8 0
+device mosfet pfet 141 76 142 77 2 8 "Vdd!" "a_102_63#" 4 0 "toInc" 8 0 "a_141_78#" 8 0
+device mosfet pfet 118 76 119 77 2 8 "Vdd!" "phi0_" 4 0 "a_102_70#" 8 0 "Vdd" 8 0
+device mosfet pfet 102 76 103 77 2 8 "Vdd!" "RESET_" 4 0 "a_102_70#" 8 0 "a_102_63#" 8 0
+device mosfet pfet 141 80 142 81 2 8 "Vdd!" "phi1_" 4 0 "a_141_78#" 8 0 "Vdd" 8 0
+device mosfet nfet 67 63 68 64 13 4 "Gnd!" "statnode" 26 0 "GND" 4 0 "a_51_55#" 4 0
+device mosfet nfet 51 63 52 64 2 4 "Gnd!" "a_51_55#" 4 0 "statnode" 4 0 "GND" 4 0
+device mosfet pfet 67 79 68 80 8 4 "Vdd!" "statnode" 16 0 "Vdd" 4 0 "a_51_55#" 4 0
+device mosfet pfet 51 77 52 78 2 8 "Vdd!" "a_51_55#" 4 0 "statnode" 8 0 "Vdd" 8 0

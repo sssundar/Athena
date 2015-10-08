@@ -1,0 +1,121 @@
+magic
+tech scmos
+timestamp 1434186535
+<< polysilicon >>
+rect -45 11 -19 13
+rect -61 8 -59 10
+rect -45 8 -43 11
+rect -78 4 -71 6
+rect -45 4 -33 6
+rect -61 -45 -59 -31
+rect -71 -47 -69 -45
+rect -65 -47 -59 -45
+rect -57 -47 -55 -45
+rect -47 -47 -26 -45
+rect -61 -49 -59 -47
+rect -61 -51 -56 -49
+rect -58 -53 -56 -51
+rect -85 -55 -69 -53
+rect -65 -55 -62 -53
+rect -58 -55 -55 -53
+rect -47 -55 -45 -53
+rect -64 -57 -62 -55
+rect -64 -59 -55 -57
+rect -47 -59 -45 -57
+<< ndiffusion >>
+rect -69 -45 -65 -44
+rect -69 -48 -65 -47
+rect -69 -53 -65 -52
+rect -69 -56 -65 -55
+<< pdiffusion >>
+rect -55 -45 -47 -44
+rect -55 -48 -47 -47
+rect -55 -53 -47 -52
+rect -55 -57 -47 -55
+rect -55 -60 -47 -59
+<< metal1 >>
+rect -89 -52 -86 15
+rect -82 7 -79 15
+rect -75 11 -69 15
+rect -47 11 -36 15
+rect -89 -80 -86 -56
+rect -82 -80 -79 3
+rect -75 -24 -72 11
+rect -62 -9 -59 0
+rect -39 -24 -36 11
+rect -32 7 -29 15
+rect -75 -28 -69 -24
+rect -41 -28 -36 -24
+rect -75 -40 -72 -28
+rect -39 -40 -36 -28
+rect -75 -44 -69 -40
+rect -47 -44 -36 -40
+rect -75 -56 -72 -44
+rect -65 -52 -55 -49
+rect -75 -60 -69 -56
+rect -75 -68 -72 -60
+rect -62 -61 -58 -52
+rect -39 -60 -36 -44
+rect -47 -64 -36 -60
+rect -75 -72 -69 -68
+rect -62 -69 -58 -65
+rect -39 -68 -36 -64
+rect -75 -80 -72 -72
+rect -47 -72 -36 -68
+rect -39 -80 -36 -72
+rect -32 -80 -29 3
+rect -25 -44 -22 15
+rect -15 11 -14 15
+rect -25 -80 -22 -48
+<< metal2 >>
+rect -10 11 10 15
+rect -58 -65 13 -61
+rect -58 -80 14 -76
+<< ntransistor >>
+rect -69 -47 -65 -45
+rect -69 -55 -65 -53
+<< ptransistor >>
+rect -55 -47 -47 -45
+rect -55 -55 -47 -53
+rect -55 -59 -47 -57
+<< polycontact >>
+rect -19 11 -15 15
+rect -82 3 -78 7
+rect -33 3 -29 7
+rect -26 -48 -22 -44
+rect -89 -56 -85 -52
+rect -62 -73 -58 -69
+<< ndcontact >>
+rect -69 -44 -65 -40
+rect -69 -52 -65 -48
+rect -69 -60 -65 -56
+<< pdcontact >>
+rect -55 -44 -47 -40
+rect -55 -52 -47 -48
+rect -55 -64 -47 -60
+<< m2contact >>
+rect -62 -65 -58 -61
+rect -62 -80 -58 -76
+rect -14 11 -10 15
+use latch  latch_1
+timestamp 1430426212
+transform 0 1 -69 -1 0 9
+box -6 -2 10 24
+use staticizer  staticizer_1
+timestamp 1430428783
+transform 0 1 -73 -1 0 -24
+box -19 2 12 32
+use inverter  inverter_0
+timestamp 1430424850
+transform 0 1 -76 -1 0 -73
+box -5 5 7 31
+<< labels >>
+rlabel polysilicon -61 8 -59 10 1 in
+rlabel m2contact -62 -80 -58 -76 1 out_
+rlabel metal1 -89 12 -86 15 4 cyclezero
+rlabel metal1 -82 12 -79 15 5 w
+rlabel metal1 -75 12 -72 15 5 GND
+rlabel metal1 -39 12 -36 15 5 Vdd
+rlabel metal1 -32 12 -29 15 5 w_
+rlabel metal1 -25 12 -22 15 6 reset_
+<< end >>

@@ -1,0 +1,11 @@
+import "globals.cast";
+import "fbit.cast";
+import "faccumbit.cast";
+
+// toFile is for testing.
+define fcell()(node fw, fw_, br, br_, bload, bload_, zin, g0_, g1_, g2_, g3_; node bus, zout; node toFile) {
+  node regin, regout;
+
+  fbit Function(regout, bus, g0_, g1_, g2_, g3_, regin);
+  faccumbit FReg(regin, fw, fw_, br, br_, bload, bload_, zin, bus, regout, zout, toFile);
+}

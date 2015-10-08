@@ -1,0 +1,125 @@
+magic
+tech scmos
+timestamp 1434158754
+<< metal1 >>
+rect -17 910 -13 926
+rect -4 916 -1 928
+rect 7 922 47 925
+rect -4 913 10 916
+rect -17 907 4 910
+rect 7 907 10 913
+rect 38 907 41 915
+rect 44 907 47 922
+rect 1 785 4 875
+rect 7 785 10 875
+rect 38 785 41 875
+rect 44 785 47 875
+rect 1 660 4 750
+rect 7 660 10 750
+rect 38 660 41 750
+rect 44 660 47 750
+rect 1 535 4 625
+rect 7 535 10 625
+rect 38 535 41 625
+rect 44 535 47 625
+rect 1 410 4 500
+rect 7 410 10 500
+rect 38 410 41 500
+rect 44 410 47 500
+rect 1 285 4 375
+rect 7 285 10 375
+rect 38 285 41 375
+rect 44 285 47 375
+rect 1 160 4 250
+rect 7 160 10 250
+rect 38 160 41 250
+rect 44 160 47 250
+rect 1 35 4 125
+rect 7 35 10 125
+rect 38 35 41 125
+rect 44 35 47 125
+<< metal2 >>
+rect -42 999 44 1003
+rect -42 932 -39 999
+rect -31 977 43 981
+rect -42 928 -28 932
+rect 39 919 43 977
+rect 41 915 43 919
+<< m2contact >>
+rect 44 999 48 1003
+rect -35 977 -31 981
+rect 37 915 41 919
+rect 20 906 24 910
+rect 20 875 24 879
+rect 20 781 24 785
+rect 20 750 24 754
+rect 20 656 24 660
+rect 20 625 24 629
+rect 20 531 24 535
+rect 20 500 24 504
+rect 20 406 24 410
+rect 20 375 24 379
+rect 20 281 24 285
+rect 20 250 24 254
+rect 20 156 24 160
+rect 20 125 24 129
+rect 20 31 24 35
+rect 20 0 24 4
+use inputRegisterController  inputRegisterController_0
+timestamp 1434158754
+transform -1 0 13 0 1 972
+box -35 -47 44 56
+use iobit  in7
+timestamp 1434088956
+transform 1 0 11 0 1 891
+box -11 -16 37 19
+use iobit  in6
+timestamp 1434088956
+transform 1 0 11 0 1 766
+box -11 -16 37 19
+use iobit  in5
+timestamp 1434088956
+transform 1 0 11 0 1 641
+box -11 -16 37 19
+use iobit  in4
+timestamp 1434088956
+transform 1 0 11 0 1 516
+box -11 -16 37 19
+use iobit  in3
+timestamp 1434088956
+transform 1 0 11 0 1 391
+box -11 -16 37 19
+use iobit  in2
+timestamp 1434088956
+transform 1 0 11 0 1 266
+box -11 -16 37 19
+use iobit  in1
+timestamp 1434088956
+transform 1 0 11 0 1 141
+box -11 -16 37 19
+use iobit  in0
+timestamp 1434088956
+transform 1 0 11 0 1 16
+box -11 -16 37 19
+<< labels >>
+rlabel metal1 1 907 4 910 4 r
+rlabel metal1 7 907 10 910 5 GND
+rlabel metal1 38 907 41 910 5 Vdd
+rlabel metal1 44 907 47 910 6 r_
+rlabel m2contact 20 906 24 910 5 in7
+rlabel m2contact 20 875 24 879 1 bus7
+rlabel m2contact 20 781 24 785 1 in6
+rlabel m2contact 20 750 24 754 1 bus6
+rlabel m2contact 20 625 24 629 1 bus5
+rlabel m2contact 20 656 24 660 1 in5
+rlabel m2contact 20 531 24 535 1 in4
+rlabel m2contact 20 500 24 504 1 bus4
+rlabel m2contact 20 406 24 410 1 in3
+rlabel m2contact 20 375 24 379 1 bus3
+rlabel m2contact 20 281 24 285 1 in2
+rlabel m2contact 20 250 24 254 1 bus2
+rlabel m2contact 20 156 24 160 1 in1
+rlabel m2contact 20 125 24 129 1 bus1
+rlabel m2contact 20 31 24 35 1 in0
+rlabel m2contact 20 0 24 4 1 bus0
+<< end >>

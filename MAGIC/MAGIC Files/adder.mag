@@ -1,0 +1,209 @@
+magic
+tech scmos
+timestamp 1434092755
+<< metal1 >>
+rect 47 1022 51 1026
+rect 14 991 31 994
+rect 74 991 87 994
+rect 0 985 3 988
+rect 7 985 10 988
+rect 14 985 17 991
+rect 34 988 37 991
+rect 21 985 24 988
+rect 28 985 37 988
+rect 65 988 68 991
+rect 65 985 73 988
+rect 77 985 80 988
+rect 84 985 87 991
+rect 91 985 94 988
+rect 98 985 101 988
+rect 104 985 107 988
+rect 139 985 143 988
+rect 153 985 157 988
+rect 266 985 270 988
+rect 0 863 3 875
+rect 7 863 10 875
+rect 14 863 17 875
+rect 21 863 24 875
+rect 28 863 31 875
+rect 70 863 73 875
+rect 77 863 80 875
+rect 84 863 87 875
+rect 91 863 94 875
+rect 98 863 101 875
+rect 104 863 107 875
+rect 117 863 120 875
+rect 139 863 143 875
+rect 153 863 157 875
+rect 234 863 238 875
+rect 266 863 270 875
+rect 0 738 3 750
+rect 7 738 10 750
+rect 14 738 17 750
+rect 21 738 24 750
+rect 28 738 31 750
+rect 70 738 73 750
+rect 77 738 80 750
+rect 84 738 87 750
+rect 91 738 94 750
+rect 98 738 101 750
+rect 104 738 107 750
+rect 117 738 120 750
+rect 139 738 143 750
+rect 153 738 157 750
+rect 234 738 238 750
+rect 266 738 270 750
+rect 0 613 3 625
+rect 7 613 10 625
+rect 14 613 17 625
+rect 21 613 24 625
+rect 28 613 31 625
+rect 70 613 73 625
+rect 77 613 80 625
+rect 84 613 87 625
+rect 91 613 94 625
+rect 98 613 101 625
+rect 104 613 107 625
+rect 117 613 120 625
+rect 139 613 143 625
+rect 153 613 157 625
+rect 234 613 238 625
+rect 266 613 270 625
+rect 0 488 3 500
+rect 7 488 10 500
+rect 14 488 17 500
+rect 21 488 24 500
+rect 28 488 31 500
+rect 70 488 73 500
+rect 77 488 80 500
+rect 84 488 87 500
+rect 91 488 94 500
+rect 98 488 101 500
+rect 104 488 107 500
+rect 117 488 120 500
+rect 139 488 143 500
+rect 153 488 157 500
+rect 234 488 238 500
+rect 266 488 270 500
+rect 0 363 3 375
+rect 7 363 10 375
+rect 14 363 17 375
+rect 21 363 24 375
+rect 28 363 31 375
+rect 70 363 73 375
+rect 77 363 80 375
+rect 84 363 87 375
+rect 91 363 94 375
+rect 98 363 101 375
+rect 104 363 107 375
+rect 117 363 120 375
+rect 139 363 143 375
+rect 153 363 157 375
+rect 234 363 238 375
+rect 266 363 270 375
+rect 0 238 3 250
+rect 7 238 10 250
+rect 14 238 17 250
+rect 21 238 24 250
+rect 28 238 31 250
+rect 70 238 73 250
+rect 77 238 80 250
+rect 84 238 87 250
+rect 91 238 94 250
+rect 98 238 101 250
+rect 104 238 107 250
+rect 117 238 120 250
+rect 139 238 143 250
+rect 153 238 157 250
+rect 234 238 238 250
+rect 266 238 270 250
+rect 0 113 3 125
+rect 7 113 10 125
+rect 14 113 17 125
+rect 21 113 24 125
+rect 28 113 31 125
+rect 70 113 73 125
+rect 77 113 80 125
+rect 84 113 87 125
+rect 91 113 94 125
+rect 98 113 101 125
+rect 104 113 107 125
+rect 117 113 120 125
+rect 139 113 143 125
+rect 153 113 157 125
+rect 234 113 238 125
+rect 266 113 270 125
+rect 234 0 238 4
+<< metal2 >>
+rect 47 988 51 991
+rect 47 984 234 988
+rect 41 955 45 959
+rect 41 830 45 834
+rect 41 705 45 709
+rect 41 580 45 584
+rect 41 456 45 460
+rect 41 330 45 334
+rect 41 205 45 209
+rect 41 80 45 84
+<< m2contact >>
+rect 234 984 238 988
+use iobit  iobit_0
+timestamp 1434088956
+transform 1 0 38 0 -1 1010
+box -11 -16 37 19
+use addsubcell  add7
+timestamp 1434084532
+transform 1 0 104 0 1 875
+box -104 0 166 113
+use addsubcell  add6
+timestamp 1434084532
+transform 1 0 104 0 1 750
+box -104 0 166 113
+use addsubcell  add5
+timestamp 1434084532
+transform 1 0 104 0 1 625
+box -104 0 166 113
+use addsubcell  add4
+timestamp 1434084532
+transform 1 0 104 0 1 500
+box -104 0 166 113
+use addsubcell  add3
+timestamp 1434084532
+transform 1 0 104 0 1 375
+box -104 0 166 113
+use addsubcell  add2
+timestamp 1434084532
+transform 1 0 104 0 1 250
+box -104 0 166 113
+use addsubcell  add1
+timestamp 1434084532
+transform 1 0 104 0 1 125
+box -104 0 166 113
+use addsubcell  add0
+timestamp 1434084532
+transform 1 0 104 0 1 0
+box -104 0 166 113
+<< labels >>
+rlabel metal1 0 985 3 988 4 phi1
+rlabel metal1 7 985 10 988 5 ld
+rlabel metal1 14 985 17 988 5 w
+rlabel metal1 21 985 24 988 5 r
+rlabel metal1 77 985 80 988 5 r_
+rlabel metal1 84 985 87 988 5 w_
+rlabel metal1 91 985 94 988 5 ld_
+rlabel metal1 98 985 101 988 5 phi1_
+rlabel metal1 104 985 107 988 5 add
+rlabel metal1 139 985 143 988 5 sub
+rlabel metal1 153 985 157 988 5 GND
+rlabel metal1 266 985 270 988 6 Vdd
+rlabel metal1 47 1022 51 1026 5 cout
+rlabel metal2 41 80 45 84 1 bus0
+rlabel metal2 41 205 45 209 1 bus1
+rlabel metal2 41 330 45 334 1 bus2
+rlabel metal2 41 456 45 460 1 bus3
+rlabel metal2 41 580 45 584 1 bus4
+rlabel metal2 41 705 45 709 1 bus5
+rlabel metal2 41 830 45 834 1 bus6
+rlabel metal2 41 955 45 959 1 bus7
+rlabel metal1 234 0 238 4 1 cin
+<< end >>

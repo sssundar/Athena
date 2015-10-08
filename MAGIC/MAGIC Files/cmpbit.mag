@@ -1,0 +1,146 @@
+magic
+tech scmos
+timestamp 1433953518
+<< polysilicon >>
+rect 14 29 16 31
+rect 14 21 16 23
+rect 28 17 30 19
+rect 0 9 4 11
+rect 0 -51 2 9
+rect 28 5 30 7
+rect 4 -3 6 -1
+rect 10 -2 13 -1
+rect 17 -2 20 -1
+rect 10 -3 20 -2
+rect 28 -3 30 -1
+rect 11 -7 20 -5
+rect 28 -7 31 -5
+rect 38 -6 47 -4
+rect 11 -9 13 -7
+rect 4 -11 6 -9
+rect 10 -11 13 -9
+rect 29 -10 31 -7
+rect 29 -12 47 -10
+rect 17 -26 19 -18
+rect 14 -44 16 -36
+rect 35 -42 54 -40
+rect 0 -53 6 -51
+rect 10 -53 20 -51
+rect 28 -53 30 -51
+rect 14 -57 20 -55
+rect 28 -57 54 -55
+rect 14 -59 16 -57
+rect 4 -61 6 -59
+rect 10 -61 16 -59
+<< ndiffusion >>
+rect 6 -1 10 0
+rect 6 -4 10 -3
+rect 6 -9 10 -8
+rect 6 -12 10 -11
+rect 6 -51 10 -50
+rect 6 -54 10 -53
+rect 6 -59 10 -58
+rect 6 -62 10 -61
+<< pdiffusion >>
+rect 20 -1 28 0
+rect 20 -5 28 -3
+rect 20 -8 28 -7
+rect 20 -51 28 -50
+rect 20 -55 28 -53
+rect 20 -58 28 -57
+<< metal1 >>
+rect 0 28 3 31
+rect 41 28 44 31
+rect 0 24 6 28
+rect 28 24 44 28
+rect 0 4 3 24
+rect 0 0 6 4
+rect 13 2 17 12
+rect 41 4 44 24
+rect 0 -12 3 0
+rect 28 0 44 4
+rect 10 -8 17 -5
+rect 33 -7 34 -3
+rect 13 -12 17 -8
+rect 0 -16 6 -12
+rect 13 -14 28 -12
+rect 13 -15 16 -14
+rect 0 -29 3 -16
+rect 20 -15 28 -14
+rect 33 -21 36 -7
+rect 28 -24 36 -21
+rect 41 -29 44 0
+rect 48 -2 51 31
+rect 0 -33 6 -29
+rect 28 -33 44 -29
+rect 0 -46 3 -33
+rect 28 -39 35 -38
+rect 28 -41 31 -39
+rect 0 -50 6 -46
+rect 17 -48 20 -46
+rect 13 -50 20 -48
+rect 0 -62 3 -50
+rect 13 -54 17 -50
+rect 10 -58 17 -54
+rect 41 -58 44 -33
+rect 28 -62 44 -58
+rect 0 -66 6 -62
+rect 41 -66 44 -62
+rect 48 -66 51 -14
+rect 55 -39 58 31
+rect 55 -66 58 -58
+<< ntransistor >>
+rect 6 -3 10 -1
+rect 6 -11 10 -9
+rect 6 -53 10 -51
+rect 6 -61 10 -59
+<< ptransistor >>
+rect 20 -3 28 -1
+rect 20 -7 28 -5
+rect 20 -53 28 -51
+rect 20 -57 28 -55
+<< polycontact >>
+rect 13 -2 17 2
+rect 34 -7 38 -3
+rect 47 -6 51 -2
+rect 47 -14 51 -10
+rect 16 -18 20 -14
+rect 31 -43 35 -39
+rect 54 -43 58 -39
+rect 13 -48 17 -44
+rect 54 -58 58 -54
+<< ndcontact >>
+rect 6 0 10 4
+rect 6 -8 10 -4
+rect 6 -16 10 -12
+rect 6 -50 10 -46
+rect 6 -58 10 -54
+rect 6 -66 10 -62
+<< pdcontact >>
+rect 20 -12 28 -8
+rect 20 -50 28 -46
+rect 20 -62 28 -58
+use xor  xor_0
+timestamp 1433978507
+transform 1 0 6 0 1 0
+box -6 0 28 31
+use inverter  inverter_0
+timestamp 1430424850
+transform 0 1 -1 1 0 -28
+box -5 5 7 31
+use inverter  inverter_1
+timestamp 1430424850
+transform 0 1 -1 -1 0 -34
+box -5 5 7 31
+<< labels >>
+rlabel metal1 0 28 3 31 4 GND
+rlabel metal1 41 28 44 31 5 Vdd
+rlabel metal1 48 28 51 31 5 eqout_
+rlabel metal1 55 28 58 31 6 zout_
+rlabel metal1 55 -66 58 -63 8 zin_
+rlabel metal1 48 -66 51 -63 1 eqin_
+rlabel polysilicon 15 30 15 30 5 cnt_
+rlabel polysilicon 29 18 29 18 1 cnt
+rlabel polysilicon 15 22 15 22 1 cmp_
+rlabel polysilicon 29 6 29 6 1 cmp
+<< end >>

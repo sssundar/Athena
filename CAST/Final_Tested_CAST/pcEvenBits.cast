@@ -1,0 +1,26 @@
+import "globals.cast";
+import "inverter.cast";
+
+// Program counter CAST for bits 0,2,...,14 of [0:14]. 
+// Need branchWrite, branchWrite_ (load address, inverted from load input to these bits)
+// 	incWrite, incWrite_ (increment address, uninverted from increment input to these bits)
+// 	phi1 read to incrementor 
+// 	ungated read to address bus (not inverted from these bits)
+// 	reset latched bit to 0 (inside, reads out as 1)
+define pcEvenBits()(node BranchLoadIn, IncLoadIn, branchWrite, branchWrite_, incWrite, incWrite_; node toIncrementor, toAddrBus) {
+  node currentAddress;
+  toAddrBus = currentAddress;
+
+  node BranchLoadIn_; 
+  inverter BLI(BranchLoadIn, BranchLoadIn_);
+
+  prs {
+    ( branchWrite & BranchLoadIn_) | (incWrite & IncLoadIn) | RESET -> currentAddress-
+    (~branchWrite_ & ~BranchLoadIn_) | (~incWrite_ & ~IncLoadIn) -> currentAddress+
+
+     phi1  &  currentAddress -> toIncrementor-
+    ~phi1_ & ~currentAddress -> toIncrementor+
+  }
+}
+
+

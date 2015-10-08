@@ -1,0 +1,7 @@
+import "globals.cast";
+import "registerBit.cast";
+
+// toFile is for testing purposes (make register file visible)
+define register(int N)(node write, write_, read, read_; node[N] fromDP, toDP, toFile) {
+	< i: N : registerBit reg[i](fromDP[i], write, write_, read, read_, toDP[i], toFile[i]); >
+}

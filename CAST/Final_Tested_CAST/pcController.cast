@@ -1,0 +1,42 @@
+import "globals.cast";
+import "inverter.cast";
+
+// Must generate branchWrite, branchWrite_, incWrite, incWrite_ for program counter.
+define pcController()(node branchWrite, branchWrite_, incWrite, incWrite_) {  
+
+node shouldBranch, shouldBranch_;
+inverter sBr(shouldBranch_, shouldBranch);
+
+node shouldIncOnCycle1, shouldIncOnCycle1_;
+inverter sIC1(shouldIncOnCycle1_, shouldIncOnCycle1);
+inverter iwi(incWrite_, incWrite);
+inverter bwi(branchWrite_, branchWrite);
+
+prs {
+	controlPath[4] | (controlPath[2] & latchedCarryOut) | (controlPath[3] & logicalAccumulatorIs0) -> shouldBranch_-
+	(~controlPath[2] | ~latchedCarryOut) & (~controlPath[3] | ~logicalAccumulatorIs0) -> shouldBranch_+
+	
+	BranchInstruction | (InputInstruction & controlPath_[3]) -> shouldIncOnCycle1_-
+	~BranchInstruction & (~InputInstruction | ~controlPath_[3]) -> shouldIncOnCycle1_+
+
+	phi0 & 
+	( 
+		( instructionCycleCountIs0 & RESET_ ) 			|
+		( instructionCycleCountIs1 & shouldIncOnCycle1 )	|
+		( instructionCycleCountIs2 & shouldBranch_ )
+	)
+	-> incWrite_-
+
+	~phi0 |
+	( 
+		( ~instructionCycleCountIs0 | ~RESET_ ) 		&
+		( ~instructionCycleCountIs1 | ~shouldIncOnCycle1 ) 	&
+		( ~instructionCycleCountIs2 | ~shouldBranch_ )
+	)
+	-> incWrite_+
+
+	phi0 & instructionCycleCountIs2 & shouldBranch -> branchWrite_-
+	~phi0 | ~instructionCycleCountIs2 | ~shouldBranch -> branchWrite_+
+}
+
+}

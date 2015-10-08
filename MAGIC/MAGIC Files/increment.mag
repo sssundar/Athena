@@ -1,0 +1,103 @@
+magic
+tech scmos
+timestamp 1431667015
+<< metal1 >>
+rect -84 -36 -80 -20
+rect -26 -44 -23 -20
+rect 4 -36 8 4
+rect 85 0 121 4
+rect 117 -44 121 0
+<< metal2 >>
+rect -116 967 74 971
+rect -133 919 -129 923
+rect -116 914 -112 967
+rect -46 909 -42 923
+rect -46 905 12 909
+rect -116 842 74 846
+rect -133 794 -129 798
+rect -116 789 -112 842
+rect -46 784 -42 798
+rect -46 780 12 784
+rect -116 717 74 721
+rect -133 669 -129 673
+rect -116 664 -112 717
+rect -46 659 -42 673
+rect -46 655 12 659
+rect -116 592 74 596
+rect -133 544 -129 548
+rect -116 539 -112 592
+rect -46 534 -42 548
+rect -46 530 12 534
+rect -116 467 74 471
+rect -133 419 -129 423
+rect -116 414 -112 467
+rect -46 409 -42 423
+rect -46 405 12 409
+rect -116 342 74 346
+rect -133 294 -129 298
+rect -116 289 -112 342
+rect -46 284 -42 298
+rect -46 280 12 284
+rect -116 217 74 221
+rect -133 169 -129 173
+rect -116 164 -112 217
+rect -46 159 -42 173
+rect -46 155 12 159
+rect -116 92 74 96
+rect -133 44 -129 48
+rect -116 39 -112 92
+rect -46 34 -42 48
+rect -46 30 4 34
+rect -133 -40 -84 -36
+rect -80 -40 4 -36
+rect 8 -40 126 -36
+rect -133 -48 -26 -44
+rect -22 -48 117 -44
+rect 121 -48 126 -44
+<< m2contact >>
+rect -85 1131 -81 1135
+rect -114 1058 -110 1062
+rect -85 1032 -81 1036
+rect -94 986 -90 990
+rect 85 984 89 988
+rect -51 939 -47 943
+rect -14 939 -10 943
+rect 4 895 8 899
+rect 4 770 8 774
+rect 4 645 8 649
+rect 4 520 8 524
+rect 4 395 8 399
+rect 4 270 8 274
+rect 4 145 8 149
+rect 4 20 8 24
+rect -84 -40 -80 -36
+rect 4 -40 8 -36
+rect -26 -48 -22 -44
+rect 117 -48 121 -44
+use accumulator  accumulator_0
+timestamp 1431665907
+transform 1 0 -133 0 1 44
+box 0 -67 127 1091
+use adder  adder_0
+timestamp 1431665391
+transform 1 0 0 0 1 20
+box 0 -20 125 968
+<< labels >>
+rlabel metal2 -133 -48 -129 -44 2 Vdd
+rlabel metal2 -133 -40 -129 -36 3 GND
+rlabel metal2 -133 44 -129 48 3 bus0
+rlabel metal2 -133 169 -129 173 3 bus1
+rlabel metal2 -133 294 -129 298 3 bus2
+rlabel metal2 -133 419 -129 423 3 bus3
+rlabel metal2 -133 544 -129 548 3 bus4
+rlabel metal2 -133 669 -129 673 3 bus5
+rlabel metal2 -133 794 -129 798 3 bus6
+rlabel metal2 -133 919 -129 923 3 bus7
+rlabel m2contact -85 1131 -81 1135 5 regw
+rlabel m2contact -114 1058 -110 1062 1 phi0
+rlabel m2contact -85 1032 -81 1036 1 regr
+rlabel m2contact -94 986 -90 990 1 phi1
+rlabel m2contact -51 939 -47 943 1 phi1_
+rlabel m2contact -14 939 -10 943 1 reset
+rlabel m2contact 85 984 89 988 1 cout
+<< end >>

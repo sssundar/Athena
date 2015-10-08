@@ -1,0 +1,98 @@
+magic
+tech scmos
+timestamp 1434088717
+<< polysilicon >>
+rect -37 83 0 85
+rect -37 82 -35 83
+rect -51 80 -35 82
+rect -2 25 0 83
+rect -2 23 8 25
+<< metal1 >>
+rect -111 97 -108 100
+rect -104 97 -101 100
+rect -97 97 -94 100
+rect -90 97 -87 100
+rect -83 97 -80 100
+rect -41 97 -38 100
+rect -34 97 -31 100
+rect -27 97 -24 100
+rect -20 97 -17 100
+rect -13 97 -10 100
+rect -6 97 -3 100
+rect -55 47 -51 51
+rect 0 46 3 100
+rect 31 60 34 100
+rect 54 60 57 100
+rect 60 60 63 100
+rect 73 60 79 100
+rect 89 60 92 100
+rect 95 60 98 100
+rect 118 60 121 100
+rect 0 42 6 46
+rect 13 45 17 46
+rect 0 2 3 42
+rect 28 42 31 46
+rect 12 22 13 26
+rect 0 -2 7 2
+rect 13 1 17 5
+rect -6 -17 -3 -14
+rect 0 -17 3 -2
+rect 28 -2 32 2
+<< metal2 >>
+rect -70 9 -66 96
+rect -47 50 17 51
+rect -47 47 13 50
+rect 17 47 32 50
+rect 90 38 94 58
+rect 17 34 94 38
+rect 17 22 37 26
+rect -70 5 13 9
+rect 17 6 32 9
+rect 17 -9 86 -6
+<< polycontact >>
+rect 13 41 17 45
+rect 8 22 12 26
+rect 13 -3 17 1
+<< m2contact >>
+rect -70 96 -66 100
+rect -51 47 -47 51
+rect 13 46 17 50
+rect 13 34 17 38
+rect 13 22 17 26
+rect 13 5 17 9
+rect 13 -10 17 -6
+use faccumbit  faccumbit_0
+timestamp 1433954011
+transform 1 0 -111 0 1 12
+box 0 -29 108 88
+use inverter  inverter_0
+timestamp 1430424850
+transform 0 1 -1 -1 0 41
+box -5 5 7 31
+use inverter  inverter_1
+timestamp 1430424850
+transform 0 1 -1 -1 0 -3
+box -5 5 7 31
+use fbit  fbit_0
+timestamp 1386741115
+transform 1 0 31 0 1 -12
+box 0 -5 90 72
+<< labels >>
+rlabel metal1 -111 97 -108 100 4 phi1
+rlabel metal1 -104 97 -101 100 5 ld
+rlabel metal1 -97 97 -94 100 5 w
+rlabel metal1 -90 97 -87 100 5 r
+rlabel metal1 -83 97 -80 100 5 GND
+rlabel m2contact -70 96 -66 100 5 bus
+rlabel metal1 -41 97 -38 100 5 Vdd
+rlabel metal1 -34 97 -31 100 5 r_
+rlabel metal1 -27 97 -24 100 5 w_
+rlabel metal1 -20 97 -17 100 5 ld_
+rlabel metal1 -13 97 -10 100 5 phi1_
+rlabel metal1 -6 97 -3 100 5 zout
+rlabel metal1 54 97 57 100 5 g1_
+rlabel metal1 60 97 63 100 5 g2_
+rlabel metal1 89 97 92 100 5 g3_
+rlabel metal1 95 97 98 100 5 g0_
+rlabel metal1 -6 -17 -3 -14 1 zin
+<< end >>

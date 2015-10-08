@@ -1,0 +1,7 @@
+define nor4()(node a,b,c,d; node out) {
+	prs {
+		~a & ~b & ~c & ~d -> out+
+		a | b | c | d -> out-
+	}
+}
+

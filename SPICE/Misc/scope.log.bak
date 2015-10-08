@@ -1,0 +1,96 @@
+ScopeSigMgr:loadpffile /home/sssundar/cs181a/lab/final/MAGIC/ProgramCounter/largestTest.tr0 1 openonly
+# PF:1
+wm geometry .sigmgr 467x236+439+199
+wm geometry .sigmgr 467x236+458+199
+wm geometry .sigmgr 467x236+475+199
+wm geometry .sigmgr 467x236+496+199
+wm geometry .sigmgr 467x236+517+197
+wm geometry .sigmgr 467x236+538+194
+wm geometry .sigmgr 467x236+557+192
+wm geometry .sigmgr 467x236+570+190
+wm geometry .sigmgr 467x236+581+188
+wm geometry .sigmgr 467x236+588+188
+wm geometry .sigmgr 467x236+589+187
+pf:read PF:1 v(chainstart) v(finaloutput)
+# WF:1:1 WF:1:2
+Graph addsignal {WF:1:1 WF:1:2} -region {new new} -yview {real(y) real(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal0 Signal1
+Graph:DSel
+Graph:Select Graph0
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-0.014187972065997 2.4729530522825} {4.82035n 6.96277n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-0.55670774151081 8.4526562487866} {4.642713496n 5.710818935n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-1.6093233316291 25.210057504353} {4.8367797215n 5.7185877006n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{3.8249236558583 -1.0450028253835} {4.8471936005n 5.2477460042n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.7956054113893 -0.86546155871789} {4.8842353263n 5.2257806703n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{0.97606938128602 -0.40664188749515} {4.878025411n 5.2816699085n}}
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0)} -range {all all all} -zoomed {0 0 0}
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph axisconfig AxisX(0) -rang {5.5n 5 exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {5n 5.5n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {5n 5.2n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {5n 5.1n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {5n 5.05n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph axisconfig AxisX(0) -rang {5n 5.07n exact} -gridvis n -label t(s) -scale lin -unitscale auto
+Graph:DSel
+Graph:Select Graph0
+Graph axisconfig AxisX(0) -range {5.0149423858n 5.04667505322n}
+Graph axisconfig AxisX(0) -scale linear -gridvis no -linticks {} -logticks {1 1} -subticks 0 -label t(s) -digiview {} -lock no -slider no -range {5n 5.07n exact} -unitscale auto
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{0.38699130900753 0.32176907991523} {5.01928932654n 5.04602301211n}}
+Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(V)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{-0.029199415817857 0.99874168634415} {5n 5.07n exact}} -unitscale {{auto} {auto}}
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{0.40003575482599 0.32176907991523} {5.01037809802n 5.04558831803n}}
+Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(V)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{-0.029199415817857 0.99874168634415} {5n 5.07n exact}} -unitscale {{auto} {auto}}
+GrMeas:ShowAll {} {}
+wm geometry .sigmgr 467x236+598+195
+Mdi:Move 114 49
+GrMeas:Risetime Graph0 Signal1 {0.1 0.5 0.9} default default xyrangeVisible
+# M:0
+GrMeas:Risetime Graph0 Signal1 {0.1 0.5 0.9} default default xyrangeAll
+# M:1
+GrMeas:Risetime Graph0 Signal1 {0.0 0.5 1.0} default default xyrangeAll
+# M:2
+Graph:DSel
+GrMeas:Select Graph0 M:2 2
+GrMeas:DelMfromMenu Graph0 M:2
+GrMeas:DelMfromMenu Graph0 M:1
+GrMeas:DelMfromMenu Graph0 M:0
+Graph:DSel
+Graph:Select Graph0
+Graph axisconfig AxisX(0) -range {5.00755258654n 5.03732913062n}
+Graph axisconfig AxisX(0) -scale linear -gridvis no -linticks {} -logticks {1 1} -subticks 0 -label t(s) -digiview {} -lock no -slider no -range {5n 5.07n exact} -unitscale auto
+Graph:DSel
+GrMeas:DeltaX Graph0 Signal1 Signal1 0 {- {} - {}} Signal xyrangeDefined {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 0 activeGraph 0 - 1
+# M:3
+Graph:DSel
+GrMeas:Select Graph0 M:3 0
+GrMeas:MoveDiffAnc2 Graph0 M:3 0 5.0000000400144n 730.28674200284u
+GrMeas:MoveDiffAnc1 Graph0 M:3 0 5.0443679596083n 0.300760286742
+GrMeas:MoveDiffAnc1 Graph0 M:3 0 5.0448037989134n 0.4470797918806
+GrMeas:MoveDiffAnc2 Graph0 M:3 0 5.0438644019035n 0.1470497918806
+GrMeas:MoveDiffAnc2 Graph0 M:3 0 5.0000000400144n 730.28674200284u
+GrMeas:MoveDiffAnc1 Graph0 M:3 0 5.0443679596083n 0.300760286742
+GrMeas:MoveDiffAnc2 Graph0 M:3 0 5.0000000400144n 730.28674200284u
+GrMeas:MoveDiffAnc1 Graph0 M:3 0 5.0443679596083n 0.300760286742
+GrMeas:MoveArrow Graph0 M:3 0 -32.0
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{0.43916909228137 0.19132462173064} {5.00646585136n 5.00559646321n}}
+Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(V)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{-0.029199415817857 0.99874168634415} {5n 5.07n exact}} -unitscale {{auto} {auto}}
+Graph:DSel
+GrMeas:Select Graph0 M:3 0
+GrMeas:MoveDiffAnc1 Graph0 M:3 0 5.0561150579463n 0.99191291277699
+GrMeas:MoveDiffAnc2 Graph0 M:3 0 5.045606935022n 0.69188291277699
+GrMeas:MoveDiffAnc2 Graph0 M:3 0 5.0000000400144n 730.28674200284u
+GrMeas:MoveDiffAnc1 Graph0 M:3 0 5.0443679596083n 0.300760286742
+GrMeas:MoveDiffAnc2 Graph0 M:3 0 5.0000000400144n 730.28674200284u
+GrMeas:MoveDiffAnc1 Graph0 M:3 0 5.0443679596083n 0.300760286742
+GrMeas:MoveDiffAnc2 Graph0 M:3 0 5.0000000400144n 730.28674200284u
+GrMeas:MoveDiffAnc1 Graph0 M:3 0 5.0443679596083n 0.300760286742
+.frame1.mdi.mdi1.work.graph0 save -file /home/sssundar/cs181a/lab/final/MAGIC/ProgramCounter/largest48.6psdelay -format png  -x 0 -y 0 -w 488 -h 368 -colormode color

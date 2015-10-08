@@ -1,0 +1,105 @@
+magic
+tech scmos
+timestamp 1434099957
+<< polysilicon >>
+rect -40 38 -19 40
+rect 7 38 33 40
+rect -13 22 -8 24
+rect -10 10 -8 22
+rect -5 18 -3 20
+rect 5 18 40 20
+rect -33 6 -19 8
+rect 7 6 26 8
+rect -26 -2 -19 0
+rect 7 -2 19 0
+rect -6 -14 -4 -6
+rect -6 -16 1 -14
+<< pdiffusion >>
+rect -3 20 5 21
+rect -3 17 5 18
+<< metal1 >>
+rect -44 41 -41 45
+rect -44 -47 -41 37
+rect -37 9 -34 45
+rect -37 -47 -34 5
+rect -30 1 -27 45
+rect -23 33 -20 45
+rect -10 42 -6 45
+rect -23 29 -15 33
+rect 13 33 16 45
+rect -23 17 -20 29
+rect -9 24 -6 31
+rect 5 29 16 33
+rect -9 21 -3 24
+rect -23 13 -14 17
+rect -30 -47 -27 -3
+rect -23 -7 -20 13
+rect -9 5 -6 21
+rect 13 17 16 29
+rect 5 13 16 17
+rect -23 -11 -15 -7
+rect -23 -35 -20 -11
+rect -10 -17 -7 1
+rect 13 -7 16 13
+rect 20 1 23 45
+rect 27 9 30 45
+rect 34 41 37 45
+rect 5 -11 16 -7
+rect 13 -35 16 -11
+rect -23 -39 -15 -35
+rect 11 -39 16 -35
+rect -23 -47 -20 -39
+rect -10 -47 -6 -43
+rect 13 -47 16 -39
+rect 20 -47 23 -3
+rect 27 -47 30 5
+rect 34 -47 37 37
+rect 41 21 44 45
+rect 41 -47 44 17
+<< ptransistor >>
+rect -3 18 5 20
+<< polycontact >>
+rect -44 37 -40 41
+rect 33 37 37 41
+rect -10 31 -6 35
+rect -17 21 -13 25
+rect 40 17 44 21
+rect -37 5 -33 9
+rect 26 5 30 9
+rect -30 -3 -26 1
+rect 19 -3 23 1
+rect 1 -18 5 -14
+<< pdcontact >>
+rect -3 21 5 25
+rect -3 13 5 17
+use latch  latch_2
+timestamp 1430426212
+transform 0 1 -17 1 0 35
+box -6 -2 10 24
+use latch  latch_0
+timestamp 1430426212
+transform 0 1 -17 -1 0 11
+box -6 -2 10 24
+use latch  latch_1
+timestamp 1430426212
+transform 0 1 -17 1 0 -5
+box -6 -2 10 24
+use staticizer  staticizer_0
+timestamp 1430428783
+transform 0 1 -21 -1 0 -35
+box -19 2 12 32
+<< labels >>
+rlabel polycontact -15 23 -15 23 1 branch_in
+rlabel polycontact 3 -16 3 -16 1 inc_in
+rlabel metal1 -30 42 -27 45 4 inc_w
+rlabel metal1 20 42 23 45 6 inc_w_
+rlabel metal1 13 42 16 45 5 Vdd
+rlabel metal1 -23 42 -20 45 5 GND
+rlabel metal1 -37 42 -34 45 4 branch_w
+rlabel metal1 27 42 30 45 6 branch_w_
+rlabel metal1 -44 42 -41 45 4 phi1
+rlabel metal1 34 42 37 45 6 phi1_
+rlabel metal1 -10 42 -6 45 5 inc_out
+rlabel metal1 -10 -47 -6 -43 1 addr_out
+rlabel metal1 41 42 44 45 6 reset_
+<< end >>

@@ -1,0 +1,37 @@
+import "globals.cast";
+
+// This is quite similar to registerController for many parts.
+// Reuse layout.
+
+
+define pwmController()(node write, write_, read, read_, PWMoutputEnable_) {  	
+   	// PWMoutputEnable_ is a gated signal that changes when PWMA(ctivate) or PWMD(eactivate) 
+	// instructions are processed. The 3rd bit of these instructions is the A/D signal. 
+	// PWMoutputEnable_ must be staticized.
+	node PWMOEw_, PWMOEw;
+
+	prs {
+		// PWM Output Enable Latching
+		phi0 & PWMInstruction -> PWMOEw_-
+		~phi0 | ~PWMInstruction -> PWMOEw_+
+
+		PWMOEw_ -> PWMOEw-
+		~PWMOEw_ -> PWMOEw+
+
+		PWMOEw & controlPath[3] -> PWMoutputEnable_-
+		(~PWMOEw_ & ~controlPath[3]) | ~RESET_ -> PWMoutputEnable_+
+
+		// Simple register 3 read/write
+		phi0 & simpleWrite & Register3Write -> write_-
+		~phi0 | ~simpleWrite | ~Register3Write -> write_+
+
+		write_ -> write-
+		~write_ -> write+
+
+		phi1 & simpleRead & Register3Read -> read_-
+		~phi1 | ~simpleRead | ~Register3Read -> read_+
+
+		read_ -> read-
+		~read_ -> read+	
+	}
+}

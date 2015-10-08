@@ -1,0 +1,22 @@
+import "globals.cast";
+import "registerBit.cast";
+import "additiveAccumulatorCell.cast";
+import "additiveAccumulatorController.cast";
+
+// additive accumulator block, including add/sub cell, accumulator register, controller, and latched carry out.
+// toFile is for testing, to make register state visible.
+define additiveAccumulator(int N)(node latchedCarryOut; node[N] fromDP, toDP, toFile) {
+	node[N+1] c;
+	node add, sub;
+	node wDP, wDP_, rDP, rDP_, wA, wA_;
+
+	additiveAccumulatorController accCtrl(wDP, wDP_, rDP, rDP_, wA, wA_, add, sub);	
+	c[0] = sub;
+
+	// latched carry out of last add/sub instruction
+	registerBit lCo(c[N], wA, wA_, phi1, phi1_, latchedCarryOut);
+
+	< i: N : additiveAccumulatorCell additiveAcc[i](fromDP[i], wDP, wDP_, rDP, rDP_, wA, wA_, 
+							add, sub, c[i], toDP[i], c[i+1], toFile[i]); >	
+	
+}

@@ -1,0 +1,45 @@
+import "globals.cast";
+import "pwmcell.cast";
+import "pwmOutput.cast";
+import "pwmController.cast";
+
+// a pwmcell is a pwm duty-cycle (compare) register bit, pwm counter register bit, 
+// counter incrementor bit, and comparator bit. 
+
+// N pwmcells arrayed make a pwm block, which updates every cycle
+// and combinationally updates its zero_ and equal_ flags. These, along with
+// the pwmController latched memory of past PWM activate/deactivate instructions,
+// allow pwmOutput to compute the current PWM output (staticized).
+
+// Please note that since our PWM duty cycle can change on any move instruction,
+// our PWM output will glitch with the wrong output for up to the entire count's
+// worth of clock cycles - since we do not synchronize our duty-cycle changes
+// with completion of the current duty cycle. So, our PWM should not be used 
+// as an interrupt unless this glitching is taken into account. When used
+// as a controller for audio or motors, this isn't an issue.
+
+// toFileX are for testing.
+define pwm(int N)(node[N] bus, toFile1, toFile2) {
+  node[N+1] z_, eq_, c;
+  node zero_, equal_;
+  node w, w_, r, r_, oe_;
+  
+  // Initial Conditions
+  z_[0]= ALWAYSLOW;
+  eq_[0] = ALWAYSLOW;
+  c[0] = ALWAYSHIGH;
+ 
+  // Aliasing
+  zero_ = z_[N];
+  equal_ = eq_[N];
+  
+  // Controller generates register3 simple read/write & PWM output enable
+  pwmController ctl(w, w_, r, r_,oe_);
+  // Output Controller handles PWM output and RESET
+  pwmOutput po(oe_, equal_, zero_, RESET, pwmOut);
+  
+  // Wiring the PWM block
+  < i: N : pwmcell PWMCells[i](bus[i], w, w_, r, r_,
+                              eq_[i], z_[i], c[i], bus[i], eq_[i+1],
+                              z_[i+1], c[i+1], toFile1[i], toFile2[i]); >
+}

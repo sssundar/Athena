@@ -1,0 +1,19 @@
+import "inverter.cast";
+
+// Single Bit of the a common Register 
+// Takes input bit in from datapath, latches it internally, and
+// outputs it back to the datapath. No other functionality.
+// toFile is for testing purposes to make internal state visible.
+// See registerController.
+define registerBit()(node bitFromDP, writeFromDP, writeFromDP_, readToDP, readToDP_; node bitToDP; node toFile)
+{
+	node latchedBit_;
+	prs {
+		writeFromDP  &  bitFromDP  -> latchedBit_-
+		~writeFromDP_ & ~bitFromDP  -> latchedBit_+
+		readToDP  &  latchedBit_ -> bitToDP-
+		~readToDP_ & ~latchedBit_ -> bitToDP+
+	}
+	// for testing only
+	inverter tFi(latchedBit_, toFile);
+}

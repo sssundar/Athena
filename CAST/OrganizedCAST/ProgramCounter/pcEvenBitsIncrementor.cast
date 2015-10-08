@@ -1,0 +1,10 @@
+import "xnor.cast";
+import "nor2.cast";
+// Takes a inverted carry in, take inverted current bit, compute NOR (AND) to compute uninverted carry-out.
+// Uses inverted carry in and inverted current bit with XNOR to compute inverted incremented bit to be passed back to PC.
+define pcEvenBitsIncrementor()(node cin_, bitOrig_, cout, bitInc_) {
+	xnor invsum(cin_,bitOrig_,bitInc_);
+	nor2 carry(cin_,bitOrig_,cout);
+}
+
+

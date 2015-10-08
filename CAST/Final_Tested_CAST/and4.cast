@@ -1,0 +1,10 @@
+import "inverter.cast";
+
+define and4()(node a,b,c,d; node out){
+node out_;
+inverter genOut(out_,out);
+prs{
+	a & b & c & d -> out_-
+	~a | ~b | ~c | ~d -> out_+
+}
+}

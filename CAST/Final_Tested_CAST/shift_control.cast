@@ -1,0 +1,45 @@
+import "globals.cast";
+
+// The only note here: we take MSBsign_ from the register guts (ungated), but in looping for a sign extension, 
+// it's stable, even though we're overwriting the guts, and if extend is low, it doesn't matter that
+// MSBsign_ is ungated.
+define shift_control()(node MSBsign_; node shift, shift_, writeFromDP, writeFromDP_, readToDP, readToDP_, shiftInToMSB)
+{
+  node MSBsign, shiftInToMSB_;
+
+  // extend is the LSB of a shift instruction
+  node extend;
+  extend = controlPath[0];
+
+  prs {
+        // as a simple register, we read/write by register 0 flags
+        phi0 & simpleWrite & Register2Write -> writeFromDP_-
+        ~phi0 | ~simpleWrite | ~Register2Write -> writeFromDP_+
+
+         writeFromDP_ -> writeFromDP-
+        ~writeFromDP_ -> writeFromDP+
+
+         phi1 & simpleRead & Register2Read -> readToDP_-
+        ~phi1 | ~simpleRead | ~Register2Read -> readToDP_+
+
+         readToDP_ -> readToDP-
+        ~readToDP_ -> readToDP+
+
+	phi0 &  ShiftInstruction -> shift_-
+	~phi0 | ~ShiftInstruction -> shift_+
+
+	shift_ -> shift-
+	~shift_ -> shift+
+
+	MSBsign_ -> MSBsign-
+	~MSBsign_ -> MSBsign+
+
+	MSBsign &  extend -> shiftInToMSB_-
+	~MSBsign | ~extend -> shiftInToMSB_+
+
+	shiftInToMSB_ -> shiftInToMSB-
+	~shiftInToMSB_ -> shiftInToMSB+
+  }
+}
+
+

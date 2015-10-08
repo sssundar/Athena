@@ -1,0 +1,141 @@
+magic
+tech scmos
+timestamp 1434151676
+<< polysilicon >>
+rect 23 172 25 174
+rect 9 165 22 166
+rect 88 165 90 167
+rect 9 164 24 165
+rect 9 153 11 164
+rect 88 157 90 159
+rect 9 151 12 153
+rect 20 151 30 153
+rect 34 151 36 153
+rect 10 147 12 149
+rect 20 147 26 149
+rect 24 145 26 147
+rect 88 149 90 151
+rect 24 143 30 145
+rect 34 143 36 145
+rect 88 141 90 143
+rect 27 135 41 137
+rect 10 111 12 113
+rect 20 111 26 113
+rect 24 109 26 111
+rect 24 107 30 109
+rect 34 107 36 109
+rect 10 103 12 105
+rect 20 103 30 105
+rect 34 103 36 105
+rect 39 90 41 135
+rect 88 133 90 135
+rect 88 125 90 127
+rect 100 90 102 101
+rect 100 86 101 90
+<< ndiffusion >>
+rect 30 153 34 154
+rect 30 150 34 151
+rect 30 145 34 146
+rect 30 142 34 143
+rect 30 109 34 110
+rect 30 105 34 107
+rect 30 102 34 103
+<< pdiffusion >>
+rect 12 153 20 154
+rect 12 149 20 151
+rect 12 146 20 147
+rect 12 113 20 114
+rect 12 110 20 111
+rect 12 105 20 106
+rect 12 102 20 103
+<< metal1 >>
+rect 5 175 12 179
+rect 34 176 41 179
+rect 5 146 8 175
+rect 20 156 23 158
+rect 38 158 41 176
+rect 20 154 27 156
+rect 34 154 41 158
+rect 24 150 27 154
+rect 24 146 30 150
+rect 5 142 12 146
+rect 38 142 41 154
+rect 5 126 8 142
+rect 34 138 41 142
+rect 5 122 12 126
+rect 5 118 8 122
+rect 5 114 12 118
+rect 5 106 12 109
+rect 24 109 27 123
+rect 38 114 41 138
+rect 34 110 41 114
+rect 20 106 27 109
+rect 5 86 8 106
+rect 24 102 27 106
+rect 24 99 30 102
+rect 16 86 20 98
+rect 23 86 26 88
+rect 44 86 47 103
+rect 51 86 54 102
+rect 59 89 62 102
+rect 95 89 98 102
+rect 101 98 104 101
+rect 101 95 111 98
+rect 57 86 62 89
+rect 88 86 98 89
+rect 108 86 111 95
+<< metal2 >>
+rect 23 92 27 156
+<< ntransistor >>
+rect 30 151 34 153
+rect 30 143 34 145
+rect 30 107 34 109
+rect 30 103 34 105
+<< ptransistor >>
+rect 12 151 20 153
+rect 12 147 20 149
+rect 12 111 20 113
+rect 12 103 20 105
+<< polycontact >>
+rect 22 165 26 169
+rect 23 133 27 137
+rect 23 123 27 127
+rect 37 86 41 90
+rect 101 86 105 90
+<< ndcontact >>
+rect 30 154 34 158
+rect 30 146 34 150
+rect 30 138 34 142
+rect 30 110 34 114
+rect 30 98 34 102
+<< pdcontact >>
+rect 12 154 20 158
+rect 12 142 20 146
+rect 12 114 20 118
+rect 12 106 20 110
+rect 12 98 20 102
+<< m2contact >>
+rect 23 156 27 160
+rect 23 88 27 92
+use inverter  inverter_1
+timestamp 1430424850
+transform 0 -1 41 -1 0 174
+box -5 5 7 31
+use inverter  inverter_0
+timestamp 1430424850
+transform 0 -1 41 1 0 127
+box -5 5 7 31
+use register_controller  register_controller_0
+timestamp 1434142375
+transform 1 0 66 0 1 144
+box -22 -43 45 47
+<< labels >>
+rlabel polysilicon 88 125 90 127 1 regw
+rlabel polysilicon 88 133 90 135 1 phi0
+rlabel polysilicon 88 141 90 143 1 wr_id
+rlabel polysilicon 88 149 90 151 1 rd_id
+rlabel polysilicon 88 157 90 159 1 phi1
+rlabel polysilicon 88 165 90 167 1 regr
+rlabel polysilicon 10 147 12 149 1 sign_
+rlabel polysilicon 23 172 25 174 1 extend
+<< end >>

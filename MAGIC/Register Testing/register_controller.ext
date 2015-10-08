@@ -1,0 +1,53 @@
+timestamp 1434142375
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use inverter inverter_0 0 1 -7 1 0 37
+use inverter inverter_1 0 1 -7 -1 0 -33
+node "GND" 2 12878 -7 -43 m1 0 0 0 0 0 0 0 0 0 0 0 0 286 194 0 0 0 0
+node "w_" 465 10866 7 -42 pc 0 0 0 0 94 90 0 0 0 0 0 0 32 32 0 0 0 0
+node "regw" 406 6196 -2 -11 p 0 0 0 0 68 72 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_0_n9#" 53 0 0 -9 ndiff 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "phi0" 358 5244 -2 -7 p 0 0 0 0 60 64 0 0 0 0 0 0 0 0 0 0 0 0
+node "w" 912 17552 -22 -22 pc 20 18 88 54 102 98 0 0 0 0 0 0 270 180 0 0 0 0
+node "a_0_n5#" 53 0 0 -5 ndiff 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "wr_id" 310 4292 -2 -3 p 0 0 0 0 52 56 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_0_n1#" 40 0 0 -1 ndiff 24 20 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
+node "rd_id" 310 4292 -2 5 p 0 0 0 0 52 56 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_0_7#" 53 0 0 7 ndiff 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_0_11#" 53 0 0 11 ndiff 8 12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "phi1" 358 5244 -2 9 p 0 0 0 0 60 64 0 0 0 0 0 0 0 0 0 0 0 0
+node "Vdd" 607 17390 14 -17 pdiff 0 0 144 84 0 0 0 0 0 0 0 0 478 290 0 0 0 0
+node "regr" 406 6196 -2 13 p 0 0 0 0 68 72 0 0 0 0 0 0 0 0 0 0 0 0
+node "r" 841 21858 -15 22 pc 20 18 88 54 90 86 0 0 0 0 0 0 402 268 0 0 0 0
+node "r_" 395 21282 7 42 pc 0 0 0 0 82 78 0 0 0 0 0 0 290 204 0 0 0 0
+cap "r" "regr" 660
+cap "w" "r" 180
+cap "r" "GND" 180
+cap "w_" "r_" 180
+cap "w" "GND" 180
+cap "w_" "Vdd" 180
+cap "phi1" "r" 420
+cap "phi0" "w" 420
+cap "regw" "w" 660
+cap "r_" "Vdd" 180
+device mosfet pfet 14 -19 15 -18 2 8 "Vdd!" "regw" 4 0 "w" 8 0 "Vdd" 8 0
+device mosfet pfet 14 -11 15 -10 2 8 "Vdd!" "phi0" 4 0 "Vdd" 8 0 "w" 8 0
+device mosfet nfet 0 -11 1 -10 2 4 "Gnd!" "regw" 4 0 "w" 4 0 "a_0_n9#" 4 0
+device mosfet nfet 0 -7 1 -6 2 4 "Gnd!" "phi0" 4 0 "a_0_n9#" 4 0 "a_0_n5#" 4 0
+device mosfet pfet 14 -3 15 -2 2 8 "Vdd!" "wr_id" 4 0 "w" 8 0 "Vdd" 8 0
+device mosfet nfet 0 -3 1 -2 2 4 "Gnd!" "wr_id" 4 0 "a_0_n5#" 4 0 "a_0_n1#" 4 0
+device mosfet pfet 14 5 15 6 2 8 "Vdd!" "rd_id" 4 0 "Vdd" 8 0 "r" 8 0
+device mosfet nfet 0 5 1 6 2 4 "Gnd!" "rd_id" 4 0 "a_0_n1#" 4 0 "a_0_7#" 4 0
+device mosfet nfet 0 9 1 10 2 4 "Gnd!" "phi1" 4 0 "a_0_7#" 4 0 "a_0_11#" 4 0
+device mosfet pfet 14 13 15 14 2 8 "Vdd!" "phi1" 4 0 "r" 8 0 "Vdd" 8 0
+device mosfet nfet 0 13 1 14 2 4 "Gnd!" "regr" 4 0 "a_0_11#" 4 0 "r" 4 0
+device mosfet pfet 14 21 15 22 2 8 "Vdd!" "regr" 4 0 "Vdd" 8 0 "r" 8 0
+merge "inverter_0/out" "r_" -376 0 0 0 0 0 0 0 0 0 0 0 0 -8 -12 0 0 0 0
+merge "inverter_0/a_n5_7#" "GND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "inverter_0/a_n5_21#" "Vdd" -1692 0 0 -144 -84 0 0 0 0 0 0 0 0 -132 -98 0 0 0 0
+merge "inverter_1/a_0_5#" "w" -796 0 0 0 0 -4 -8 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_1/out" "w_" -376 0 0 0 0 0 0 0 0 0 0 0 0 -8 -12 0 0 0 0
+merge "inverter_0/a_0_5#" "r" -796 0 0 0 0 -4 -8 0 0 0 0 0 0 0 0 0 0 0 0

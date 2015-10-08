@@ -1,0 +1,56 @@
+magic
+tech scmos
+timestamp 1434180000
+<< metal1 >>
+rect 406 272 407 273
+rect 398 269 407 272
+rect 398 268 411 269
+rect 386 232 389 268
+rect 364 229 389 232
+rect 369 214 372 221
+rect 408 202 412 203
+rect 378 158 381 163
+rect 409 148 412 180
+<< metal2 >>
+rect 381 341 422 344
+rect 408 307 422 311
+rect 407 280 422 283
+rect 407 273 411 280
+rect 377 265 381 268
+rect 377 261 422 265
+rect 407 250 422 253
+rect 407 224 410 250
+rect 373 221 410 224
+rect 419 217 422 246
+rect 408 214 422 217
+rect 408 207 412 214
+rect 408 202 412 203
+rect 412 189 422 193
+rect 419 158 422 184
+rect 382 154 422 158
+<< m2contact >>
+rect 404 307 408 311
+rect 407 269 411 273
+rect 369 221 373 225
+rect 408 203 412 207
+rect 378 154 382 158
+use trickyxnor2  trickyxnor2_0
+timestamp 1434146939
+transform 0 1 353 1 0 268
+box 0 4 76 54
+use trickyxor2  trickyxor2_0
+timestamp 1434144344
+transform -1 0 392 0 -1 206
+box -20 -11 44 43
+use nand_p32n32  nand_p32n32_0
+timestamp 1434174658
+transform 1 0 315 0 1 185
+box -15 -37 97 47
+<< labels >>
+rlabel metal2 421 215 421 215 1 inc_out1
+rlabel metal2 419 156 419 156 1 inc_in1
+rlabel metal2 420 309 420 309 5 inc_in2
+rlabel metal2 419 263 419 263 5 Vdd
+rlabel metal2 420 342 420 342 5 GND
+rlabel metal2 420 281 420 281 1 inc_out2
+<< end >>

@@ -1,0 +1,8 @@
+import "xor.cast";
+import "nand2.cast";
+// Takes a noninverted carry in, take noninverted current bit, compute NAND to output inverted carry-out.
+// Uses carry in and current bit with XOR to compute noninverted incremented bit to be passed back to PC.
+define pcOddBitsIncrementor()(node cin, bitOrig, cout_, bitInc) {
+	xor sum(cin,bitOrig,bitInc);
+	nand2 invcarry(cin,bitOrig,cout_);
+}

@@ -1,0 +1,9 @@
+import "globals.cast";
+import "IRBit.cast";
+import "IRController.cast";
+
+define instructionRegister(int N)(node[N] fromDP, toCP, toCP_) {
+	node write, write_;
+	IRController IRC(write, write_);
+	< i: N : IRBit IR[i](fromDP[i], write, write_, toCP[i], toCP_[i]); >
+}

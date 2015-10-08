@@ -1,0 +1,161 @@
+magic
+tech scmos
+timestamp 1434151676
+<< polysilicon >>
+rect 2 1020 11 1022
+<< metal1 >>
+rect -2 1014 2 1018
+rect -4 987 5 991
+rect 5 953 8 959
+rect 16 953 20 959
+rect 23 953 26 959
+rect 38 953 41 959
+rect 44 953 47 959
+rect 51 953 54 959
+rect 57 953 60 959
+rect 88 953 91 959
+rect 101 953 104 959
+rect 108 953 111 959
+rect 5 831 8 875
+rect 23 831 26 875
+rect 38 831 41 875
+rect 44 831 47 875
+rect 51 831 54 875
+rect 57 831 60 875
+rect 88 831 91 875
+rect 101 831 104 875
+rect 108 831 111 875
+rect 5 706 8 750
+rect 23 706 26 750
+rect 38 706 41 750
+rect 44 706 47 750
+rect 51 706 54 750
+rect 57 706 60 750
+rect 88 706 91 750
+rect 101 706 104 750
+rect 108 706 111 750
+rect 5 581 8 625
+rect 23 581 26 625
+rect 38 581 41 625
+rect 44 581 47 625
+rect 51 581 54 625
+rect 57 581 60 625
+rect 88 581 91 625
+rect 101 581 104 625
+rect 108 581 111 625
+rect 5 456 8 500
+rect 23 456 26 500
+rect 38 456 41 500
+rect 44 456 47 500
+rect 51 456 54 500
+rect 57 456 60 500
+rect 88 456 91 500
+rect 101 456 104 500
+rect 108 456 111 500
+rect 5 331 8 375
+rect 23 331 26 375
+rect 38 331 41 375
+rect 44 331 47 375
+rect 51 331 54 375
+rect 57 331 60 375
+rect 88 331 91 375
+rect 101 331 104 375
+rect 108 331 111 375
+rect 5 206 8 250
+rect 23 206 26 250
+rect 38 206 41 250
+rect 44 206 47 250
+rect 51 206 54 250
+rect 57 206 60 250
+rect 88 206 91 250
+rect 101 206 104 250
+rect 108 206 111 250
+rect 5 81 8 125
+rect 23 81 26 125
+rect 38 81 41 125
+rect 44 81 47 125
+rect 51 81 54 125
+rect 57 81 60 125
+rect 88 81 91 125
+rect 101 81 104 125
+rect 108 81 111 125
+<< metal2 >>
+rect -2 1018 2 1022
+rect -2 920 2 1010
+rect 70 933 74 944
+rect 70 929 98 933
+rect -2 917 19 920
+rect 70 808 74 819
+rect 70 804 98 808
+rect 70 683 74 694
+rect 70 679 98 683
+rect 70 558 74 569
+rect 70 554 98 558
+rect 70 433 74 444
+rect 70 429 98 433
+rect 70 308 74 319
+rect 70 304 98 308
+rect 70 183 74 194
+rect 70 179 98 183
+rect 70 58 74 69
+rect 70 54 98 58
+<< polycontact >>
+rect -2 1018 2 1022
+<< m2contact >>
+rect -2 1010 2 1014
+rect 19 916 23 920
+use shift_controller  shift_controller_0
+timestamp 1434151676
+transform 1 0 0 0 1 873
+box 5 86 111 191
+use shiftcell  shift7
+timestamp 1430467387
+transform 1 0 61 0 1 914
+box -61 -39 50 42
+use shiftcell  shift6
+timestamp 1430467387
+transform 1 0 61 0 1 789
+box -61 -39 50 42
+use shiftcell  shift5
+timestamp 1430467387
+transform 1 0 61 0 1 664
+box -61 -39 50 42
+use shiftcell  shift4
+timestamp 1430467387
+transform 1 0 61 0 1 539
+box -61 -39 50 42
+use shiftcell  shift3
+timestamp 1430467387
+transform 1 0 61 0 1 414
+box -61 -39 50 42
+use shiftcell  shift2
+timestamp 1430467387
+transform 1 0 61 0 1 289
+box -61 -39 50 42
+use shiftcell  shift1
+timestamp 1430467387
+transform 1 0 61 0 1 164
+box -61 -39 50 42
+use shiftcell  shift0
+timestamp 1430467387
+transform 1 0 61 0 1 39
+box -61 -39 50 42
+<< labels >>
+rlabel metal1 5 953 8 956 5 shift_
+rlabel metal1 23 953 26 956 5 sin
+rlabel metal1 38 953 41 956 5 shift
+rlabel metal1 44 953 47 956 5 w
+rlabel metal1 51 953 54 956 5 r
+rlabel metal1 57 953 60 956 5 GND
+rlabel metal1 88 953 91 956 5 Vdd
+rlabel metal1 101 953 104 956 5 w_
+rlabel metal1 108 953 111 956 6 r_
+rlabel metal2 94 54 98 58 1 bus0
+rlabel metal2 94 179 98 183 1 bus1
+rlabel metal2 94 304 98 308 1 bus2
+rlabel metal2 94 429 98 433 1 bus3
+rlabel metal2 94 554 98 558 1 bus4
+rlabel metal2 94 679 98 683 1 bus5
+rlabel metal2 94 804 98 808 1 bus6
+rlabel metal2 94 929 98 933 1 bus7
+<< end >>

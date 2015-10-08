@@ -1,0 +1,24 @@
+import "globals.cast";
+import "inverter.cast";
+
+// this holds the accumulated count for the pwm counter
+// toFile is for testing.
+define pwmaccumbit()(node in; node out, cmp, cmp_; node toFile)
+{
+  node reg_;
+  cmp_ = reg_;
+
+  prs {
+    ( phi0  & in ) -> reg_-
+    (~phi0_ & ~in) | ~RESET_ -> reg_+
+
+     phi1  &  reg_ -> out-
+    ~phi1_ & ~reg_ -> out+
+
+     cmp_ -> cmp-
+    ~cmp_ -> cmp+
+  }
+  
+  // testing
+  inverter pwc2i(reg_,toFile);
+}

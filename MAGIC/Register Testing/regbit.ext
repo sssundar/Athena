@@ -1,0 +1,41 @@
+timestamp 1431679428
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use latch outlatch 0 1 -1 1 0 25
+use latch inlatch 0 1 -1 -1 0 17
+use staticizer staticizer_0 0 1 -6 -1 0 -17
+node "out" 0 752 6 32 m1 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
+node "w_" 249 14410 23 12 p 0 0 0 0 50 50 0 0 0 0 0 0 196 136 0 0 0 0
+node "in" 284 7792 7 1 p 0 0 0 0 56 56 0 0 0 0 0 0 40 28 16 16 0 0
+node "w" 237 14172 -23 11 pc 0 0 0 0 48 48 0 0 0 0 0 0 196 136 0 0 0 0
+node "Vdd" 157 8648 25 19 nnc 32 32 0 0 0 0 0 0 0 0 0 0 228 152 0 0 0 0
+node "GND" 348 8836 -10 -21 ppc 0 0 32 32 0 0 0 0 0 0 0 0 232 154 0 0 0 0
+node "a_6_21#" 48 3787 6 21 pc 0 0 0 0 18 18 0 0 0 0 0 0 79 58 0 0 0 0
+node "r_" 177 12700 23 28 p 0 0 0 0 38 38 0 0 0 0 0 0 196 136 0 0 0 0
+node "r" 165 12462 -17 27 pc 0 0 0 0 36 36 0 0 0 0 0 0 196 136 0 0 0 0
+cap "w" "r" 180
+cap "Vdd" "r_" 180
+cap "r" "GND" 180
+cap "w_" "r_" 180
+cap "Vdd" "w_" 180
+cap "in" "a_6_21#" 840
+cap "w" "GND" 180
+cap "outlatch/in" "inlatch/in" 60
+merge "staticizer_0/GND" "inlatch/GND" 0 -16 -16 0 0 0 0 0 0 0 0 0 0 -16 -32 0 0 0 0
+merge "inlatch/GND" "outlatch/GND"
+merge "outlatch/GND" "GND"
+merge "inlatch/latch" "w" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "staticizer_0/in" "inlatch/out" -1852 0 0 0 0 -6 -12 0 0 0 0 0 0 -12 -20 0 0 0 0
+merge "inlatch/out" "outlatch/in"
+merge "outlatch/in" "a_6_21#"
+merge "outlatch/out" "out" -564 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0 0 0
+merge "staticizer_0/Vdd" "inlatch/Vdd" 0 0 0 -32 -24 0 0 0 0 0 0 0 0 -32 -40 0 0 0 0
+merge "inlatch/Vdd" "outlatch/Vdd"
+merge "outlatch/Vdd" "Vdd"
+merge "inlatch/in" "in" -796 0 0 0 0 -4 -8 0 0 0 0 0 0 0 0 0 0 0 0
+merge "outlatch/latch_" "r_" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inlatch/latch_" "w_" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "outlatch/latch" "r" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0

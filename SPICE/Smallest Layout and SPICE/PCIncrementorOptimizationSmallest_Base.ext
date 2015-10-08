@@ -1,0 +1,49 @@
+timestamp 1434165362
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use latchOutputMimic latchOutputMimic_0 1 0 6 0 1 22
+use inv_p8n4 inv_p8n4_1 1 0 30 0 1 19
+use inv_p8n4 inv_p8n4_0 -1 0 80 0 1 -32
+use PCIncrementorOptimizationSmallest_BaseCell PCIncrementorOptimizationSmallest_BaseCell_0[0:6:249][0:0:153] 1 0 0 0 1 0
+node "m1_84_n24#" 0 423 84 -24 m1 0 0 0 0 0 0 0 0 0 0 0 0 9 12 0 0 0 0
+node "GND" 3 29519 17 -9 m1 0 0 0 0 0 0 0 0 0 0 0 0 565 308 203 140 0 0
+node "chainStart" 0 3760 -24 13 m1 0 0 0 0 0 0 0 0 0 0 0 0 80 48 0 0 0 0
+node "FINALOUTPUT" 0 16450 1826 22 m1 0 0 0 0 0 0 0 0 0 0 0 0 350 78 0 0 0 0
+node "m1_n30_n20#" 3 30785 -30 -20 m1 0 0 0 0 0 0 0 0 0 0 0 0 655 374 0 0 0 0
+node "Vdd" 1 19599 16 38 m1 0 0 0 0 0 0 0 0 0 0 0 0 417 230 0 0 0 0
+node "a_68_n39#" 26 20017 68 -39 pc 0 0 0 0 16 16 0 0 0 0 0 0 327 180 276 168 0 0
+node "a_20_12#" 164 4284 20 12 pc 0 0 0 0 36 36 0 0 0 0 0 0 16 16 0 0 0 0
+cap "m1_n30_n20#" "GND" 540
+cap "m1_n30_n20#" "a_68_n39#" 720
+cap "a_68_n39#" "GND" 1260
+cap "latchOutputMimic_0/flip0to1" "latchOutputMimic_0/a_n16_n22#" 240
+cap "inv_p8n4_1/a_n6_5#" "inv_p8n4_1/a_n4_0#" 240
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[6]/m1_288_28#" "FINALOUTPUT" -282 0 0 0 0 0 0 0 0 0 0 0 0 -6 -10 0 0 0 0
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[0]/m1_87_n69#" "PCIncrementorOptimizationSmallest_BaseCell_0[0]/m1_87_n7#" -752 0 0 0 0 0 0 0 0 0 0 0 0 -16 -48 0 0 0 0
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[0]/m1_87_n7#" "inv_p8n4_0/a_n2_n26#"
+merge "inv_p8n4_0/a_n2_n26#" "inv_p8n4_1/a_n2_n26#"
+merge "inv_p8n4_1/a_n2_n26#" "latchOutputMimic_0/a_n7_8#"
+merge "latchOutputMimic_0/a_n7_8#" "GND"
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[0]/m1_94_n31#" "PCIncrementorOptimizationSmallest_BaseCell_0[0]/nand_p8n8_0/cin" -1768 0 0 0 0 0 -8 0 0 0 0 0 0 -16 -24 0 -8 0 0
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[0]/nand_p8n8_0/cin" "inv_p8n4_0/a_n6_5#"
+merge "inv_p8n4_0/a_n6_5#" "inv_p8n4_1/a_n4_0#"
+merge "inv_p8n4_1/a_n4_0#" "a_68_n39#"
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[0]/m1_87_67#" "inv_p8n4_1/a_n4_7#" -141 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 0 0 0 0
+merge "inv_p8n4_1/a_n4_7#" "latchOutputMimic_0/a_n16_n22#"
+merge "latchOutputMimic_0/a_n16_n22#" "PCIncrementorOptimizationSmallest_BaseCell_0[0]/m1_87_n40#"
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[0]/m1_87_n40#" "inv_p8n4_0/a_n4_7#"
+merge "inv_p8n4_0/a_n4_7#" "m1_n30_n20#"
+merge "m1_n30_n20#" "m1_84_n24#"
+merge "m1_84_n24#" "Vdd"
+merge "inv_p8n4_1/a_n6_5#" "latchOutputMimic_0/latchReadMimic" -790 0 0 0 0 0 -4 0 0 0 0 0 0 -9 -12 0 0 0 0
+merge "latchOutputMimic_0/latchReadMimic" "a_20_12#"
+merge "latchOutputMimic_0/flip0to1" "chainStart" -376 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[1:6]/m1_87_n7#" "PCIncrementorOptimizationSmallest_BaseCell_0[0:5]/m1_112_n7#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[1:6]/m1_94_n31#" "PCIncrementorOptimizationSmallest_BaseCell_0[1:6]/nand_p8n8_0/cin" -152 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -8 -20 0 0
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[1:6]/nand_p8n8_0/cin" "PCIncrementorOptimizationSmallest_BaseCell_0[0:5]/m1_288_28#"
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[1:6]/m1_87_n40#" "PCIncrementorOptimizationSmallest_BaseCell_0[1:6]/m1_87_67#" -1034 0 0 0 0 0 0 0 0 0 0 0 0 -22 -56 0 0 0 0
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[1:6]/m1_87_67#" "PCIncrementorOptimizationSmallest_BaseCell_0[0:5]/m1_87_67#"
+merge "PCIncrementorOptimizationSmallest_BaseCell_0[1:6]/m1_87_n69#" "PCIncrementorOptimizationSmallest_BaseCell_0[0:5]/m1_161_n64#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0

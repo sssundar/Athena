@@ -1,0 +1,7 @@
+define nor3()(node a,b,c; node out) {
+	prs {
+		~a & ~b & ~c -> out+
+		a | b | c -> out-
+	}
+}
+

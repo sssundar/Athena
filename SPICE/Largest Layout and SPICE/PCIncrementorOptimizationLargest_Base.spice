@@ -1,0 +1,285 @@
+* SPICE3 file created from PCIncrementorOptimizationLargest_Base.ext - technology: scmos
+M1000 Vdd PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[0]/inv_p8n4_2/a_n4_0# Vdd pfet w =88n l =22n
+M1001 PCIncrementorOptimizationLargest_BaseCell_0[0]/inv_p8n4_2/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/xnor GND Gnd nfet w =44n l =22n
+M1002 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/b_ Vdd pfet w =88n l =22n
+M1003 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a Vdd Vdd pfet w =88n l =22n
+M1004 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a_ Gnd nfet w =44n l =22n
+M1005 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/b_ GND Vdd Vdd pfet w =88n l =22n
+M1006 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a GND Gnd nfet w =44n l =22n
+M1007 Vdd PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a_13_15# Vdd pfet w =88n l =22n
+M1008 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a_13_15# PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/xnor Vdd pfet w =88n l =22n
+M1009 GND GND PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/b_ Gnd nfet w =44n l =22n
+M1010 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/xnor Gnd nfet w =44n l =22n
+M1011 Vdd PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[0]/inv_p8n4_1/a_n4_0# Vdd pfet w =88n l =22n
+M1012 PCIncrementorOptimizationLargest_BaseCell_0[0]/inv_p8n4_1/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/xor GND Gnd nfet w =44n l =22n
+M1013 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/b_ Vdd pfet w =88n l =22n
+M1014 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/b_ nor_p64n16_0/cout Vdd Vdd pfet w =88n l =22n
+M1015 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/xor Vdd PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/b_ Gnd nfet w =44n l =22n
+M1016 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/b_ nor_p64n16_0/cout GND Gnd nfet w =44n l =22n
+M1017 GND Vdd PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/a_ Gnd nfet w =44n l =22n
+M1018 Vdd Vdd PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/a_ Vdd pfet w =88n l =22n
+M1019 GND PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/a_27_4# Gnd nfet w =44n l =22n
+M1020 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/xor Vdd pfet w =88n l =22n
+M1021 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/a_27_4# PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/xor Gnd nfet w =44n l =22n
+M1022 Vdd GND PCIncrementorOptimizationLargest_BaseCell_0[0]/nor_p64n16_0/a_n46_21# Vdd pfet w =704n l =22n
+M1023 PCIncrementorOptimizationLargest_BaseCell_0[0]/nor_p64n16_0/a_n46_21# PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b Vdd pfet w =704n l =22n
+M1024 GND PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b Gnd nfet w =176n l =22n
+M1025 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b GND GND Gnd nfet w =176n l =22n
+M1026 Vdd nor_p64n16_0/cout PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a Vdd pfet w =352n l =22n
+M1027 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a Vdd Vdd Vdd pfet w =352n l =22n
+M1028 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a Vdd PCIncrementorOptimizationLargest_BaseCell_0[0]/nand_p32n32_0/a_n5_n20# Gnd nfet w =352n l =22n
+M1029 PCIncrementorOptimizationLargest_BaseCell_0[0]/nand_p32n32_0/a_n5_n20# nor_p64n16_0/cout GND Gnd nfet w =352n l =22n
+M1030 Vdd PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[1]/inv_p8n4_2/a_n4_0# Vdd pfet w =88n l =22n
+M1031 PCIncrementorOptimizationLargest_BaseCell_0[1]/inv_p8n4_2/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/xnor GND Gnd nfet w =44n l =22n
+M1032 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/b_ Vdd pfet w =88n l =22n
+M1033 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a Vdd Vdd pfet w =88n l =22n
+M1034 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a_ Gnd nfet w =44n l =22n
+M1035 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/b_ GND Vdd Vdd pfet w =88n l =22n
+M1036 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a GND Gnd nfet w =44n l =22n
+M1037 Vdd PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a_13_15# Vdd pfet w =88n l =22n
+M1038 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a_13_15# PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/xnor Vdd pfet w =88n l =22n
+M1039 GND GND PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/b_ Gnd nfet w =44n l =22n
+M1040 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/xnor Gnd nfet w =44n l =22n
+M1041 Vdd PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[1]/inv_p8n4_1/a_n4_0# Vdd pfet w =88n l =22n
+M1042 PCIncrementorOptimizationLargest_BaseCell_0[1]/inv_p8n4_1/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/xor GND Gnd nfet w =44n l =22n
+M1043 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b_ Vdd pfet w =88n l =22n
+M1044 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b Vdd Vdd pfet w =88n l =22n
+M1045 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/xor Vdd PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b_ Gnd nfet w =44n l =22n
+M1046 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b GND Gnd nfet w =44n l =22n
+M1047 GND Vdd PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/a_ Gnd nfet w =44n l =22n
+M1048 Vdd Vdd PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/a_ Vdd pfet w =88n l =22n
+M1049 GND PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/a_27_4# Gnd nfet w =44n l =22n
+M1050 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/xor Vdd pfet w =88n l =22n
+M1051 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/a_27_4# PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/xor Gnd nfet w =44n l =22n
+M1052 Vdd GND PCIncrementorOptimizationLargest_BaseCell_0[1]/nor_p64n16_0/a_n46_21# Vdd pfet w =704n l =22n
+M1053 PCIncrementorOptimizationLargest_BaseCell_0[1]/nor_p64n16_0/a_n46_21# PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b Vdd pfet w =704n l =22n
+M1054 GND PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b Gnd nfet w =176n l =22n
+M1055 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b GND GND Gnd nfet w =176n l =22n
+M1056 Vdd PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a Vdd pfet w =352n l =22n
+M1057 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a Vdd Vdd Vdd pfet w =352n l =22n
+M1058 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a Vdd PCIncrementorOptimizationLargest_BaseCell_0[1]/nand_p32n32_0/a_n5_n20# Gnd nfet w =352n l =22n
+M1059 PCIncrementorOptimizationLargest_BaseCell_0[1]/nand_p32n32_0/a_n5_n20# PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b GND Gnd nfet w =352n l =22n
+M1060 Vdd PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[2]/inv_p8n4_2/a_n4_0# Vdd pfet w =88n l =22n
+M1061 PCIncrementorOptimizationLargest_BaseCell_0[2]/inv_p8n4_2/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/xnor GND Gnd nfet w =44n l =22n
+M1062 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/b_ Vdd pfet w =88n l =22n
+M1063 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a Vdd Vdd pfet w =88n l =22n
+M1064 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a_ Gnd nfet w =44n l =22n
+M1065 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/b_ GND Vdd Vdd pfet w =88n l =22n
+M1066 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a GND Gnd nfet w =44n l =22n
+M1067 Vdd PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a_13_15# Vdd pfet w =88n l =22n
+M1068 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a_13_15# PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/xnor Vdd pfet w =88n l =22n
+M1069 GND GND PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/b_ Gnd nfet w =44n l =22n
+M1070 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/xnor Gnd nfet w =44n l =22n
+M1071 Vdd PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[2]/inv_p8n4_1/a_n4_0# Vdd pfet w =88n l =22n
+M1072 PCIncrementorOptimizationLargest_BaseCell_0[2]/inv_p8n4_1/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/xor GND Gnd nfet w =44n l =22n
+M1073 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b_ Vdd pfet w =88n l =22n
+M1074 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b Vdd Vdd pfet w =88n l =22n
+M1075 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/xor Vdd PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b_ Gnd nfet w =44n l =22n
+M1076 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b GND Gnd nfet w =44n l =22n
+M1077 GND Vdd PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/a_ Gnd nfet w =44n l =22n
+M1078 Vdd Vdd PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/a_ Vdd pfet w =88n l =22n
+M1079 GND PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/a_27_4# Gnd nfet w =44n l =22n
+M1080 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/xor Vdd pfet w =88n l =22n
+M1081 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/a_27_4# PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/xor Gnd nfet w =44n l =22n
+M1082 Vdd GND PCIncrementorOptimizationLargest_BaseCell_0[2]/nor_p64n16_0/a_n46_21# Vdd pfet w =704n l =22n
+M1083 PCIncrementorOptimizationLargest_BaseCell_0[2]/nor_p64n16_0/a_n46_21# PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b Vdd pfet w =704n l =22n
+M1084 GND PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b Gnd nfet w =176n l =22n
+M1085 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b GND GND Gnd nfet w =176n l =22n
+M1086 Vdd PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a Vdd pfet w =352n l =22n
+M1087 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a Vdd Vdd Vdd pfet w =352n l =22n
+M1088 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a Vdd PCIncrementorOptimizationLargest_BaseCell_0[2]/nand_p32n32_0/a_n5_n20# Gnd nfet w =352n l =22n
+M1089 PCIncrementorOptimizationLargest_BaseCell_0[2]/nand_p32n32_0/a_n5_n20# PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b GND Gnd nfet w =352n l =22n
+M1090 Vdd PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[3]/inv_p8n4_2/a_n4_0# Vdd pfet w =88n l =22n
+M1091 PCIncrementorOptimizationLargest_BaseCell_0[3]/inv_p8n4_2/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/xnor GND Gnd nfet w =44n l =22n
+M1092 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/b_ Vdd pfet w =88n l =22n
+M1093 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a Vdd Vdd pfet w =88n l =22n
+M1094 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a_ Gnd nfet w =44n l =22n
+M1095 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/b_ GND Vdd Vdd pfet w =88n l =22n
+M1096 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a GND Gnd nfet w =44n l =22n
+M1097 Vdd PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a_13_15# Vdd pfet w =88n l =22n
+M1098 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a_13_15# PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/xnor Vdd pfet w =88n l =22n
+M1099 GND GND PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/b_ Gnd nfet w =44n l =22n
+M1100 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/xnor Gnd nfet w =44n l =22n
+M1101 Vdd PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[3]/inv_p8n4_1/a_n4_0# Vdd pfet w =88n l =22n
+M1102 PCIncrementorOptimizationLargest_BaseCell_0[3]/inv_p8n4_1/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/xor GND Gnd nfet w =44n l =22n
+M1103 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b_ Vdd pfet w =88n l =22n
+M1104 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b Vdd Vdd pfet w =88n l =22n
+M1105 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/xor Vdd PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b_ Gnd nfet w =44n l =22n
+M1106 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b GND Gnd nfet w =44n l =22n
+M1107 GND Vdd PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/a_ Gnd nfet w =44n l =22n
+M1108 Vdd Vdd PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/a_ Vdd pfet w =88n l =22n
+M1109 GND PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/a_27_4# Gnd nfet w =44n l =22n
+M1110 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/xor Vdd pfet w =88n l =22n
+M1111 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/a_27_4# PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/xor Gnd nfet w =44n l =22n
+M1112 Vdd GND PCIncrementorOptimizationLargest_BaseCell_0[3]/nor_p64n16_0/a_n46_21# Vdd pfet w =704n l =22n
+M1113 PCIncrementorOptimizationLargest_BaseCell_0[3]/nor_p64n16_0/a_n46_21# PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b Vdd pfet w =704n l =22n
+M1114 GND PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b Gnd nfet w =176n l =22n
+M1115 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b GND GND Gnd nfet w =176n l =22n
+M1116 Vdd PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a Vdd pfet w =352n l =22n
+M1117 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a Vdd Vdd Vdd pfet w =352n l =22n
+M1118 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a Vdd PCIncrementorOptimizationLargest_BaseCell_0[3]/nand_p32n32_0/a_n5_n20# Gnd nfet w =352n l =22n
+M1119 PCIncrementorOptimizationLargest_BaseCell_0[3]/nand_p32n32_0/a_n5_n20# PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b GND Gnd nfet w =352n l =22n
+M1120 Vdd PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[4]/inv_p8n4_2/a_n4_0# Vdd pfet w =88n l =22n
+M1121 PCIncrementorOptimizationLargest_BaseCell_0[4]/inv_p8n4_2/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/xnor GND Gnd nfet w =44n l =22n
+M1122 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/b_ Vdd pfet w =88n l =22n
+M1123 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a Vdd Vdd pfet w =88n l =22n
+M1124 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a_ Gnd nfet w =44n l =22n
+M1125 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/b_ GND Vdd Vdd pfet w =88n l =22n
+M1126 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a GND Gnd nfet w =44n l =22n
+M1127 Vdd PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a_13_15# Vdd pfet w =88n l =22n
+M1128 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a_13_15# PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/xnor Vdd pfet w =88n l =22n
+M1129 GND GND PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/b_ Gnd nfet w =44n l =22n
+M1130 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/xnor Gnd nfet w =44n l =22n
+M1131 Vdd PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[4]/inv_p8n4_1/a_n4_0# Vdd pfet w =88n l =22n
+M1132 PCIncrementorOptimizationLargest_BaseCell_0[4]/inv_p8n4_1/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/xor GND Gnd nfet w =44n l =22n
+M1133 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b_ Vdd pfet w =88n l =22n
+M1134 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b Vdd Vdd pfet w =88n l =22n
+M1135 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/xor Vdd PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b_ Gnd nfet w =44n l =22n
+M1136 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b GND Gnd nfet w =44n l =22n
+M1137 GND Vdd PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/a_ Gnd nfet w =44n l =22n
+M1138 Vdd Vdd PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/a_ Vdd pfet w =88n l =22n
+M1139 GND PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/a_27_4# Gnd nfet w =44n l =22n
+M1140 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/xor Vdd pfet w =88n l =22n
+M1141 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/a_27_4# PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/xor Gnd nfet w =44n l =22n
+M1142 Vdd GND PCIncrementorOptimizationLargest_BaseCell_0[4]/nor_p64n16_0/a_n46_21# Vdd pfet w =704n l =22n
+M1143 PCIncrementorOptimizationLargest_BaseCell_0[4]/nor_p64n16_0/a_n46_21# PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b Vdd pfet w =704n l =22n
+M1144 GND PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b Gnd nfet w =176n l =22n
+M1145 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b GND GND Gnd nfet w =176n l =22n
+M1146 Vdd PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a Vdd pfet w =352n l =22n
+M1147 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a Vdd Vdd Vdd pfet w =352n l =22n
+M1148 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a Vdd PCIncrementorOptimizationLargest_BaseCell_0[4]/nand_p32n32_0/a_n5_n20# Gnd nfet w =352n l =22n
+M1149 PCIncrementorOptimizationLargest_BaseCell_0[4]/nand_p32n32_0/a_n5_n20# PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b GND Gnd nfet w =352n l =22n
+M1150 Vdd PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[5]/inv_p8n4_2/a_n4_0# Vdd pfet w =88n l =22n
+M1151 PCIncrementorOptimizationLargest_BaseCell_0[5]/inv_p8n4_2/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/xnor GND Gnd nfet w =44n l =22n
+M1152 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/b_ Vdd pfet w =88n l =22n
+M1153 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a Vdd Vdd pfet w =88n l =22n
+M1154 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/xnor PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a_ Gnd nfet w =44n l =22n
+M1155 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/b_ GND Vdd Vdd pfet w =88n l =22n
+M1156 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a GND Gnd nfet w =44n l =22n
+M1157 Vdd PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a_13_15# Vdd pfet w =88n l =22n
+M1158 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a_13_15# PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/xnor Vdd pfet w =88n l =22n
+M1159 GND GND PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/b_ Gnd nfet w =44n l =22n
+M1160 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/xnor Gnd nfet w =44n l =22n
+M1161 Vdd PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[5]/inv_p8n4_1/a_n4_0# Vdd pfet w =88n l =22n
+M1162 PCIncrementorOptimizationLargest_BaseCell_0[5]/inv_p8n4_1/a_n4_0# PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/xor GND Gnd nfet w =44n l =22n
+M1163 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b_ Vdd pfet w =88n l =22n
+M1164 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b Vdd Vdd pfet w =88n l =22n
+M1165 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/xor Vdd PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b_ Gnd nfet w =44n l =22n
+M1166 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b GND Gnd nfet w =44n l =22n
+M1167 GND Vdd PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/a_ Gnd nfet w =44n l =22n
+M1168 Vdd Vdd PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/a_ Vdd pfet w =88n l =22n
+M1169 GND PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/a_27_4# Gnd nfet w =44n l =22n
+M1170 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/xor Vdd pfet w =88n l =22n
+M1171 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/a_27_4# PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/a_ PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/xor Gnd nfet w =44n l =22n
+M1172 Vdd GND PCIncrementorOptimizationLargest_BaseCell_0[5]/nor_p64n16_0/a_n46_21# Vdd pfet w =704n l =22n
+M1173 PCIncrementorOptimizationLargest_BaseCell_0[5]/nor_p64n16_0/a_n46_21# PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a FINALOUTPUT Vdd pfet w =704n l =22n
+M1174 GND PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a FINALOUTPUT Gnd nfet w =176n l =22n
+M1175 FINALOUTPUT GND GND Gnd nfet w =176n l =22n
+M1176 Vdd PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a Vdd pfet w =352n l =22n
+M1177 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a Vdd Vdd Vdd pfet w =352n l =22n
+M1178 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a Vdd PCIncrementorOptimizationLargest_BaseCell_0[5]/nand_p32n32_0/a_n5_n20# Gnd nfet w =352n l =22n
+M1179 PCIncrementorOptimizationLargest_BaseCell_0[5]/nand_p32n32_0/a_n5_n20# PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b GND Gnd nfet w =352n l =22n
+M1180 Vdd trickyxnor2_0/xnor inv_p8n4_2/a_n4_0# Vdd pfet w =88n l =22n
+M1181 inv_p8n4_2/a_n4_0# trickyxnor2_0/xnor GND Gnd nfet w =44n l =22n
+M1182 trickyxnor2_0/xnor trickyxnor2_0/a trickyxnor2_0/b_ Vdd pfet w =88n l =22n
+M1183 trickyxnor2_0/a_ trickyxnor2_0/a Vdd Vdd pfet w =88n l =22n
+M1184 trickyxnor2_0/xnor trickyxnor2_0/b_ trickyxnor2_0/a_ Gnd nfet w =44n l =22n
+M1185 trickyxnor2_0/b_ GND Vdd Vdd pfet w =88n l =22n
+M1186 trickyxnor2_0/a_ trickyxnor2_0/a GND Gnd nfet w =44n l =22n
+M1187 Vdd trickyxnor2_0/a_ trickyxnor2_0/a_13_15# Vdd pfet w =88n l =22n
+M1188 trickyxnor2_0/a_13_15# trickyxnor2_0/b_ trickyxnor2_0/xnor Vdd pfet w =88n l =22n
+M1189 GND GND trickyxnor2_0/b_ Gnd nfet w =44n l =22n
+M1190 trickyxnor2_0/b_ trickyxnor2_0/a_ trickyxnor2_0/xnor Gnd nfet w =44n l =22n
+M1191 Vdd trickyxor2_0/xor inv_p8n4_1/a_n4_0# Vdd pfet w =88n l =22n
+M1192 inv_p8n4_1/a_n4_0# trickyxor2_0/xor GND Gnd nfet w =44n l =22n
+M1193 trickyxor2_0/xor trickyxor2_0/a_ trickyxor2_0/b_ Vdd pfet w =88n l =22n
+M1194 trickyxor2_0/b_ trickyxor2_0/b Vdd Vdd pfet w =88n l =22n
+M1195 trickyxor2_0/xor Vdd trickyxor2_0/b_ Gnd nfet w =44n l =22n
+M1196 trickyxor2_0/b_ trickyxor2_0/b GND Gnd nfet w =44n l =22n
+M1197 GND Vdd trickyxor2_0/a_ Gnd nfet w =44n l =22n
+M1198 Vdd Vdd trickyxor2_0/a_ Vdd pfet w =88n l =22n
+M1199 GND trickyxor2_0/b_ trickyxor2_0/a_27_4# Gnd nfet w =44n l =22n
+M1200 trickyxor2_0/a_ trickyxor2_0/b_ trickyxor2_0/xor Vdd pfet w =88n l =22n
+M1201 trickyxor2_0/a_27_4# trickyxor2_0/a_ trickyxor2_0/xor Gnd nfet w =44n l =22n
+M1202 Vdd trickyxor2_0/b inv_p8n4_0/a_n4_0# Vdd pfet w =88n l =22n
+M1203 inv_p8n4_0/a_n4_0# trickyxor2_0/b GND Gnd nfet w =44n l =22n
+M1204 Vdd GND nor_p64n16_0/a_n46_21# Vdd pfet w =704n l =22n
+M1205 nor_p64n16_0/a_n46_21# trickyxnor2_0/a nor_p64n16_0/cout Vdd pfet w =704n l =22n
+M1206 GND trickyxnor2_0/a nor_p64n16_0/cout Gnd nfet w =176n l =22n
+M1207 nor_p64n16_0/cout GND GND Gnd nfet w =176n l =22n
+M1208 Vdd trickyxor2_0/b trickyxnor2_0/a Vdd pfet w =352n l =22n
+M1209 trickyxnor2_0/a Vdd Vdd Vdd pfet w =352n l =22n
+M1210 trickyxnor2_0/a Vdd nand_p32n32_0/a_n5_n20# Gnd nfet w =352n l =22n
+M1211 nand_p32n32_0/a_n5_n20# trickyxor2_0/b GND Gnd nfet w =352n l =22n
+M1212 Vdd latchOutputMimic_0/latchReadMimic trickyxor2_0/b Vdd pfet w =352n l =22n
+M1213 trickyxor2_0/b latchOutputMimic_0/latchReadMimic GND Gnd nfet w =176n l =22n
+M1214 Vdd GND latchOutputMimic_0/a_n5_6# Vdd pfet w =88n l =22n
+M1215 latchOutputMimic_0/a_n5_6# chainStart latchOutputMimic_0/latchReadMimic Vdd pfet w =88n l =22n
+M1216 latchOutputMimic_0/latchReadMimic chainStart latchOutputMimic_0/a_n3_n20# Gnd nfet w =44n l =22n
+M1217 latchOutputMimic_0/a_n3_n20# Vdd GND Gnd nfet w =44n l =22n
+C0 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/xor 2.0fF scale=1.21e-4
+C1 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b 2.0fF scale=1.21e-4
+C2 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/xor PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b 2.0fF scale=1.21e-4
+C3 trickyxor2_0/xor trickyxor2_0/b 2.0fF scale=1.21e-4
+C4 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/xor 2.0fF scale=1.21e-4
+C5 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/xor 2.0fF scale=1.21e-4
+C6 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/xor nor_p64n16_0/cout 2.0fF scale=1.21e-4
+C7 chainStart gnd 12.6fF scale=1.21e-4
+C8 latchOutputMimic_0/latchReadMimic gnd 17.3fF scale=1.21e-4
+C9 nor_p64n16_0/cout gnd 63.4fF scale=1.21e-4
+C10 trickyxnor2_0/a gnd 50.9fF scale=1.21e-4
+C11 trickyxor2_0/b_ gnd 25.3fF scale=1.21e-4
+C12 trickyxor2_0/a_ gnd 18.1fF scale=1.21e-4
+C13 trickyxor2_0/b gnd 70.1fF scale=1.21e-4
+C14 trickyxor2_0/xor gnd 27.1fF scale=1.21e-4
+C15 trickyxnor2_0/b_ gnd 19.9fF scale=1.21e-4
+C16 trickyxnor2_0/a_ gnd 16.3fF scale=1.21e-4
+C17 trickyxnor2_0/xnor gnd 40.8fF scale=1.21e-4
+C18 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a gnd 60.2fF scale=1.21e-4
+C19 Vdd gnd 908.5fF scale=1.21e-4
+C20 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b_ gnd 25.3fF scale=1.21e-4
+C21 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/a_ gnd 18.1fF scale=1.21e-4
+C22 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/b gnd 63.2fF scale=1.21e-4
+C23 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxor2_0/xor gnd 27.1fF scale=1.21e-4
+C24 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/b_ gnd 19.9fF scale=1.21e-4
+C25 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/a_ gnd 16.3fF scale=1.21e-4
+C26 PCIncrementorOptimizationLargest_BaseCell_0[5]/trickyxnor2_0/xnor gnd 40.8fF scale=1.21e-4
+C27 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a gnd 59.6fF scale=1.21e-4
+C28 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b_ gnd 25.3fF scale=1.21e-4
+C29 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/a_ gnd 18.1fF scale=1.21e-4
+C30 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/b gnd 63.2fF scale=1.21e-4
+C31 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxor2_0/xor gnd 27.1fF scale=1.21e-4
+C32 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/b_ gnd 19.9fF scale=1.21e-4
+C33 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/a_ gnd 16.3fF scale=1.21e-4
+C34 PCIncrementorOptimizationLargest_BaseCell_0[4]/trickyxnor2_0/xnor gnd 40.8fF scale=1.21e-4
+C35 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a gnd 59.6fF scale=1.21e-4
+C36 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b_ gnd 25.3fF scale=1.21e-4
+C37 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/a_ gnd 18.1fF scale=1.21e-4
+C38 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/b gnd 63.2fF scale=1.21e-4
+C39 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxor2_0/xor gnd 27.1fF scale=1.21e-4
+C40 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/b_ gnd 19.9fF scale=1.21e-4
+C41 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/a_ gnd 16.3fF scale=1.21e-4
+C42 PCIncrementorOptimizationLargest_BaseCell_0[3]/trickyxnor2_0/xnor gnd 40.8fF scale=1.21e-4
+C43 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a gnd 59.6fF scale=1.21e-4
+C44 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b_ gnd 25.3fF scale=1.21e-4
+C45 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/a_ gnd 18.1fF scale=1.21e-4
+C46 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/b gnd 63.2fF scale=1.21e-4
+C47 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxor2_0/xor gnd 27.1fF scale=1.21e-4
+C48 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/b_ gnd 19.9fF scale=1.21e-4
+C49 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/a_ gnd 16.3fF scale=1.21e-4
+C50 PCIncrementorOptimizationLargest_BaseCell_0[2]/trickyxnor2_0/xnor gnd 40.8fF scale=1.21e-4
+C51 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a gnd 59.6fF scale=1.21e-4
+C52 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b_ gnd 25.3fF scale=1.21e-4
+C53 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/a_ gnd 18.1fF scale=1.21e-4
+C54 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/b gnd 63.2fF scale=1.21e-4
+C55 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxor2_0/xor gnd 27.1fF scale=1.21e-4
+C56 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/b_ gnd 19.9fF scale=1.21e-4
+C57 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/a_ gnd 16.3fF scale=1.21e-4
+C58 PCIncrementorOptimizationLargest_BaseCell_0[1]/trickyxnor2_0/xnor gnd 40.8fF scale=1.21e-4
+C59 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a gnd 59.6fF scale=1.21e-4
+C60 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/b_ gnd 25.3fF scale=1.21e-4
+C61 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/a_ gnd 18.1fF scale=1.21e-4
+C62 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxor2_0/xor gnd 27.1fF scale=1.21e-4
+C63 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/b_ gnd 19.9fF scale=1.21e-4
+C64 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/a_ gnd 16.3fF scale=1.21e-4
+C65 PCIncrementorOptimizationLargest_BaseCell_0[0]/trickyxnor2_0/xnor gnd 40.8fF scale=1.21e-4

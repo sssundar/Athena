@@ -1,0 +1,33 @@
+import "globals.cast";
+
+// Must generate writeFromDP, writeFromDP_, readToDP, readToDP_, writeFromAdder, writeFromAdder_, add, sub.
+// The additiveAccumulator will route these to also latch the MSBCarryOut (using writeFromAdder, writeFromAdder_, phi1, phi1_) 
+// and generate the LSBCarryIn (= sub).
+
+define additiveAccumulatorController()(node writeFromDP, writeFromDP_, readToDP, readToDP_, writeFromAdder, writeFromAdder_, add, sub) {  
+    // add/sub from instruction byte
+    add = controlPath_[0];
+    sub = controlPath[0];
+
+    prs {
+        // accumulator signals        
+         phi0 &  ArithmeticInstruction -> writeFromAdder_-
+        ~phi0 | ~ArithmeticInstruction -> writeFromAdder_+
+
+         writeFromAdder_ -> writeFromAdder-
+        ~writeFromAdder_ -> writeFromAdder+
+
+        // as a simple register, we read/write by register 0 flags
+        phi0 & simpleWrite & Register0Write -> writeFromDP_-
+        ~phi0 | ~simpleWrite | ~Register0Write -> writeFromDP_+
+
+         writeFromDP_ -> writeFromDP-
+        ~writeFromDP_ -> writeFromDP+
+
+         phi1 & simpleRead & Register0Read -> readToDP_-
+        ~phi1 | ~simpleRead | ~Register0Read -> readToDP_+
+
+         readToDP_ -> readToDP-
+        ~readToDP_ -> readToDP+
+    }
+}

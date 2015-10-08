@@ -1,0 +1,23 @@
+import "globals.cast";
+import "iccBit.cast";
+import "xor.cast";
+import "inverter.cast";
+
+// Counts 00, 01, 10, 00 .. 
+define instructionCycleCounter()(){
+
+// Control Signals
+node INC;
+
+prs {
+	(instructionCycleCountIs2 | (instructionCycleCountIs1 & BranchInstruction_) | RESET) -> INC-
+	(~instructionCycleCountIs2 & (~instructionCycleCountIs1 | ~BranchInstruction_) & ~RESET) -> INC+
+}
+
+// the counter (see globals.cast for signals)
+node iccB1in;
+iccBit b0(iccB0_, INC, iccB0);
+iccBit b1(iccB1in, INC, iccB1);
+xor b1update(iccB1,iccB0,iccB1in);
+
+} 

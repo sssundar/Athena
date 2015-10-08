@@ -1,0 +1,129 @@
+magic
+tech scmos
+timestamp 1430461504
+<< polysilicon >>
+rect 32 38 34 40
+rect 21 36 34 38
+rect 21 26 23 36
+rect 39 34 41 40
+rect -15 25 -8 26
+rect -17 24 -8 25
+rect 18 24 23 26
+rect -22 13 -8 14
+rect -26 12 -8 13
+rect 21 10 23 24
+rect 27 32 41 34
+rect 27 26 29 32
+rect 27 24 31 26
+rect 57 24 70 26
+rect 27 14 29 24
+rect 27 12 41 14
+rect -29 8 -8 10
+rect 4 2 6 10
+rect 21 8 36 10
+rect -35 0 6 2
+rect 34 -1 36 8
+rect 39 -1 41 12
+rect 45 6 47 22
+rect 24 -17 26 -15
+rect 30 -17 76 -15
+rect 23 -34 45 -32
+<< ndiffusion >>
+rect 26 -15 30 -14
+rect 26 -18 30 -17
+<< metal1 >>
+rect -39 3 -36 45
+rect -32 12 -29 45
+rect -18 29 -15 45
+rect -26 17 -22 18
+rect -39 -38 -36 -1
+rect -32 -38 -29 8
+rect -18 -38 -15 25
+rect -12 37 -9 45
+rect 33 44 36 45
+rect 39 44 42 45
+rect -12 35 51 37
+rect 55 35 61 37
+rect -12 34 61 35
+rect -12 19 -9 34
+rect -12 15 -6 19
+rect 58 19 61 34
+rect -12 -20 -9 15
+rect 1 -4 4 17
+rect 16 15 33 18
+rect 51 15 61 19
+rect 37 12 41 15
+rect 64 12 67 45
+rect 37 9 67 12
+rect 16 3 44 6
+rect 26 -10 29 3
+rect -12 -23 -6 -20
+rect -12 -37 -9 -23
+rect 19 -30 22 -24
+rect 26 -37 30 -22
+rect -12 -40 30 -37
+rect 33 -38 36 -5
+rect 39 -38 42 -5
+rect 64 -30 67 9
+rect 49 -34 67 -30
+rect 64 -38 67 -34
+rect 70 27 73 45
+rect 70 -38 73 23
+rect 77 -14 80 45
+rect 77 -38 80 -18
+<< ntransistor >>
+rect 26 -17 30 -15
+<< polycontact >>
+rect 32 40 36 44
+rect 39 40 43 44
+rect -19 25 -15 29
+rect 1 17 5 21
+rect -26 13 -22 17
+rect -33 8 -29 12
+rect 70 23 74 27
+rect -39 -1 -35 3
+rect 32 -5 36 -1
+rect 44 2 48 6
+rect 39 -5 43 -1
+rect 76 -18 80 -14
+rect 19 -34 23 -30
+rect 45 -34 49 -30
+<< ndcontact >>
+rect 26 -14 30 -10
+rect 26 -22 30 -18
+<< m2contact >>
+rect -26 18 -22 22
+rect 1 27 5 31
+rect 44 27 48 31
+<< psubstratepcontact >>
+rect 51 35 55 39
+use latch  latch_1
+timestamp 1430426212
+transform 0 1 -6 1 0 21
+box -6 -2 10 24
+use latch  latch_2
+timestamp 1430426212
+transform 0 -1 55 1 0 21
+box -6 -2 10 24
+use latch  latch_0
+timestamp 1430426212
+transform 0 1 -6 -1 0 13
+box -6 -2 10 24
+use staticizer  staticizer_0
+timestamp 1430428783
+transform 0 1 -10 -1 0 -20
+box -19 2 12 32
+<< labels >>
+rlabel m2contact -26 18 -22 22 1 in
+rlabel m2contact 1 27 5 31 1 bus
+rlabel m2contact 44 27 48 31 1 fblock
+rlabel metal1 77 42 80 45 6 reset
+rlabel metal1 70 42 73 45 5 phi1
+rlabel metal1 64 42 67 45 5 Vdd
+rlabel polycontact 39 40 43 44 5 phi1_
+rlabel polycontact 32 40 36 44 5 r_
+rlabel metal1 -12 42 -9 45 5 GND
+rlabel metal1 -18 42 -15 45 5 r
+rlabel metal1 -32 42 -29 45 5 w
+rlabel metal1 -39 42 -36 45 4 w_
+<< end >>

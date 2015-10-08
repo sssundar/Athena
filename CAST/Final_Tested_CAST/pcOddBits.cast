@@ -1,0 +1,23 @@
+import "globals.cast";
+import "inverter.cast";
+
+// Program counter CAST for bits 1,3,..13 of [0:14]. 
+// Need branchWrite, branchWrite_ (load address, uninverted from load input to these bits)
+// 	incWrite, incWrite_ (increment address, uninverted from increment input to these bits)
+// 	phi1 read to incrementor 
+// 	ungated read to address bus (inverted from these bits)
+// 	reset latched bit to 1 (reads out as 0)
+define pcOddBits()(node BranchLoadIn, IncLoadIn, branchWrite, branchWrite_, incWrite, incWrite_; node toIncrementor, toAddrBus) {
+  node currentAddress_;
+  inverter ABI(currentAddress_, toAddrBus);
+
+  prs {
+    ( branchWrite & BranchLoadIn) | (incWrite & IncLoadIn) -> currentAddress_-
+    (~branchWrite_ & ~BranchLoadIn) | (~incWrite_ & ~IncLoadIn) | ~RESET_ -> currentAddress_+
+
+     phi1  &  currentAddress_ -> toIncrementor-
+    ~phi1_ & ~currentAddress_ -> toIncrementor+
+  }
+}
+
+

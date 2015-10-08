@@ -1,0 +1,54 @@
+timestamp 1434163356
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use nand_p32n32 nand_p32n32_0 1 0 110 0 1 24
+use nor_p64n16 nor_p64n16_0 1 0 250 0 1 23
+use trickyxor2 trickyxor2_0 1 0 119 0 1 -53
+use inv_p8n4 inv_p8n4_1 -1 0 186 0 1 -38
+use trickyxnor2 trickyxnor2_0 1 0 220 0 1 -72
+use inv_p8n4 inv_p8n4_2 -1 0 312 0 1 -41
+node "m1_87_n69#" 1 10622 87 -69 m1 0 0 0 0 0 0 0 0 0 0 0 0 226 122 0 0 0 0
+node "m1_161_n64#" 4 52828 161 -64 m1 0 0 0 0 0 0 0 0 0 0 0 0 1124 598 0 0 0 0
+node "m1_87_n40#" 1 6815 87 -40 m1 0 0 0 0 0 0 0 0 0 0 0 0 145 88 0 0 0 0
+node "m1_94_n31#" 0 4057 94 -31 m1 0 0 0 0 0 0 0 0 0 0 0 0 75 54 44 32 0 0
+node "m1_87_n7#" 0 3384 87 -7 m1 0 0 0 0 0 0 0 0 0 0 0 0 72 44 0 0 0 0
+node "m1_137_n6#" 3 30127 137 -6 m1 0 0 0 0 0 0 0 0 0 0 0 0 641 426 0 0 0 0
+node "m1_288_28#" 1 13191 288 28 m1 0 0 0 0 0 0 0 0 0 0 0 0 237 156 136 76 0 0
+node "m1_131_17#" 2 24161 131 17 m1 0 0 0 0 0 0 0 0 0 0 0 0 451 280 224 120 0 0
+node "m1_87_67#" 5 74746 87 67 m1 0 0 0 0 0 0 0 0 0 0 0 0 1216 628 1076 510 0 0
+node "a_172_n48#" 42 6236 172 -48 pc 0 0 0 0 28 22 0 0 0 0 0 0 88 64 0 0 0 0
+node "a_301_n37#" 25 8531 301 -37 pc 0 0 0 0 16 16 0 0 0 0 0 0 157 110 0 0 0 0
+cap "m1_131_17#" "m1_137_n6#" 540
+cap "m1_87_67#" "m1_161_n64#" 540
+cap "m1_87_67#" "m1_131_17#" 540
+cap "m1_288_28#" "m1_137_n6#" 540
+cap "m1_87_67#" "m1_137_n6#" 1215
+cap "m1_288_28#" "m1_87_67#" 675
+merge "nor_p64n16_0/cout" "m1_288_28#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "nor_p64n16_0/cin" "trickyxnor2_0/a" -611 0 0 0 0 0 0 0 0 0 0 0 0 -13 -36 0 0 0 0
+merge "trickyxnor2_0/a" "nand_p32n32_0/cout"
+merge "nand_p32n32_0/cout" "m1_131_17#"
+merge "trickyxor2_0/b" "m1_94_n31#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "inv_p8n4_2/a_n2_n26#" "trickyxnor2_0/GND" -1034 0 0 0 0 0 0 0 0 0 0 0 0 -22 -56 0 0 0 0
+merge "trickyxnor2_0/GND" "trickyxnor2_0/b"
+merge "trickyxnor2_0/b" "inv_p8n4_1/a_n2_n26#"
+merge "inv_p8n4_1/a_n2_n26#" "trickyxor2_0/GND"
+merge "trickyxor2_0/GND" "m1_87_n69#"
+merge "m1_87_n69#" "m1_161_n64#"
+merge "inv_p8n4_1/a_n6_5#" "trickyxor2_0/xor" -956 0 0 0 0 -4 -10 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "trickyxor2_0/xor" "a_172_n48#"
+merge "trickyxor2_0/Vdd" "trickyxor2_0/a" -188 0 0 0 0 0 0 0 0 0 0 0 0 -4 -18 0 0 0 0
+merge "trickyxor2_0/a" "m1_87_n40#"
+merge "nor_p64n16_0/a_n46_25#" "nand_p32n32_0/a_n8_n18#" -470 0 0 0 0 0 0 0 0 0 0 0 0 -10 -46 0 -8 0 0
+merge "nand_p32n32_0/a_n8_n18#" "inv_p8n4_2/a_n4_7#"
+merge "inv_p8n4_2/a_n4_7#" "trickyxnor2_0/Vdd"
+merge "trickyxnor2_0/Vdd" "inv_p8n4_1/a_n4_7#"
+merge "inv_p8n4_1/a_n4_7#" "m1_87_67#"
+merge "nor_p64n16_0/a_n48_23#" "nand_p32n32_0/a_n5_n31#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22 0 0 0 0
+merge "nand_p32n32_0/a_n5_n31#" "m1_87_n7#"
+merge "m1_87_n7#" "m1_137_n6#"
+merge "inv_p8n4_2/a_n6_5#" "trickyxnor2_0/xnor" -898 0 0 0 0 -3 -8 0 0 0 0 0 0 -3 -8 0 0 0 0
+merge "trickyxnor2_0/xnor" "a_301_n37#"

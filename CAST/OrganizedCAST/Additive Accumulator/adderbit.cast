@@ -1,0 +1,20 @@
+// A input from accumulator
+// B input from datapath
+// S sum A+B+I
+// I carry in
+// O carry out of A+B+I
+define adderbit()(node A, B, I; node S, O)
+{
+ node int1, int2;
+ prs 
+ {
+  (~A&~B)|(~I&(~A|~B))->int1+
+  (A&B)|(I&(A|B))->int1-
+  ~int1->O+
+  int1->O-
+  ((~A|~B|~I)&~int1)|(~A&~B&~I)->int2+
+  ((A|B|I)&int1)|(A&B&I)->int2-
+  ~int2 -> S+
+  int2 -> S-
+ }
+}
